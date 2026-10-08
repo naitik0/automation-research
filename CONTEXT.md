@@ -34,6 +34,18 @@ _Avoid_: Leakage, label leak (before it has been measured)
 One setting of which alert fields an LLM is shown when it triages an alert, for example the full benchmark prompt, or the prompt with label-revealing metadata removed.
 _Avoid_: Ablation (when used without saying which fields), prompt variant
 
+**Rule-identity reference**:
+A diagnostic that predicts each alert's label from the label most common for its rule in labelled training data. It measures how predictive rule identity is; it is not a competing triage method.
+_Avoid_: Rule-majority baseline (as a fair competitor), lookup classifier
+
+**Shared sample**:
+The fixed set of alerts that every model is run on, under every information condition, so that results can be compared on identical alerts.
+_Avoid_: Test set (when the published per-model samples are meant), eval set
+
+**Dry run**:
+A small run of the full experiment on alerts kept apart from the shared sample, which must pass agreed checks before the production run; its results are never reported.
+_Avoid_: Pilot (the earlier feasibility check), smoke test
+
 **Problem brief**:
 A 1–2 page document stating the chosen problem: its research question, why it matters, gap evidence, a feasibility check, a rough approach, 1–2 rejected candidate problems with reasons, and the fallback problem with its kill criteria.
 _Avoid_: Proposal, topic summary
