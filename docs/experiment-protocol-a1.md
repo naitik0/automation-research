@@ -1,6 +1,6 @@
 # Experiment protocol A1
 
-**Status:** approved 2026-10-09 · implements A1 of the approved [problem brief](problem-brief.md)
+**Status:** approved 2026-10-09; amended 2026-10-09 before production (§4 test inputs, D10; see the change log) · implements A1 of the approved [problem brief](problem-brief.md)
 **Rule:** nothing in §1–§10 may change after the production run starts. A change needs a new protocol version and a rerun of the affected cells. No result from the dry run (§11) is used in any reported analysis.
 
 Facts in this document come from the pinned SecAlertBench files (commit `42a8488`), the pilot ([notes/soc-alert-triage-pilot.md](../notes/soc-alert-triage-pilot.md)), the llama.cpp b11509 server README, Groq's documentation (model page, reasoning, OpenAI compatibility and rate-limit pages, read 2026-10-09), and Anthropic's model reference. Items marked **[D#]** are decisions awaiting approval (§12).
@@ -132,9 +132,11 @@ For gpt-oss, only the final `content` is parsed, never the reasoning. An empty c
 
 **Test sets.**
 - Each of the 15 available published prediction files is scored on **all 2,000 of its rows as published**, including the few rows whose content is duplicated within the file. Labels come from each row's `true_label` **[D7]**.
+- **Test input for a published file [D10].** The references read each row's own published `record`, the exact alert that the published model was shown, not the matching dataset row. For TF-IDF this means the §4.1 text is built from that record; the rule-identity reference uses that record's `rule_name`. The record differs from the dataset row only in the re-randomised IP fields.
+- **Unmatched published rows [D10].** A few rows per file (0–5 in the pinned files) have no dataset row with the same content key. They stay in the test set and are scored like every other row. Their count is recorded per file and reported as a limitation: because they match no frame alert, no exact content duplicate of them can be removed from training.
 - The references are also scored on the shared sample (§1), so they can be compared directly with our four models. On the shared sample, TF-IDF + logistic regression is fitted once per information condition, on the fields visible to the LLM under that condition. The published models all saw the full prompt, so they are compared with condition (a) only. The rule-identity reference doesn't depend on the condition; it is reported once as a diagnostic.
 
-**Training sets (out-of-sample).** For each test set, train on the frame alerts (§1, deduplicated) whose content key is **not** in that test set. That is about 6,200 alerts for a published file and 7,204 for the shared sample (dry-run alerts are not test alerts, so they may be used for training). No test alert, and no content duplicate of one, is ever in training.
+**Training sets (out-of-sample).** For each test set, train on the frame alerts (§1, deduplicated) whose content key is **not** in that test set. That is about 6,200 alerts for a published file and 7,204 for the shared sample (dry-run alerts are not test alerts, so they may be used for training). No test alert, and no content duplicate of one, is ever in training. Training text always comes from the pinned dataset rows (§4.1). The exclusion is by exact content key, so it covers every matched test row; for unmatched published rows (above) there is no exact duplicate to exclude.
 
 | Reference | Hard prediction | Score (for AUROC) |
 |---|---|---|
@@ -397,6 +399,7 @@ Dry-run outputs are kept under `runs/dryrun/` and **never** reused in results.
 | C1 | TF-IDF text is lowercased once in the builder (`str.lower()`); the vectorizer does no case folding (§4.1). |
 | C2 | A local-model AUROC score is available only when **both** label probabilities are in the top 20; otherwise it is unavailable, with no substitution. Coverage is reported for each model × condition (§7.1). |
 | R1 | AUROC sensitivity: worst-case and best-case bounds that replace every unavailable score (§7.1 step 10). Unavailable scores are separate from invalid hard labels. |
+| D10 | RQ1 references read each published row's own `record` (what that published model was shown) as the test input; training uses pinned-dataset rows outside the test set, excluding exact content-key duplicates. Unmatched published rows stay in the test set; their count is recorded and reported as a limitation (§4). |
 
 ### Still open
 
@@ -409,3 +412,9 @@ Dry-run outputs are kept under `runs/dryrun/` and **never** reused in results.
 | D9 | The 16th published model (Gemini) | Analyse 15 models per alert; use the 16th only through its published summary | Open the file in a sandbox or VM with a Defender exclusion (your security call) |
 
 After these are settled, the next steps are to implement `experiments/a1/`, run the dry run, and report P1–P15. Production runs only after you see the dry-run report.
+
+## Change log
+
+| Date | Change | Why |
+|---|---|---|
+| 2026-10-09 | §4: the test input for a published file is the row's own published `record`; unmatched published rows stay in the test set, with their count reported as a limitation. Added D10 to §12. | Under-specified in the approved text. Settled by the user during offline preparation, before production and before any reference result was computed; it changes only the reference baselines, not any LLM input or output. |

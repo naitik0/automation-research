@@ -1,7 +1,12 @@
 """Checkpointed, resumable LLM runner (protocol §3, §8, §9). Dry run only: production is disabled in code.
 
   python -m src.run_llm --model qwen3-4b [--max-new-calls 60] [--subdir main] [--first N]
+  python -m src.run_llm --model llama-3.2-3b --print-config   # offline: config and hashes, no server or API
   test hooks (P10): --crash-after N [--crash-partial]
+
+Before any request the runner checks config/protocol.lock.json against the files on disk and the current
+harness, and checks the live label tokens against the lock. A run directory written by another harness is
+never resumed: use a new --subdir.
 """
 from __future__ import annotations
 
@@ -17,7 +22,10 @@ from pathlib import Path
 
 import numpy as np
 
-from .common import MANIFESTS, RUNS, SEED_CALL_ORDER, ROOT, load_dataset, read_jsonl, sha256_file, sha256_text, write_json
+from .common import MANIFESTS, RUNS, SEED_CALL_ORDER, load_dataset, read_jsonl, sha256_file, sha256_text, write_json
+from .lock import LOCK_PATH, harness_hash
+from .lock import load as load_lock
+from .lock import verify as verify_lock
 from .models import (MODELS, AnthropicClient, FatalError, GroqClient, LocalClient, TransportError,
                      model_params)
 from .prompts import SYSTEM_PROMPT, SYSTEM_SHA256, messages, parse_label, user_message
@@ -26,15 +34,11 @@ from .score import extract_score, label_tokens
 ALLOWED_PHASES = {"dryrun": MANIFESTS / "dryrun_sample.jsonl"}  # production deliberately absent (§11)
 BACKOFF = (2, 4, 8, 16, 32, 60)
 MAX_ATTEMPTS = 6
+LABEL_TOKEN_KEYS = ("A", "A_pieces", "N", "N_pieces", "k", "prompt_prefix_unchanged")
 
 
 def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="milliseconds")
-
-
-def harness_hash() -> str:
-    src = sorted((ROOT / "src").glob("*.py"))
-    return sha256_text("".join(p.name + sha256_file(p) for p in src))[:16]
 
 
 def call_order(manifest: list[dict]) -> list[tuple[dict, str]]:
@@ -57,24 +61,33 @@ class Store:
 
     def __init__(self, run_dir: Path, config_hash: str, meta: dict, break_lock: bool):
         self.dir = run_dir
-        run_dir.mkdir(parents=True, exist_ok=True)
         self.calls, self.attempts = run_dir / "calls.jsonl", run_dir / "attempts.jsonl"
         self.lock = run_dir / "RUNNING.lock"
+        meta_path = run_dir / "run_meta.json"
+        old = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else None
+        # Every refusal comes before the first write, so a refused start leaves the run directory untouched.
         if self.lock.exists() and not break_lock:
             raise SystemExit(f"{self.lock} exists (another runner, or a stale lock: use --break-lock)")
-        self.lock.write_text(json.dumps({"pid": os.getpid(), "host": socket.gethostname(), "since": now()}))
-        meta_path = run_dir / "run_meta.json"
-        if meta_path.exists():
-            old = json.loads(meta_path.read_text(encoding="utf-8"))
+        if old is not None:
             if old["config_hash"] != config_hash:
-                self.release()
                 raise SystemExit("config hash differs from run_meta.json: refusing to resume (§9)")
-            old.setdefault("sessions", []).append({"started": now(), "harness": meta["harness"]})
+            harnesses = {s.get("harness") for s in old.get("sessions", [])}
+            if harnesses != {meta["harness"]}:
+                raise SystemExit(f"{run_dir} was written by harness {sorted(map(str, harnesses))}, not "
+                                 f"{meta['harness']}: refusing to mix harnesses in one run (use a new --subdir)")
+        run_dir.mkdir(parents=True, exist_ok=True)
+        self.lock.write_text(json.dumps({"pid": os.getpid(), "host": socket.gethostname(), "since": now()}))
+        if old is not None:
+            old["sessions"].append({"started": now(), "harness": meta["harness"]})
             write_json(meta_path, old)
         else:
             write_json(meta_path, {**meta, "config_hash": config_hash,
                                    "sessions": [{"started": now(), "harness": meta["harness"]}]})
-        self.done = self._load()
+        try:
+            self.done = self._load()
+        except SystemExit:
+            self.release()
+            raise
 
     def _load(self) -> dict:
         if not self.calls.exists():
@@ -163,34 +176,58 @@ def main(argv=None) -> int:
     ap.add_argument("--break-lock", action="store_true")
     ap.add_argument("--crash-after", type=int, default=None, help="P10 test hook: hard exit after N new calls")
     ap.add_argument("--crash-partial", action="store_true", help="P10: write half of the next line before exiting")
+    ap.add_argument("--print-config", action="store_true", help="print config and hashes offline, then exit")
     a = ap.parse_args(argv)
 
     if a.phase not in ALLOWED_PHASES:
         raise SystemExit("Production runs are disabled until the dry-run report is approved (protocol §11).")
     manifest_path = ALLOWED_PHASES[a.phase]
-    manifest = read_jsonl(manifest_path)
-    data = load_dataset()
     params = model_params(a.model)
     psha = params_sha(a.model)
     kind = MODELS[a.model]["kind"]
-    client = {"local": LocalClient, "groq": GroqClient, "anthropic": AnthropicClient}[kind]()
 
-    lt, server = None, None
+    # §0: refuse to start unless the pinned inputs and the harness match the lock.
+    lock = load_lock()
+    only = ["data/secalertbench.json", "data/run_rq1_api_test_eval.py", "manifests/" + manifest_path.name]
+    if kind == "local":
+        only += ["tools/models/" + MODELS[a.model]["gguf"], "tools/llama.cpp/llama", "tools/llama.cpp/ggml"]
+    problems = verify_lock(lock, only)
+    if problems:
+        raise SystemExit("protocol lock check failed: " + "; ".join(problems))
+    lt = None
+    if kind == "local":
+        if a.model not in lock["label_tokens"]:
+            raise SystemExit(f"no label tokens for {a.model} in the lock (python -m src.lock --label-tokens)")
+        lt = {k: lock["label_tokens"][a.model][k] for k in LABEL_TOKEN_KEYS}
+
+    order = call_order(read_jsonl(manifest_path))
+    if a.first:
+        order = order[: a.first]
+    config = {"phase": a.phase, "model": a.model, "params": params, "manifest_sha256": sha256_file(manifest_path),
+              "system_sha256": SYSTEM_SHA256, "label_tokens": lt, "first": a.first}
+    config_hash = sha256_text(json.dumps(config, sort_keys=True))
+    meta = {**config, "harness": harness_hash(), "host": socket.gethostname(),
+            "lock_sha256": sha256_file(LOCK_PATH), "harness_commit_in_lock": lock["harness"]["commit"]}
+    if a.print_config:
+        print(json.dumps({"config_hash": config_hash, "harness": meta["harness"], "lock_sha256": meta["lock_sha256"],
+                          "expected_calls": len(order), "run_dir": str(RUNS / a.phase / a.model / a.subdir),
+                          "config": config}, indent=1, ensure_ascii=False))
+        return 0
+
+    manifest = read_jsonl(manifest_path)
+    data = load_dataset()
+    client = {"local": LocalClient, "groq": GroqClient, "anthropic": AnthropicClient}[kind]()
+    server = None
     if kind == "local":
         props = client.props()
         server = {"build": props.get("build_info"), "model_path": props.get("model_path")}
         if not str(server["model_path"]).endswith(MODELS[a.model]["gguf"]):
             raise SystemExit(f"server is running {server['model_path']}, not {a.model}")
         first_rec = data[manifest[0]["row_index"]]
-        lt = label_tokens(client, client.apply_template(messages(first_rec, "a"), params["template_kwargs"] or None))
-
-    order = call_order(manifest)
-    if a.first:
-        order = order[: a.first]
-    config = {"phase": a.phase, "model": a.model, "params": params, "manifest_sha256": sha256_file(manifest_path),
-              "system_sha256": SYSTEM_SHA256, "label_tokens": lt, "first": a.first}
-    config_hash = sha256_text(json.dumps(config, sort_keys=True))
-    meta = {**config, "server": server, "harness": harness_hash(), "host": socket.gethostname()}
+        live = label_tokens(client, client.apply_template(messages(first_rec, "a"), params["template_kwargs"] or None))
+        if live != lt:                                 # §7.1 step 2 / P8: the tokens must be the recorded ones
+            raise SystemExit(f"live label tokens differ from the lock: {live} vs {lt}")
+    meta["server"] = server
     store = Store(RUNS / a.phase / a.model / a.subdir, config_hash, meta, a.break_lock)
 
     new = 0

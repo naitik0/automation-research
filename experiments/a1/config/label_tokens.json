@@ -1,0 +1,46 @@
+{
+  "llama-3.2-3b": {
+    "A": [
+      29702
+    ],
+    "A_pieces": [
+      "Attack"
+    ],
+    "N": [
+      8284,
+      12,
+      29702
+    ],
+    "N_pieces": [
+      "Non",
+      "-",
+      "Attack"
+    ],
+    "k": 1,
+    "prompt_prefix_unchanged": true,
+    "recorded_at": "2026-10-08T20:11:06+00:00",
+    "source": "logged by the runner in runs/dryrun/llama-3.2-3b/main/run_meta.json (llama-server b11509-1167d3f42, Llama-3.2-3B-Instruct-Q4_K_M.gguf); re-checked live by run_llm at every start"
+  },
+  "qwen3-4b": {
+    "A": [
+      28602
+    ],
+    "A_pieces": [
+      "Attack"
+    ],
+    "N": [
+      8121,
+      12,
+      28602
+    ],
+    "N_pieces": [
+      "Non",
+      "-",
+      "Attack"
+    ],
+    "k": 1,
+    "prompt_prefix_unchanged": true,
+    "recorded_at": "2026-10-08T20:08:52+00:00",
+    "source": "llama-server /tokenize, build b11509-1167d3f42"
+  }
+}

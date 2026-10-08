@@ -1,0 +1,1134 @@
+{"fold": 2, "kind": "alert", "row_index": 2049, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "00eda17eba944408"}
+{"fold": 2, "kind": "alert", "row_index": 4857, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "012b3eaae9f69119"}
+{"fold": 3, "kind": "alert", "row_index": 308, "rule_name": "发现黑客工具Nmap扫描行为", "stratum": "mixed_attack", "uid": "012defc1457b0510"}
+{"fold": 1, "kind": "alert", "row_index": 5916, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "014d1f44df497145"}
+{"fold": 1, "kind": "alert", "row_index": 7439, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_attack", "uid": "01af573fdb4b570a"}
+{"fold": 3, "kind": "alert", "row_index": 7667, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "02f958a320699e89"}
+{"fold": 1, "kind": "alert", "row_index": 5570, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "04865753058a0471"}
+{"fold": 1, "kind": "alert", "row_index": 2818, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_attack", "uid": "08a18935d6691e51"}
+{"fold": 2, "kind": "alert", "row_index": 7729, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "08de57da2a332576"}
+{"fold": 2, "kind": "alert", "row_index": 6598, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "0af9a710cc61e986"}
+{"fold": 0, "kind": "alert", "row_index": 85, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "0c750b18a37b0322"}
+{"fold": 2, "kind": "alert", "row_index": 1919, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "0cd5d42fe1dd8558"}
+{"fold": 4, "kind": "alert", "row_index": 4403, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "0d7690d43b504537"}
+{"fold": 3, "kind": "alert", "row_index": 4740, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "10030eed6aaff410"}
+{"fold": 4, "kind": "alert", "row_index": 3324, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "1075dd2099fa5fcb"}
+{"fold": 4, "kind": "alert", "row_index": 4349, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "10a7ec9d67a48ae4"}
+{"fold": 4, "kind": "alert", "row_index": 4081, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "11799606897ab626"}
+{"fold": 4, "kind": "alert", "row_index": 7255, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "11d20eeff88aa299"}
+{"fold": 3, "kind": "alert", "row_index": 3709, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_attack", "uid": "1200b3d80e71655f"}
+{"fold": 2, "kind": "alert", "row_index": 8058, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "123431199c544e3d"}
+{"fold": 1, "kind": "alert", "row_index": 4350, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "131d32197710fef8"}
+{"fold": 2, "kind": "alert", "row_index": 6695, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "13fadbd39d5e0b49"}
+{"fold": 2, "kind": "alert", "row_index": 5542, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "14416ac8125f4011"}
+{"fold": 3, "kind": "alert", "row_index": 4017, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "16b88ddf7e522d9e"}
+{"fold": 0, "kind": "alert", "row_index": 3354, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "1721f96c0d29dd94"}
+{"fold": 4, "kind": "alert", "row_index": 3154, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "173bc903e3e6986b"}
+{"fold": 1, "kind": "alert", "row_index": 7914, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_attack", "uid": "1864aad299e3a560"}
+{"fold": 2, "kind": "alert", "row_index": 6114, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "18a39c83d9af5b28"}
+{"fold": 4, "kind": "alert", "row_index": 322, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "1ac8f87b9c78d5a6"}
+{"fold": 2, "kind": "alert", "row_index": 2330, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "1ba905c4c89d8392"}
+{"fold": 3, "kind": "alert", "row_index": 2580, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_attack", "uid": "1c8af16a2cde86a3"}
+{"fold": 0, "kind": "alert", "row_index": 7394, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_attack", "uid": "1df986eb9a630d50"}
+{"fold": 1, "kind": "alert", "row_index": 7342, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_attack", "uid": "1e71e6aaa06ee10d"}
+{"fold": 0, "kind": "alert", "row_index": 3292, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "1f068e75ae75df41"}
+{"fold": 3, "kind": "alert", "row_index": 905, "rule_name": "发现黑客工具Nmap扫描行为", "stratum": "mixed_attack", "uid": "1fa957c1fefc373b"}
+{"fold": 3, "kind": "alert", "row_index": 1788, "rule_name": "React Server Components 远程代码执行漏洞(CVE-2025-55182)", "stratum": "mixed_attack", "uid": "22425ed91c812bf8"}
+{"fold": 0, "kind": "alert", "row_index": 4554, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "22e3fbdae5c043dd"}
+{"fold": 3, "kind": "alert", "row_index": 7930, "rule_name": "Web弱口令登录", "stratum": "mixed_attack", "uid": "23980bb4f8dd821e"}
+{"fold": 2, "kind": "alert", "row_index": 6192, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "258eaaa8e8b09e23"}
+{"fold": 4, "kind": "alert", "row_index": 6690, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "26fada5d415cbe86"}
+{"fold": 0, "kind": "alert", "row_index": 2191, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "27ff525defa61882"}
+{"fold": 2, "kind": "alert", "row_index": 2470, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "29f878d2f2769116"}
+{"fold": 4, "kind": "alert", "row_index": 2682, "rule_name": "Nginx range 过滤器整形溢出漏洞 (CVE–2017–7529)", "stratum": "mixed_attack", "uid": "2a016d341c5b21eb"}
+{"fold": 2, "kind": "alert", "row_index": 1219, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "2b1d057d27a0c18c"}
+{"fold": 4, "kind": "alert", "row_index": 3938, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "2b54c5aa98f86041"}
+{"fold": 2, "kind": "alert", "row_index": 7920, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "2bbba8382cf48dfd"}
+{"fold": 4, "kind": "alert", "row_index": 3489, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "2bff98da4caa5baa"}
+{"fold": 0, "kind": "alert", "row_index": 2408, "rule_name": "Horde Groupware后门漏洞(CVE-2012-0209)", "stratum": "mixed_attack", "uid": "2d8a7eb9f40352de"}
+{"fold": 4, "kind": "alert", "row_index": 5874, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "34c24c00f3e563e0"}
+{"fold": 4, "kind": "alert", "row_index": 5386, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "35a74b46bd6db342"}
+{"fold": 2, "kind": "alert", "row_index": 788, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "363a7a5b8135752b"}
+{"fold": 4, "kind": "alert", "row_index": 316, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "374eba819a872fca"}
+{"fold": 2, "kind": "alert", "row_index": 1004, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "3b7ba9919f4fe00b"}
+{"fold": 2, "kind": "alert", "row_index": 8056, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "3c5429e96a179b70"}
+{"fold": 3, "kind": "alert", "row_index": 1241, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "3d2fadf4f60c0a40"}
+{"fold": 2, "kind": "alert", "row_index": 8192, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "3d50482907df6648"}
+{"fold": 2, "kind": "alert", "row_index": 2751, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "3e220e803b9798b2"}
+{"fold": 1, "kind": "alert", "row_index": 3233, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_attack", "uid": "3f8d3fa2c1be6454"}
+{"fold": 1, "kind": "alert", "row_index": 6503, "rule_name": "Swagger未授权访问行为", "stratum": "mixed_attack", "uid": "42e1f54debe7fcdd"}
+{"fold": 4, "kind": "alert", "row_index": 6142, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "43059f20906760f3"}
+{"fold": 0, "kind": "alert", "row_index": 4112, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_attack", "uid": "4490da8de7704249"}
+{"fold": 2, "kind": "alert", "row_index": 585, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "451a99d7fb98c8ee"}
+{"fold": 1, "kind": "alert", "row_index": 6970, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "456793a993ac2974"}
+{"fold": 2, "kind": "alert", "row_index": 8165, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "463410cc06967536"}
+{"fold": 2, "kind": "alert", "row_index": 5109, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "465f8b4c165c4e70"}
+{"fold": 2, "kind": "alert", "row_index": 3927, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "4675c68a02917d08"}
+{"fold": 2, "kind": "alert", "row_index": 7905, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "46d6aded14844355"}
+{"fold": 1, "kind": "alert", "row_index": 1787, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "477dd5b9343f9481"}
+{"fold": 3, "kind": "alert", "row_index": 2727, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "4ac4becbd27e3062"}
+{"fold": 0, "kind": "alert", "row_index": 6133, "rule_name": "Horde Groupware后门漏洞(CVE-2012-0209)", "stratum": "mixed_attack", "uid": "4b9c09503ff50695"}
+{"fold": 2, "kind": "alert", "row_index": 402, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "4bf5a8ef04cf8aad"}
+{"fold": 1, "kind": "alert", "row_index": 2891, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "4ecffd325eaec8c6"}
+{"fold": 3, "kind": "alert", "row_index": 3636, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "50fd0d7bd3d851b7"}
+{"fold": 4, "kind": "alert", "row_index": 8050, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "512e18e00b505759"}
+{"fold": 1, "kind": "alert", "row_index": 7382, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_attack", "uid": "51885dc6a0baba25"}
+{"fold": 0, "kind": "alert", "row_index": 5903, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "5255573008c233b4"}
+{"fold": 1, "kind": "alert", "row_index": 2442, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_attack", "uid": "54347599974b61a6"}
+{"fold": 2, "kind": "alert", "row_index": 7392, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "5476c65602473224"}
+{"fold": 2, "kind": "alert", "row_index": 3910, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "54a21c6b2c831b27"}
+{"fold": 2, "kind": "alert", "row_index": 832, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "58078639ba7d8178"}
+{"fold": 2, "kind": "alert", "row_index": 7377, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "583b5b37361d11d7"}
+{"fold": 2, "kind": "alert", "row_index": 6561, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "59dd1cdc9ab3c9b0"}
+{"fold": 2, "kind": "alert", "row_index": 4222, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "5b93f8880c4c9ed2"}
+{"fold": 2, "kind": "alert", "row_index": 1505, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "5c3146761f08826a"}
+{"fold": 4, "kind": "alert", "row_index": 6393, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "5ff1e7f1809d676c"}
+{"fold": 3, "kind": "alert", "row_index": 587, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "606d900872ffd050"}
+{"fold": 2, "kind": "alert", "row_index": 5111, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "60e3b9d7e547db90"}
+{"fold": 1, "kind": "alert", "row_index": 937, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_attack", "uid": "62749e251a8179a2"}
+{"fold": 2, "kind": "alert", "row_index": 6034, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "632d535129f96707"}
+{"fold": 4, "kind": "alert", "row_index": 5041, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "6345ada3a8d433aa"}
+{"fold": 1, "kind": "alert", "row_index": 6754, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_attack", "uid": "6467af1200f6c2d7"}
+{"fold": 4, "kind": "alert", "row_index": 2633, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "6675972cb3c74224"}
+{"fold": 2, "kind": "alert", "row_index": 3298, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "679906fd20d9428c"}
+{"fold": 4, "kind": "alert", "row_index": 8110, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "681570060e0e0788"}
+{"fold": 3, "kind": "alert", "row_index": 2772, "rule_name": "CloudBees Script Security Plugin 任意代码执行漏洞(CVE-2019-1003000)", "stratum": "mixed_attack", "uid": "6a2a5840a975b6a4"}
+{"fold": 1, "kind": "alert", "row_index": 4426, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "6def4ecff7bb1dbc"}
+{"fold": 2, "kind": "alert", "row_index": 7089, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "6e4643e236ed3eb0"}
+{"fold": 4, "kind": "alert", "row_index": 7832, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "6e50a621fba7a0b7"}
+{"fold": 0, "kind": "alert", "row_index": 380, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "6e617adaba1bb990"}
+{"fold": 4, "kind": "alert", "row_index": 1475, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "6f378fb759e330f4"}
+{"fold": 2, "kind": "alert", "row_index": 3029, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "70fca2cc5ad14b4a"}
+{"fold": 4, "kind": "alert", "row_index": 807, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "7461e1de354e5de1"}
+{"fold": 1, "kind": "alert", "row_index": 2104, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "74aa6514f8f5fc5a"}
+{"fold": 4, "kind": "alert", "row_index": 7282, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "75cbb442f77a5453"}
+{"fold": 2, "kind": "alert", "row_index": 3539, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "75dc779d15dd81ac"}
+{"fold": 1, "kind": "alert", "row_index": 2324, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_attack", "uid": "78368b34f7a513ee"}
+{"fold": 3, "kind": "alert", "row_index": 4745, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_attack", "uid": "798b9d2da4cf01bc"}
+{"fold": 2, "kind": "alert", "row_index": 6666, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "7a1e57600355785a"}
+{"fold": 4, "kind": "alert", "row_index": 7028, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "7a98681e1909b248"}
+{"fold": 2, "kind": "alert", "row_index": 7042, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "7ad872acf9ec8f52"}
+{"fold": 2, "kind": "alert", "row_index": 4102, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "7b2335e19ca4b706"}
+{"fold": 3, "kind": "alert", "row_index": 89, "rule_name": "Web弱口令登录", "stratum": "mixed_attack", "uid": "7b77e4225de29230"}
+{"fold": 0, "kind": "alert", "row_index": 6098, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_attack", "uid": "7c57bafb39707950"}
+{"fold": 4, "kind": "alert", "row_index": 3379, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "7c63a7b3319a0a43"}
+{"fold": 3, "kind": "alert", "row_index": 2612, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "7d8e9892dccbc693"}
+{"fold": 4, "kind": "alert", "row_index": 8177, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "81110804c83b37f6"}
+{"fold": 2, "kind": "alert", "row_index": 2024, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "828cd0db5db88707"}
+{"fold": 2, "kind": "alert", "row_index": 5248, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "86d131781b0f90e1"}
+{"fold": 3, "kind": "alert", "row_index": 3522, "rule_name": "发现Web服务探测行为", "stratum": "mixed_attack", "uid": "878587e08d6411b7"}
+{"fold": 2, "kind": "alert", "row_index": 6056, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "8a4e0816bbddd2b8"}
+{"fold": 2, "kind": "alert", "row_index": 6612, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "8a70f04e4ea8ff69"}
+{"fold": 4, "kind": "alert", "row_index": 1308, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "8adb5741f8351297"}
+{"fold": 2, "kind": "alert", "row_index": 418, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_attack", "uid": "8b868120ffcf3dc6"}
+{"fold": 2, "kind": "alert", "row_index": 2116, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "8c513369f0ea7854"}
+{"fold": 2, "kind": "alert", "row_index": 7277, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "8c935e72c63f78ad"}
+{"fold": 4, "kind": "alert", "row_index": 6623, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "8cb0db730788debf"}
+{"fold": 2, "kind": "alert", "row_index": 4727, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "8d87331c31821bd8"}
+{"fold": 4, "kind": "alert", "row_index": 1518, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "8ecddb5282a1deea"}
+{"fold": 4, "kind": "alert", "row_index": 412, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "910dd53fd4afbd3c"}
+{"fold": 1, "kind": "alert", "row_index": 3388, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_attack", "uid": "91ce08be11f79ce7"}
+{"fold": 2, "kind": "alert", "row_index": 84, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "922a8ad89ab433e3"}
+{"fold": 1, "kind": "alert", "row_index": 358, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "9255f3d372dc4909"}
+{"fold": 2, "kind": "alert", "row_index": 106, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "942c76368bae7382"}
+{"fold": 2, "kind": "alert", "row_index": 4134, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "9531e48a973ced53"}
+{"fold": 3, "kind": "alert", "row_index": 6337, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "95944c61e970aa09"}
+{"fold": 3, "kind": "alert", "row_index": 1578, "rule_name": "Web弱口令登录", "stratum": "mixed_attack", "uid": "9666d90ee795a09e"}
+{"fold": 0, "kind": "alert", "row_index": 2826, "rule_name": "Horde Groupware后门漏洞(CVE-2012-0209)", "stratum": "mixed_attack", "uid": "97e430c49c1a9bfa"}
+{"fold": 4, "kind": "alert", "row_index": 6103, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "9865677fc490ffc9"}
+{"fold": 1, "kind": "alert", "row_index": 1482, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "991ff05984313813"}
+{"fold": 2, "kind": "alert", "row_index": 1262, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "9a735db6a1fe36d1"}
+{"fold": 1, "kind": "alert", "row_index": 4608, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "9be974ab1e0fe5d2"}
+{"fold": 2, "kind": "alert", "row_index": 7449, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "9c1215ad6e096ff5"}
+{"fold": 1, "kind": "alert", "row_index": 5187, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_attack", "uid": "9cfd4a647552d2fd"}
+{"fold": 2, "kind": "alert", "row_index": 5546, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "9effde1171f65a36"}
+{"fold": 3, "kind": "alert", "row_index": 3894, "rule_name": "发现Web服务探测行为", "stratum": "mixed_attack", "uid": "9f8a8b15cf5d683c"}
+{"fold": 3, "kind": "alert", "row_index": 4815, "rule_name": "Web弱口令登录", "stratum": "mixed_attack", "uid": "a00b360315e6bab6"}
+{"fold": 1, "kind": "alert", "row_index": 1682, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_attack", "uid": "a216beeaa2922b89"}
+{"fold": 2, "kind": "alert", "row_index": 6100, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "a2b405e7db8c1d19"}
+{"fold": 3, "kind": "alert", "row_index": 5788, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "a4309d5605037a4b"}
+{"fold": 3, "kind": "alert", "row_index": 3109, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "a4e3ff7d2818d3e2"}
+{"fold": 2, "kind": "alert", "row_index": 8168, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "a5ec1c61e8a44d09"}
+{"fold": 2, "kind": "alert", "row_index": 453, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "a7b4aebd32687316"}
+{"fold": 2, "kind": "alert", "row_index": 1222, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "a9c9902871eccb33"}
+{"fold": 1, "kind": "alert", "row_index": 6551, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_attack", "uid": "a9d1bb8a655c38ca"}
+{"fold": 4, "kind": "alert", "row_index": 4938, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "aa5991b9cf83996f"}
+{"fold": 3, "kind": "alert", "row_index": 1281, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "ab0bb7a52446edcf"}
+{"fold": 1, "kind": "alert", "row_index": 2745, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "ab42de7b3be060ae"}
+{"fold": 2, "kind": "alert", "row_index": 1298, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "ac462632240be9b7"}
+{"fold": 2, "kind": "alert", "row_index": 2736, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "ad88b77a0b12c199"}
+{"fold": 2, "kind": "alert", "row_index": 4155, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "adf84c3f166e1cc7"}
+{"fold": 4, "kind": "alert", "row_index": 7096, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "ae7b5605194b9914"}
+{"fold": 4, "kind": "alert", "row_index": 225, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "ae9e90c607e22e0a"}
+{"fold": 2, "kind": "alert", "row_index": 1905, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "af3d22c17d3d3baa"}
+{"fold": 1, "kind": "alert", "row_index": 7651, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "af64f517b5f4cf00"}
+{"fold": 3, "kind": "alert", "row_index": 756, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "aff0fe042b745a3e"}
+{"fold": 0, "kind": "alert", "row_index": 4658, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_attack", "uid": "b4c51c4fd72587c1"}
+{"fold": 1, "kind": "alert", "row_index": 772, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_attack", "uid": "b4c850c77fee323f"}
+{"fold": 1, "kind": "alert", "row_index": 4031, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_attack", "uid": "b5ab6ca403ce1d0a"}
+{"fold": 2, "kind": "alert", "row_index": 8305, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "b6a9c1aafbc16d22"}
+{"fold": 3, "kind": "alert", "row_index": 888, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "b8ded255992f35a3"}
+{"fold": 1, "kind": "alert", "row_index": 559, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "b96c9c3fe361938a"}
+{"fold": 3, "kind": "alert", "row_index": 3503, "rule_name": "发现黑客工具Nmap扫描行为", "stratum": "mixed_attack", "uid": "b97ebae846a2fd52"}
+{"fold": 3, "kind": "alert", "row_index": 4531, "rule_name": "发现黑客工具Nmap扫描行为", "stratum": "mixed_attack", "uid": "ba4d92747f3b1e30"}
+{"fold": 4, "kind": "alert", "row_index": 6314, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "bbb1e700db176a8f"}
+{"fold": 4, "kind": "alert", "row_index": 6204, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "bbc9ae1b6ccdc5e5"}
+{"fold": 1, "kind": "alert", "row_index": 1772, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "bc7439c47dcdeb0f"}
+{"fold": 4, "kind": "alert", "row_index": 6247, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "bd2493feae322e25"}
+{"fold": 4, "kind": "alert", "row_index": 2240, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "bd5fcb15b36885c3"}
+{"fold": 2, "kind": "alert", "row_index": 6887, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "bdd61467d7556c39"}
+{"fold": 2, "kind": "alert", "row_index": 414, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "be7261a52b2abe82"}
+{"fold": 2, "kind": "alert", "row_index": 4387, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "bf538563ef75a106"}
+{"fold": 0, "kind": "alert", "row_index": 1740, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "bf77fa8d94167016"}
+{"fold": 4, "kind": "alert", "row_index": 5729, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "c2efa4e2ca1e2d9c"}
+{"fold": 1, "kind": "alert", "row_index": 5742, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_attack", "uid": "c48ebe2b9fbc58ed"}
+{"fold": 1, "kind": "alert", "row_index": 4690, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "c5710893daa27193"}
+{"fold": 0, "kind": "alert", "row_index": 4703, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "c5cdf24f9faa687e"}
+{"fold": 2, "kind": "alert", "row_index": 5239, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "c67b8c56eb8119e0"}
+{"fold": 0, "kind": "alert", "row_index": 7147, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_attack", "uid": "c7fa0adeeca49748"}
+{"fold": 1, "kind": "alert", "row_index": 4300, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "c887ce3cd778ef8a"}
+{"fold": 3, "kind": "alert", "row_index": 1827, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "caa8a9764a31bce2"}
+{"fold": 1, "kind": "alert", "row_index": 323, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "cc8d732b2d350303"}
+{"fold": 2, "kind": "alert", "row_index": 7518, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "ccd1945fb9bbcd80"}
+{"fold": 4, "kind": "alert", "row_index": 3436, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "cf0c449100a435f3"}
+{"fold": 3, "kind": "alert", "row_index": 1455, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_attack", "uid": "cf2654ab3d82ab66"}
+{"fold": 4, "kind": "alert", "row_index": 2808, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "cf47765c90df69f0"}
+{"fold": 4, "kind": "alert", "row_index": 1798, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "d1c718b5bf16261c"}
+{"fold": 2, "kind": "alert", "row_index": 6011, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "d239c9c0c685c1f2"}
+{"fold": 3, "kind": "alert", "row_index": 1489, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "d2bab4ff1dc238f2"}
+{"fold": 3, "kind": "alert", "row_index": 7023, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "d7bb4a9d409d3648"}
+{"fold": 3, "kind": "alert", "row_index": 5413, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "d7ccdf16cd7e8403"}
+{"fold": 2, "kind": "alert", "row_index": 6286, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "d854478a77fdaf0c"}
+{"fold": 4, "kind": "alert", "row_index": 3302, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "d89e96216d79c9bc"}
+{"fold": 0, "kind": "alert", "row_index": 1215, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_attack", "uid": "d9d330bc4af7d537"}
+{"fold": 1, "kind": "alert", "row_index": 8181, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_attack", "uid": "da1c00e3d0e1e075"}
+{"fold": 1, "kind": "alert", "row_index": 1872, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "daeb46b4d742b5fc"}
+{"fold": 3, "kind": "alert", "row_index": 580, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "dc0bcdb0a8adc5ac"}
+{"fold": 2, "kind": "alert", "row_index": 1064, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "ddcdcd80656fa98f"}
+{"fold": 3, "kind": "alert", "row_index": 4493, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "df268e2805783c2d"}
+{"fold": 3, "kind": "alert", "row_index": 637, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_attack", "uid": "dfa198102b0cbdcf"}
+{"fold": 1, "kind": "alert", "row_index": 5875, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "dfdfd2de539a9dea"}
+{"fold": 4, "kind": "alert", "row_index": 7082, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "e0a6a78a056fe245"}
+{"fold": 4, "kind": "alert", "row_index": 314, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "e13d93a50f908a8c"}
+{"fold": 4, "kind": "alert", "row_index": 4204, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "e1a960b34bea7825"}
+{"fold": 2, "kind": "alert", "row_index": 5020, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "e2f6ca77da78ebd0"}
+{"fold": 2, "kind": "alert", "row_index": 5492, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "e35a0c8b393ac6ae"}
+{"fold": 3, "kind": "alert", "row_index": 7790, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_attack", "uid": "e39beb60948a62a1"}
+{"fold": 4, "kind": "alert", "row_index": 3651, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "e3e881ce1be533f4"}
+{"fold": 2, "kind": "alert", "row_index": 6042, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "e5c4c2e381b6fa18"}
+{"fold": 4, "kind": "alert", "row_index": 4663, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "e5dd8c299b746070"}
+{"fold": 1, "kind": "alert", "row_index": 3528, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_attack", "uid": "e966ab3134bdec99"}
+{"fold": 2, "kind": "alert", "row_index": 5506, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "eaeba234b20f352b"}
+{"fold": 4, "kind": "alert", "row_index": 2875, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "eb447edf9ecd10a1"}
+{"fold": 3, "kind": "alert", "row_index": 4117, "rule_name": "Web弱口令登录", "stratum": "mixed_attack", "uid": "ee13299d7d91307f"}
+{"fold": 2, "kind": "alert", "row_index": 5697, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "eec2f99061cb06d0"}
+{"fold": 4, "kind": "alert", "row_index": 3534, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "f1da76fdf4f1a5f0"}
+{"fold": 4, "kind": "alert", "row_index": 5721, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "f1e14cafeff3b7fb"}
+{"fold": 2, "kind": "alert", "row_index": 8134, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "f2e8fc11872ca14b"}
+{"fold": 4, "kind": "alert", "row_index": 3060, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "f360dee7982b2b89"}
+{"fold": 3, "kind": "alert", "row_index": 5062, "rule_name": "Web弱口令登录", "stratum": "mixed_attack", "uid": "f4bcd1d21be9c466"}
+{"fold": 4, "kind": "alert", "row_index": 6233, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "f50cf6decf708a90"}
+{"fold": 2, "kind": "alert", "row_index": 6307, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "f747a418cbdcb6d0"}
+{"fold": 4, "kind": "alert", "row_index": 5257, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "f7b3a3dcdf2f9f68"}
+{"fold": 2, "kind": "alert", "row_index": 2906, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "f7cb5d06a8f62939"}
+{"fold": 2, "kind": "alert", "row_index": 3134, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "f7d8b07bfebe8a86"}
+{"fold": 4, "kind": "alert", "row_index": 5140, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "f841de9474880719"}
+{"fold": 4, "kind": "alert", "row_index": 7825, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "f98cecba395ccde3"}
+{"fold": 1, "kind": "alert", "row_index": 5763, "rule_name": "Druid 存在未授权访问漏洞", "stratum": "mixed_attack", "uid": "fa51d37953162fee"}
+{"fold": 3, "kind": "alert", "row_index": 7732, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_attack", "uid": "fa5f57b1abf2cf38"}
+{"fold": 2, "kind": "alert", "row_index": 6343, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "fa7a0c8fcf4b1839"}
+{"fold": 2, "kind": "alert", "row_index": 7414, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "fac7c3c202ebf232"}
+{"fold": 4, "kind": "alert", "row_index": 4729, "rule_name": "Go pprof 调试信息泄露漏洞", "stratum": "mixed_attack", "uid": "fbc3f12f20eea4d8"}
+{"fold": 2, "kind": "alert", "row_index": 7031, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "fc4de50019ea2c83"}
+{"fold": 3, "kind": "alert", "row_index": 6229, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_attack", "uid": "fc675652fd443890"}
+{"fold": 0, "kind": "alert", "row_index": 7967, "rule_name": "Horde Groupware后门漏洞(CVE-2012-0209)", "stratum": "mixed_attack", "uid": "fcadda62a6fea744"}
+{"fold": 1, "kind": "alert", "row_index": 5581, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_attack", "uid": "fcc190c846714303"}
+{"fold": 4, "kind": "alert", "row_index": 2413, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "fcd7e9360caa343e"}
+{"fold": 4, "kind": "alert", "row_index": 1676, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "fe00da1a65b09580"}
+{"fold": 4, "kind": "alert", "row_index": 3523, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "ff0f7c9df4c86c62"}
+{"fold": 4, "kind": "alert", "row_index": 3252, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "ff43a3bf97229a16"}
+{"fold": 2, "kind": "alert", "row_index": 127, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "fffb29c7bda373b5"}
+{"fold": 2, "kind": "alert", "row_index": 2556, "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "stratum": "single_attack", "uid": "0094672e2454074d"}
+{"fold": 2, "kind": "alert", "row_index": 1860, "rule_name": "Oracle 9iAS OracleJSP泄漏JSP文件信息漏洞", "stratum": "single_attack", "uid": "017d6240a9c7c0ed"}
+{"fold": 4, "kind": "alert", "row_index": 4243, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "038626de21ae612f"}
+{"fold": 4, "kind": "alert", "row_index": 2781, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "0450d4ab43125ede"}
+{"fold": 1, "kind": "alert", "row_index": 8231, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "0598a34f9d55e22a"}
+{"fold": 2, "kind": "alert", "row_index": 2352, "rule_name": "Novell ZENworks Asset Management Web Console 信息泄露漏洞", "stratum": "single_attack", "uid": "05fdc0921bae1985"}
+{"fold": 4, "kind": "alert", "row_index": 706, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "07108f98cfe3f3a0"}
+{"fold": 4, "kind": "alert", "row_index": 4767, "rule_name": "金和OA系统DownLoadBgImage任意文件读取漏洞", "stratum": "single_attack", "uid": "073c4280056e2cf4"}
+{"fold": 3, "kind": "alert", "row_index": 5444, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "08e2dc5901d28f04"}
+{"fold": 1, "kind": "alert", "row_index": 4934, "rule_name": "Geoserver XML外部实体注入(XXE)漏洞(CVE-2025-30220)", "stratum": "single_attack", "uid": "0a233c05e9b51646"}
+{"fold": 4, "kind": "alert", "row_index": 6813, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "0a682a7e7bcc4468"}
+{"fold": 0, "kind": "alert", "row_index": 1674, "rule_name": "OA系统 use_finger.php USER_ID SQL注入漏洞", "stratum": "single_attack", "uid": "0d74a217567cac39"}
+{"fold": 1, "kind": "alert", "row_index": 205, "rule_name": "geoserver默认口令漏洞", "stratum": "single_attack", "uid": "0f6b8a6882fa71dc"}
+{"fold": 3, "kind": "alert", "row_index": 5151, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "1333b3b7a03d7fad"}
+{"fold": 4, "kind": "alert", "row_index": 4367, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "14d5b0c9b405785f"}
+{"fold": 4, "kind": "alert", "row_index": 4486, "rule_name": "Adobe ColdFusion 反序列化漏洞（CVE-2017-3066）", "stratum": "single_attack", "uid": "17afd6e3f049a3f2"}
+{"fold": 2, "kind": "alert", "row_index": 5567, "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "stratum": "single_attack", "uid": "17e6e14772eb37fd"}
+{"fold": 2, "kind": "alert", "row_index": 7775, "rule_name": "发现读取Windows敏感文件行为", "stratum": "single_attack", "uid": "19238892e59174d9"}
+{"fold": 4, "kind": "alert", "row_index": 5772, "rule_name": "F5 BIG-IP 远程命令执行漏洞(CVE-2022-1388)", "stratum": "single_attack", "uid": "19a8c8fdf71190aa"}
+{"fold": 4, "kind": "alert", "row_index": 1634, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "1a45f7fae89fe37f"}
+{"fold": 4, "kind": "alert", "row_index": 4844, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "1a9824adb76c8817"}
+{"fold": 1, "kind": "alert", "row_index": 2031, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "1af26ae92c823f3e"}
+{"fold": 0, "kind": "alert", "row_index": 7235, "rule_name": "Java反序列化绕过攻击", "stratum": "single_attack", "uid": "1ba910fe9ea4722a"}
+{"fold": 2, "kind": "alert", "row_index": 6825, "rule_name": "发现读取Windows敏感文件行为", "stratum": "single_attack", "uid": "1bc8b0e13dd71e5b"}
+{"fold": 4, "kind": "alert", "row_index": 2196, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "1c61051696d1d50e"}
+{"fold": 1, "kind": "alert", "row_index": 5963, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "1c8f60d5e32cb3cc"}
+{"fold": 1, "kind": "alert", "row_index": 5770, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "1d2f2474573b2018"}
+{"fold": 1, "kind": "alert", "row_index": 2336, "rule_name": "Joomla  API未授权访问漏洞(CVE-2023-23752)", "stratum": "single_attack", "uid": "1e67cb34cc75958e"}
+{"fold": 3, "kind": "alert", "row_index": 5899, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "1f188817846b85cf"}
+{"fold": 0, "kind": "alert", "row_index": 3969, "rule_name": "EJS模板注入漏洞", "stratum": "single_attack", "uid": "1fcea8968dafa021"}
+{"fold": 2, "kind": "alert", "row_index": 2179, "rule_name": "Oracle 9iAS已认证用户访问敏感服务漏洞", "stratum": "single_attack", "uid": "205fe3228fb951b6"}
+{"fold": 3, "kind": "alert", "row_index": 2508, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "208722e60582f3cf"}
+{"fold": 2, "kind": "alert", "row_index": 3585, "rule_name": "通用命令执行漏洞", "stratum": "single_attack", "uid": "20c9e671c238558c"}
+{"fold": 4, "kind": "alert", "row_index": 1512, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "21f820f275e328d3"}
+{"fold": 3, "kind": "alert", "row_index": 6408, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "2265ef79a0337a14"}
+{"fold": 0, "kind": "alert", "row_index": 2550, "rule_name": "Hadoop YARN ResourceManager 未授权访问", "stratum": "single_attack", "uid": "24d6316e591e7ba3"}
+{"fold": 3, "kind": "alert", "row_index": 6038, "rule_name": "Nostromo Web服务器的远程命令执行(CVE-2019-16278)", "stratum": "single_attack", "uid": "26b1a6526510aba6"}
+{"fold": 1, "kind": "alert", "row_index": 6257, "rule_name": "Windows命令执行攻击(机器学习)", "stratum": "single_attack", "uid": "27f6610f7754bbd6"}
+{"fold": 0, "kind": "alert", "row_index": 3204, "rule_name": "JBOSSAS 5.x/6.x 反序列化命令执行漏洞(CVE-2017-12149)", "stratum": "single_attack", "uid": "2876e503868826a5"}
+{"fold": 2, "kind": "alert", "row_index": 6542, "rule_name": "XXL-JOB未授权远程命令执行漏洞", "stratum": "single_attack", "uid": "288ceff4c42bc578"}
+{"fold": 3, "kind": "alert", "row_index": 8204, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "28dff00c78696831"}
+{"fold": 3, "kind": "alert", "row_index": 7318, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "29565cef6d3f5d86"}
+{"fold": 3, "kind": "alert", "row_index": 123, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "2960edfff12b50dc"}
+{"fold": 0, "kind": "alert", "row_index": 4391, "rule_name": "Java反序列化绕过攻击", "stratum": "single_attack", "uid": "2a19b7a1e680147c"}
+{"fold": 4, "kind": "alert", "row_index": 5433, "rule_name": "Apache Flink 任意文件上传漏洞(CVE-2020-17518)", "stratum": "single_attack", "uid": "2a74f3fc766b56c3"}
+{"fold": 4, "kind": "alert", "row_index": 361, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "2b0b16fa7ecee665"}
+{"fold": 1, "kind": "alert", "row_index": 4159, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "2d0d2ad8faa92e87"}
+{"fold": 0, "kind": "alert", "row_index": 3291, "rule_name": "Shell命令执行(机器学习)", "stratum": "single_attack", "uid": "2d2c3e57c7dcd9fa"}
+{"fold": 2, "kind": "alert", "row_index": 568, "rule_name": "Apache Struts2 远程代码执行漏洞（CVE-2018-11776/S2-057）", "stratum": "single_attack", "uid": "2d9757290ecae5a0"}
+{"fold": 2, "kind": "alert", "row_index": 6796, "rule_name": "Apache HTTP Server 路径穿越/远程命令执行漏洞(CVE-2021-42013)", "stratum": "single_attack", "uid": "3109d3a71bdec7e3"}
+{"fold": 2, "kind": "alert", "row_index": 2526, "rule_name": "XXL-JOB未授权远程命令执行漏洞", "stratum": "single_attack", "uid": "31af20cdf5bc2767"}
+{"fold": 3, "kind": "alert", "row_index": 2923, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "324bc094204324f6"}
+{"fold": 4, "kind": "alert", "row_index": 2536, "rule_name": "Apache Axis2 默认口令漏洞(CVE-2010-0219)", "stratum": "single_attack", "uid": "324c6a332c132780"}
+{"fold": 1, "kind": "alert", "row_index": 2050, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "325255402a20f16a"}
+{"fold": 0, "kind": "alert", "row_index": 2183, "rule_name": "Harbor权限许可和访问控制问题漏洞(CVE-2019-16097)", "stratum": "single_attack", "uid": "329ceb2483e2e617"}
+{"fold": 2, "kind": "alert", "row_index": 6832, "rule_name": "Java框架通用代码执行攻击", "stratum": "single_attack", "uid": "32b442c8e8f081f4"}
+{"fold": 2, "kind": "alert", "row_index": 6799, "rule_name": "发现读取Windows敏感文件行为", "stratum": "single_attack", "uid": "33e303c4b9282ac1"}
+{"fold": 0, "kind": "alert", "row_index": 4405, "rule_name": "OA系统 use_finger.php USER_ID SQL注入漏洞", "stratum": "single_attack", "uid": "35164f9838a938f3"}
+{"fold": 3, "kind": "alert", "row_index": 8277, "rule_name": "ThinkPHP远程代码执行漏洞 (CVE-2022-47945)", "stratum": "single_attack", "uid": "39975044606ea2bd"}
+{"fold": 3, "kind": "alert", "row_index": 1706, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "3a515d680b07bb08"}
+{"fold": 3, "kind": "alert", "row_index": 5206, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "3a9c29c1984dfcef"}
+{"fold": 1, "kind": "alert", "row_index": 2136, "rule_name": "Hessian反序列化漏洞(http)", "stratum": "single_attack", "uid": "3aa2378283a459c2"}
+{"fold": 3, "kind": "alert", "row_index": 7735, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "3da6195fee9b28f4"}
+{"fold": 4, "kind": "alert", "row_index": 5105, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "412692ea92c0c6be"}
+{"fold": 3, "kind": "alert", "row_index": 4270, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "414cd4c0b901c0f3"}
+{"fold": 2, "kind": "alert", "row_index": 6260, "rule_name": "发现读取Windows敏感文件行为", "stratum": "single_attack", "uid": "416503421f55e108"}
+{"fold": 3, "kind": "alert", "row_index": 5518, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "42d11cdae124206b"}
+{"fold": 3, "kind": "alert", "row_index": 5651, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "447e12f140e1da26"}
+{"fold": 0, "kind": "alert", "row_index": 2784, "rule_name": "Spring Data Commons 远程代码执行漏洞(CVE-2018-1273)", "stratum": "single_attack", "uid": "450ecee3904d9152"}
+{"fold": 1, "kind": "alert", "row_index": 5675, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "461893ae29156efa"}
+{"fold": 3, "kind": "alert", "row_index": 4536, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "469ddbdc17cf1771"}
+{"fold": 3, "kind": "alert", "row_index": 5019, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "497611cad4da5d34"}
+{"fold": 0, "kind": "alert", "row_index": 32, "rule_name": "Apache HugeGraph远程命令执行漏洞(CVE-2024-27348)", "stratum": "single_attack", "uid": "4a50a3aded13ae47"}
+{"fold": 3, "kind": "alert", "row_index": 4479, "rule_name": "金和OA信息泄露漏洞", "stratum": "single_attack", "uid": "4ac4d1096dd45cf4"}
+{"fold": 3, "kind": "alert", "row_index": 2859, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "4b87ac795b929d0c"}
+{"fold": 2, "kind": "alert", "row_index": 5294, "rule_name": "Java框架通用代码执行攻击", "stratum": "single_attack", "uid": "4ba55baca657078b"}
+{"fold": 2, "kind": "alert", "row_index": 4638, "rule_name": "Java框架通用代码执行攻击", "stratum": "single_attack", "uid": "4d29165681b0bc9a"}
+{"fold": 1, "kind": "alert", "row_index": 275, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "506b90adfe616e47"}
+{"fold": 0, "kind": "alert", "row_index": 4172, "rule_name": "Apache Druid服务端请求伪造(SSRF)漏洞(CVE-2025-27888)", "stratum": "single_attack", "uid": "5131f0dd4bf62f35"}
+{"fold": 0, "kind": "alert", "row_index": 4301, "rule_name": "Java反序列化绕过攻击", "stratum": "single_attack", "uid": "52e238c255e34d4d"}
+{"fold": 0, "kind": "alert", "row_index": 5091, "rule_name": "发现系统命令注入行为", "stratum": "single_attack", "uid": "54c0593b6fb8324a"}
+{"fold": 1, "kind": "alert", "row_index": 6723, "rule_name": "Hessian反序列化漏洞(http)", "stratum": "single_attack", "uid": "55c564fd3b5fd166"}
+{"fold": 0, "kind": "alert", "row_index": 1132, "rule_name": "Joomla! ChronoForums 目录遍历漏洞 (CVE-2021-28377)", "stratum": "single_attack", "uid": "5622208e2fe9adbd"}
+{"fold": 2, "kind": "alert", "row_index": 5811, "rule_name": "发现java可疑类绕过攻击", "stratum": "single_attack", "uid": "56c4ee7bea965cba"}
+{"fold": 3, "kind": "alert", "row_index": 5935, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "57f8ed7c028de5da"}
+{"fold": 3, "kind": "alert", "row_index": 4689, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "5a8f9cb27e16f032"}
+{"fold": 0, "kind": "alert", "row_index": 4324, "rule_name": "发现系统命令注入行为", "stratum": "single_attack", "uid": "5b9f5838cb776ef5"}
+{"fold": 1, "kind": "alert", "row_index": 4912, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "5c3b80e2f708a28c"}
+{"fold": 3, "kind": "alert", "row_index": 2707, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "5df9f3ebad244def"}
+{"fold": 4, "kind": "alert", "row_index": 7206, "rule_name": "Apache Flink 任意文件上传漏洞(CVE-2020-17518)", "stratum": "single_attack", "uid": "5edf1a18557a1ead"}
+{"fold": 2, "kind": "alert", "row_index": 4575, "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "stratum": "single_attack", "uid": "5ef3a5d235c94829"}
+{"fold": 2, "kind": "alert", "row_index": 1310, "rule_name": "Oracle 9iAS已认证用户访问敏感服务漏洞", "stratum": "single_attack", "uid": "5fb4e365578fa828"}
+{"fold": 3, "kind": "alert", "row_index": 368, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "61f6fc62c7baae80"}
+{"fold": 2, "kind": "alert", "row_index": 1501, "rule_name": "Geoserver远程代码执行漏洞(CVE-2024-36401)", "stratum": "single_attack", "uid": "635c495cd62f7361"}
+{"fold": 3, "kind": "alert", "row_index": 5644, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "636ae71f273356eb"}
+{"fold": 1, "kind": "alert", "row_index": 2539, "rule_name": "XML外部实体注入攻击(XXE)", "stratum": "single_attack", "uid": "665b7aaafeb13506"}
+{"fold": 4, "kind": "alert", "row_index": 6469, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "67121a2195e84612"}
+{"fold": 2, "kind": "alert", "row_index": 1994, "rule_name": "通用命令执行漏洞", "stratum": "single_attack", "uid": "671a122ab97ed464"}
+{"fold": 4, "kind": "alert", "row_index": 500, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "686223dff742f6ba"}
+{"fold": 1, "kind": "alert", "row_index": 6389, "rule_name": "Struts2-032命令执行漏洞(CVE-2016-3081)", "stratum": "single_attack", "uid": "6902ca5bf56b4267"}
+{"fold": 0, "kind": "alert", "row_index": 3421, "rule_name": "Apache Shiro权限绕过漏洞(CVE-2020-1957/CVE-2020-11989)", "stratum": "single_attack", "uid": "69a9963b9dd63fc7"}
+{"fold": 4, "kind": "alert", "row_index": 6407, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "6d4543b9e71a41ee"}
+{"fold": 3, "kind": "alert", "row_index": 6872, "rule_name": "WebServer文件解析漏洞攻击", "stratum": "single_attack", "uid": "6d8acf3e5ce3e0c6"}
+{"fold": 3, "kind": "alert", "row_index": 6518, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "6f8ffaaae3b9aedf"}
+{"fold": 4, "kind": "alert", "row_index": 1005, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "6f9dda45e5d0e31c"}
+{"fold": 3, "kind": "alert", "row_index": 1237, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "70024a655cdb7a1f"}
+{"fold": 2, "kind": "alert", "row_index": 939, "rule_name": "BeanShell 远程代码执行漏洞", "stratum": "single_attack", "uid": "706728f2c4ab406c"}
+{"fold": 0, "kind": "alert", "row_index": 6226, "rule_name": "PHP代码执行攻击", "stratum": "single_attack", "uid": "715bb3e547517ed3"}
+{"fold": 2, "kind": "alert", "row_index": 5450, "rule_name": "XXL-JOB未授权远程命令执行漏洞", "stratum": "single_attack", "uid": "7177ac78c644149f"}
+{"fold": 3, "kind": "alert", "row_index": 845, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "71f9f8e559493652"}
+{"fold": 2, "kind": "alert", "row_index": 292, "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "stratum": "single_attack", "uid": "72adf3a77db85bc7"}
+{"fold": 3, "kind": "alert", "row_index": 1687, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "74e382c884f208cb"}
+{"fold": 1, "kind": "alert", "row_index": 6322, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "7588dd384920b23b"}
+{"fold": 0, "kind": "alert", "row_index": 5825, "rule_name": "PHP代码执行攻击", "stratum": "single_attack", "uid": "7615f67d74e47253"}
+{"fold": 4, "kind": "alert", "row_index": 3647, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "77489cd7ff514c69"}
+{"fold": 4, "kind": "alert", "row_index": 3998, "rule_name": "极限OA video_file.php 任意文件读取漏洞", "stratum": "single_attack", "uid": "78db875d3077339d"}
+{"fold": 2, "kind": "alert", "row_index": 2002, "rule_name": "通用命令注入绕过攻击", "stratum": "single_attack", "uid": "798165d4a562a543"}
+{"fold": 3, "kind": "alert", "row_index": 3082, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "7a1ff4a32406092c"}
+{"fold": 2, "kind": "alert", "row_index": 869, "rule_name": "Java框架通用代码执行攻击", "stratum": "single_attack", "uid": "7a233028b79b94d8"}
+{"fold": 0, "kind": "alert", "row_index": 3037, "rule_name": "Shell命令执行(机器学习)", "stratum": "single_attack", "uid": "7afaf737e42d9071"}
+{"fold": 3, "kind": "alert", "row_index": 3112, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "7bb06a16c9fe79c9"}
+{"fold": 1, "kind": "alert", "row_index": 3640, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "7e02ae66a78c1448"}
+{"fold": 1, "kind": "alert", "row_index": 3021, "rule_name": "Apache NiFi 未授权访问漏洞(CVE-2024-56512)", "stratum": "single_attack", "uid": "803c7e48f9ad60e2"}
+{"fold": 2, "kind": "alert", "row_index": 1177, "rule_name": "F5 BIG-IP TMUI 远程代码执行漏洞(CVE-2023-46747)", "stratum": "single_attack", "uid": "80d07b4e03b4a41d"}
+{"fold": 0, "kind": "alert", "row_index": 7046, "rule_name": "发现系统命令注入行为", "stratum": "single_attack", "uid": "80dfdb39cc178437"}
+{"fold": 3, "kind": "alert", "row_index": 6461, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "818e4e22addec90a"}
+{"fold": 0, "kind": "alert", "row_index": 6563, "rule_name": "Spring Data Commons 远程代码执行漏洞(CVE-2018-1273)", "stratum": "single_attack", "uid": "819dae6ddbc24081"}
+{"fold": 3, "kind": "alert", "row_index": 6031, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "82facb5ad56d894e"}
+{"fold": 2, "kind": "alert", "row_index": 8109, "rule_name": "Struts2-045远程命令执行漏洞(CVE-2017-5638)", "stratum": "single_attack", "uid": "8502580ef719da30"}
+{"fold": 1, "kind": "alert", "row_index": 3705, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "8594d231faf75085"}
+{"fold": 2, "kind": "alert", "row_index": 2950, "rule_name": "发现读取Windows敏感文件行为", "stratum": "single_attack", "uid": "895d37a1b6e87f16"}
+{"fold": 0, "kind": "alert", "row_index": 222, "rule_name": "Apache HugeGraph远程命令执行漏洞(CVE-2024-27348)", "stratum": "single_attack", "uid": "8a0a70939875ce09"}
+{"fold": 4, "kind": "alert", "row_index": 5024, "rule_name": "Struts2-046远程命令执行漏洞", "stratum": "single_attack", "uid": "8aa68f243c1ea10a"}
+{"fold": 0, "kind": "alert", "row_index": 3514, "rule_name": "Joomla！1.5 <3.4.5  x-forwarded-for对象注入远程执行代码（CVE-2015-8562）", "stratum": "single_attack", "uid": "8b040ceb94b27e06"}
+{"fold": 0, "kind": "alert", "row_index": 2604, "rule_name": "EJS模板注入漏洞", "stratum": "single_attack", "uid": "8c0f5b00d693dbbe"}
+{"fold": 2, "kind": "alert", "row_index": 2226, "rule_name": "Apache Struts 2 任意代码执行漏洞", "stratum": "single_attack", "uid": "8d1ebc3d1b944264"}
+{"fold": 4, "kind": "alert", "row_index": 5682, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "8da0163558dd8f7d"}
+{"fold": 2, "kind": "alert", "row_index": 4436, "rule_name": "htdig任意文件包含漏洞", "stratum": "single_attack", "uid": "8df6e687b37e0223"}
+{"fold": 4, "kind": "alert", "row_index": 4086, "rule_name": "Jenkins 远程代码执行（CVE-2019-1003000）", "stratum": "single_attack", "uid": "8e351c6f27d27703"}
+{"fold": 2, "kind": "alert", "row_index": 7465, "rule_name": "Struts2-045远程命令执行漏洞(CVE-2017-5638)", "stratum": "single_attack", "uid": "8f35366a52fe6126"}
+{"fold": 0, "kind": "alert", "row_index": 7874, "rule_name": "Joomla！1.5 <3.4.5  x-forwarded-for对象注入远程执行代码（CVE-2015-8562）", "stratum": "single_attack", "uid": "912cd5ecc3a56cad"}
+{"fold": 0, "kind": "alert", "row_index": 4068, "rule_name": "Shell命令执行(机器学习)", "stratum": "single_attack", "uid": "92c3c5ebc5c1511d"}
+{"fold": 1, "kind": "alert", "row_index": 5791, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "9335e652d93da50b"}
+{"fold": 0, "kind": "alert", "row_index": 3760, "rule_name": "vBulletin 任意代码执行漏洞", "stratum": "single_attack", "uid": "93f9d6a967ef784a"}
+{"fold": 4, "kind": "alert", "row_index": 7635, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "95f0cff84c74952b"}
+{"fold": 0, "kind": "alert", "row_index": 7770, "rule_name": "Shell命令执行(机器学习)", "stratum": "single_attack", "uid": "9621502adf6c65e2"}
+{"fold": 0, "kind": "alert", "row_index": 1353, "rule_name": "PHP代码执行攻击", "stratum": "single_attack", "uid": "96577834409ade2b"}
+{"fold": 2, "kind": "alert", "row_index": 6938, "rule_name": "Apache Struts2 远程代码执行漏洞（CVE-2018-11776/S2-057）", "stratum": "single_attack", "uid": "9691f36e4b6e2bff"}
+{"fold": 3, "kind": "alert", "row_index": 1272, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "978c3537acc5903b"}
+{"fold": 1, "kind": "alert", "row_index": 6830, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "98b841366bb68bc5"}
+{"fold": 1, "kind": "alert", "row_index": 770, "rule_name": "Red Hat JBoss Portal 安全漏洞", "stratum": "single_attack", "uid": "98d514008c319f8b"}
+{"fold": 1, "kind": "alert", "row_index": 1486, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "99fd456781732f3f"}
+{"fold": 3, "kind": "alert", "row_index": 1010, "rule_name": "Microsoft IIS CGI文件名错误解码漏洞(MS01-026)", "stratum": "single_attack", "uid": "9a181046a4a57e35"}
+{"fold": 4, "kind": "alert", "row_index": 8107, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "9bef2eaac9e1fad1"}
+{"fold": 1, "kind": "alert", "row_index": 8009, "rule_name": "XML外部实体注入攻击(XXE)", "stratum": "single_attack", "uid": "9d182e5beebd281b"}
+{"fold": 3, "kind": "alert", "row_index": 6547, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "9d5374825f0a2009"}
+{"fold": 3, "kind": "alert", "row_index": 3172, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "9e02b20018fd48ac"}
+{"fold": 3, "kind": "alert", "row_index": 6251, "rule_name": "Apache OFBiz 任意文件读取漏洞(CVE-2023-50968)", "stratum": "single_attack", "uid": "9e7af42eb7986ace"}
+{"fold": 1, "kind": "alert", "row_index": 2979, "rule_name": "Struts2 XWork ParameterInterceptors补丁绕过远程代码执行漏洞（S2-009/CVE-2011-3923 ）", "stratum": "single_attack", "uid": "9e9f2869855063c5"}
+{"fold": 2, "kind": "alert", "row_index": 2683, "rule_name": "Apache Struts2 远程代码执行漏洞（CVE-2018-11776/S2-057）", "stratum": "single_attack", "uid": "9fa89db382dc0a92"}
+{"fold": 4, "kind": "alert", "row_index": 891, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "a3157ef7eb437e1d"}
+{"fold": 4, "kind": "alert", "row_index": 7122, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "a396a1af7cdc70cd"}
+{"fold": 1, "kind": "alert", "row_index": 5468, "rule_name": "金和OA系统C6未授权任意文件读取漏洞", "stratum": "single_attack", "uid": "a3cee377eb79e611"}
+{"fold": 0, "kind": "alert", "row_index": 3660, "rule_name": "PHP代码执行攻击", "stratum": "single_attack", "uid": "a425de8bdfb0978b"}
+{"fold": 3, "kind": "alert", "row_index": 7918, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "a6841e4abf4d30a7"}
+{"fold": 4, "kind": "alert", "row_index": 1439, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "a6f89018b928f408"}
+{"fold": 3, "kind": "alert", "row_index": 4695, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "a7164a0b4dd20a8c"}
+{"fold": 4, "kind": "alert", "row_index": 3536, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "a7965b9c94ce8c5f"}
+{"fold": 0, "kind": "alert", "row_index": 7292, "rule_name": "发现系统命令注入行为", "stratum": "single_attack", "uid": "a934a7ca7ef888ab"}
+{"fold": 2, "kind": "alert", "row_index": 510, "rule_name": "通用命令执行漏洞", "stratum": "single_attack", "uid": "a984e29322069f33"}
+{"fold": 4, "kind": "alert", "row_index": 5900, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "aba4de385fe2f6a6"}
+{"fold": 2, "kind": "alert", "row_index": 4846, "rule_name": "发现读取Windows敏感文件行为", "stratum": "single_attack", "uid": "adabc97674570158"}
+{"fold": 0, "kind": "alert", "row_index": 457, "rule_name": "Tomcat远程代码执行漏洞(CVE-2020-9484)", "stratum": "single_attack", "uid": "aedefa093c918b75"}
+{"fold": 0, "kind": "alert", "row_index": 4589, "rule_name": "PHP代码执行攻击", "stratum": "single_attack", "uid": "af6e9393c19468bb"}
+{"fold": 2, "kind": "alert", "row_index": 60, "rule_name": "发现读取Windows敏感文件行为", "stratum": "single_attack", "uid": "af766b66b42e38e1"}
+{"fold": 2, "kind": "alert", "row_index": 7359, "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "stratum": "single_attack", "uid": "b04e448e5cdf1794"}
+{"fold": 1, "kind": "alert", "row_index": 2250, "rule_name": "JBoss war包上传漏洞", "stratum": "single_attack", "uid": "b24cb65d9f175266"}
+{"fold": 1, "kind": "alert", "row_index": 2264, "rule_name": "深信服EDR远程命令执行漏洞", "stratum": "single_attack", "uid": "b291e91c3ff6d74c"}
+{"fold": 4, "kind": "alert", "row_index": 121, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "b2fa9a4e5881e87c"}
+{"fold": 0, "kind": "alert", "row_index": 4277, "rule_name": "发现系统命令注入行为", "stratum": "single_attack", "uid": "b314ab5c82079cb8"}
+{"fold": 1, "kind": "alert", "row_index": 876, "rule_name": "Atlassian Jira Server 和 Jira Data Center 目录遍历漏洞(CVE-2020-29453)", "stratum": "single_attack", "uid": "b318a040edc532df"}
+{"fold": 1, "kind": "alert", "row_index": 6922, "rule_name": "发现脚本文件上传行为", "stratum": "single_attack", "uid": "b41a22118ff203df"}
+{"fold": 0, "kind": "alert", "row_index": 753, "rule_name": "Apache SkyWalking SQL注入漏洞(CVE-2020-9483)", "stratum": "single_attack", "uid": "b89ad2ae2f2b9a0e"}
+{"fold": 4, "kind": "alert", "row_index": 7195, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "bb2a745e1cde6268"}
+{"fold": 0, "kind": "alert", "row_index": 6588, "rule_name": "Spring Data Commons 远程代码执行漏洞(CVE-2018-1273)", "stratum": "single_attack", "uid": "bc060e4f27afc254"}
+{"fold": 1, "kind": "alert", "row_index": 5576, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "bc817f8ef3df52a5"}
+{"fold": 4, "kind": "alert", "row_index": 6560, "rule_name": "Huawei Auth-HTTP Serve 文件读取漏洞", "stratum": "single_attack", "uid": "bcb0f7caeec04812"}
+{"fold": 3, "kind": "alert", "row_index": 7541, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "bdee2db0f44fc31e"}
+{"fold": 2, "kind": "alert", "row_index": 4093, "rule_name": "Apache Shiro 身份验证绕过漏洞(CVE-2016-6802)", "stratum": "single_attack", "uid": "bdf34a1f34f4f75c"}
+{"fold": 2, "kind": "alert", "row_index": 2665, "rule_name": "Java框架通用代码执行攻击", "stratum": "single_attack", "uid": "be331d2ee8513484"}
+{"fold": 4, "kind": "alert", "row_index": 6025, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "beb3e70e5870b8b1"}
+{"fold": 1, "kind": "alert", "row_index": 835, "rule_name": "Oracle 9i默认配置文件信息泄露漏洞", "stratum": "single_attack", "uid": "bef253ca76cdd79b"}
+{"fold": 4, "kind": "alert", "row_index": 7283, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "bef908d2d573f03f"}
+{"fold": 3, "kind": "alert", "row_index": 2501, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "c0b4ced86c7aa735"}
+{"fold": 1, "kind": "alert", "row_index": 6898, "rule_name": "Hessian反序列化漏洞(http)", "stratum": "single_attack", "uid": "c1d43488fb8d5103"}
+{"fold": 0, "kind": "alert", "row_index": 2918, "rule_name": "JBoss JMXInvokerServlet 反序列化漏洞", "stratum": "single_attack", "uid": "c1fd12419a24b49b"}
+{"fold": 1, "kind": "alert", "row_index": 14, "rule_name": "Windows命令执行攻击(机器学习)", "stratum": "single_attack", "uid": "c313073983828f9b"}
+{"fold": 4, "kind": "alert", "row_index": 7693, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "c5fd826a92c33bee"}
+{"fold": 1, "kind": "alert", "row_index": 7489, "rule_name": "Joomla  API未授权访问漏洞(CVE-2023-23752)", "stratum": "single_attack", "uid": "c6f31ef821546425"}
+{"fold": 0, "kind": "alert", "row_index": 7389, "rule_name": "PHP代码执行攻击", "stratum": "single_attack", "uid": "c7d2901f71a7994c"}
+{"fold": 3, "kind": "alert", "row_index": 3567, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "c8cff50e1af13f57"}
+{"fold": 4, "kind": "alert", "row_index": 647, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "cb54fee14972c7d6"}
+{"fold": 4, "kind": "alert", "row_index": 7428, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "cbcc48c04937ab64"}
+{"fold": 2, "kind": "alert", "row_index": 1854, "rule_name": "发现java可疑类绕过攻击", "stratum": "single_attack", "uid": "cbf1772134d962c8"}
+{"fold": 2, "kind": "alert", "row_index": 5383, "rule_name": "Apache Unomi 远程代码执行漏洞(CVE-2020-13942)", "stratum": "single_attack", "uid": "cce0b9d4326bbd45"}
+{"fold": 0, "kind": "alert", "row_index": 4274, "rule_name": "金和OA C6系统download.jsp接口任意文件读取漏洞", "stratum": "single_attack", "uid": "cd17b9380ec415bf"}
+{"fold": 0, "kind": "alert", "row_index": 309, "rule_name": "发现系统命令注入行为", "stratum": "single_attack", "uid": "ce2a276439128ff2"}
+{"fold": 1, "kind": "alert", "row_index": 252, "rule_name": "金和OA系统C6未授权任意文件读取漏洞", "stratum": "single_attack", "uid": "ce3ba8b925142800"}
+{"fold": 3, "kind": "alert", "row_index": 6817, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "d06f4c4765ddedb3"}
+{"fold": 0, "kind": "alert", "row_index": 4633, "rule_name": "Joomla！1.5 <3.4.5  x-forwarded-for对象注入远程执行代码（CVE-2015-8562）", "stratum": "single_attack", "uid": "d1539dafe470eed8"}
+{"fold": 0, "kind": "alert", "row_index": 7538, "rule_name": "Joomla！1.5 <3.4.5  x-forwarded-for对象注入远程执行代码（CVE-2015-8562）", "stratum": "single_attack", "uid": "d1dc4e14a55c29aa"}
+{"fold": 0, "kind": "alert", "row_index": 5029, "rule_name": "Joomla！1.5 <3.4.5  x-forwarded-for对象注入远程执行代码（CVE-2015-8562）", "stratum": "single_attack", "uid": "d1e9bbc8f954ac91"}
+{"fold": 0, "kind": "alert", "row_index": 1147, "rule_name": "PHP代码执行攻击", "stratum": "single_attack", "uid": "d1ea88847df2c2ed"}
+{"fold": 0, "kind": "alert", "row_index": 5970, "rule_name": "Apache APISIX远程任意代码执行漏洞(CVE-2022-24112)", "stratum": "single_attack", "uid": "d2c2a0dc1214fa96"}
+{"fold": 2, "kind": "alert", "row_index": 7891, "rule_name": "Apache Struts2 远程代码执行漏洞（CVE-2018-11776/S2-057）", "stratum": "single_attack", "uid": "d3684127db8552f5"}
+{"fold": 3, "kind": "alert", "row_index": 790, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "d458a325ee38b061"}
+{"fold": 1, "kind": "alert", "row_index": 2006, "rule_name": "Apache NiFi 未授权访问漏洞(CVE-2024-56512)", "stratum": "single_attack", "uid": "d4dab2b7bd916cd3"}
+{"fold": 3, "kind": "alert", "row_index": 3271, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "d542f08492a5bd59"}
+{"fold": 1, "kind": "alert", "row_index": 5190, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "d636fcebb3bc9f12"}
+{"fold": 4, "kind": "alert", "row_index": 8290, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "d91552dc74ae6608"}
+{"fold": 1, "kind": "alert", "row_index": 1593, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "d9c47bc92a711318"}
+{"fold": 1, "kind": "alert", "row_index": 4514, "rule_name": "发现脚本文件上传行为", "stratum": "single_attack", "uid": "daea195f77df0706"}
+{"fold": 1, "kind": "alert", "row_index": 3717, "rule_name": "PHP代码执行攻击(机器学习)", "stratum": "single_attack", "uid": "daf3867914b34f28"}
+{"fold": 0, "kind": "alert", "row_index": 7618, "rule_name": "Apache APISIX远程任意代码执行漏洞(CVE-2022-24112)", "stratum": "single_attack", "uid": "dcae073fa5ee07bf"}
+{"fold": 0, "kind": "alert", "row_index": 1319, "rule_name": "Shell命令执行(机器学习)", "stratum": "single_attack", "uid": "dd903807b87bd72f"}
+{"fold": 4, "kind": "alert", "row_index": 2855, "rule_name": "ElasticSearch Snapshot API 目录穿越漏洞(CVE-2015-5531)", "stratum": "single_attack", "uid": "de12fd116f6f2058"}
+{"fold": 4, "kind": "alert", "row_index": 7552, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "e01469d87083d4e6"}
+{"fold": 2, "kind": "alert", "row_index": 1031, "rule_name": "通用命令执行漏洞", "stratum": "single_attack", "uid": "e4173fbbdeebcbae"}
+{"fold": 2, "kind": "alert", "row_index": 1495, "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "stratum": "single_attack", "uid": "e8251724181c1c0a"}
+{"fold": 1, "kind": "alert", "row_index": 4309, "rule_name": "XML外部实体注入攻击(XXE)", "stratum": "single_attack", "uid": "e994d55823e16006"}
+{"fold": 4, "kind": "alert", "row_index": 3512, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "ee9928e2c64cf0c9"}
+{"fold": 1, "kind": "alert", "row_index": 2098, "rule_name": "Joomla  API未授权访问漏洞(CVE-2023-23752)", "stratum": "single_attack", "uid": "efc676089fd3a3a2"}
+{"fold": 1, "kind": "alert", "row_index": 6439, "rule_name": "XML外部实体注入攻击(XXE)", "stratum": "single_attack", "uid": "f0890c735f79fa16"}
+{"fold": 0, "kind": "alert", "row_index": 6853, "rule_name": "Apache Shiro权限绕过漏洞(CVE-2020-1957/CVE-2020-11989)", "stratum": "single_attack", "uid": "f178eda52236a5f7"}
+{"fold": 2, "kind": "alert", "row_index": 6721, "rule_name": "ThinkPHP 5.x 远程代码执行", "stratum": "single_attack", "uid": "f1b2475e6d071a1c"}
+{"fold": 4, "kind": "alert", "row_index": 6398, "rule_name": "多家厂商test-cgi脚本目录远程遍历漏洞", "stratum": "single_attack", "uid": "f2649f77823a6b8f"}
+{"fold": 4, "kind": "alert", "row_index": 743, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "f3a0a67cb90f8e06"}
+{"fold": 4, "kind": "alert", "row_index": 4459, "rule_name": "Struts2 XWork ParameterInterceptors补丁绕过远程代码执行漏洞（S2-005/CVE-2010-1870）", "stratum": "single_attack", "uid": "f3b3e4d6ac451777"}
+{"fold": 4, "kind": "alert", "row_index": 5898, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "f64ad2318bc16e08"}
+{"fold": 1, "kind": "alert", "row_index": 1181, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "f64c7fafecf3ddf1"}
+{"fold": 3, "kind": "alert", "row_index": 3470, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "f6dd97d2c0d35f2e"}
+{"fold": 2, "kind": "alert", "row_index": 1167, "rule_name": "ThinkPHP 5.x 远程代码执行", "stratum": "single_attack", "uid": "f74de8f89877131c"}
+{"fold": 2, "kind": "alert", "row_index": 1289, "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "stratum": "single_attack", "uid": "f77d5f495080a31d"}
+{"fold": 3, "kind": "alert", "row_index": 4168, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "fac09169fa74f21c"}
+{"fold": 1, "kind": "alert", "row_index": 210, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "fb5c4aa55f1809fc"}
+{"fold": 2, "kind": "alert", "row_index": 653, "rule_name": "Apache Struts2 远程代码执行漏洞（CVE-2018-11776/S2-057）", "stratum": "single_attack", "uid": "fc4cf6c14f8fa492"}
+{"fold": 1, "kind": "alert", "row_index": 8172, "rule_name": "ThinkPHP Framework Remote Code Execute Vulnerabiltiy", "stratum": "single_attack", "uid": "fc4f4d642c50601b"}
+{"fold": 4, "kind": "alert", "row_index": 6292, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "fd6863aff2e2596e"}
+{"fold": 1, "kind": "alert", "row_index": 7773, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "ff4f83b2980340df"}
+{"fold": 0, "kind": "alert", "row_index": 125, "rule_name": "Joomla！1.5 <3.4.5  x-forwarded-for对象注入远程执行代码（CVE-2015-8562）", "stratum": "single_attack", "uid": "ff5eaee49336510a"}
+{"fold": 1, "kind": "alert", "row_index": 8306, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_non_attack", "uid": "0044cebd5cb81ff8"}
+{"fold": 0, "kind": "alert", "row_index": 8120, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "00c456eed2def108"}
+{"fold": 1, "kind": "alert", "row_index": 4545, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "02bdee86469e8027"}
+{"fold": 0, "kind": "alert", "row_index": 2687, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "0366e7139292696f"}
+{"fold": 0, "kind": "alert", "row_index": 331, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "03cfdf171f2b6cd2"}
+{"fold": 0, "kind": "alert", "row_index": 1729, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "043b388c108e37ff"}
+{"fold": 1, "kind": "alert", "row_index": 3774, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "051fffaa54119e88"}
+{"fold": 0, "kind": "alert", "row_index": 5573, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "062f930291c2cc4d"}
+{"fold": 4, "kind": "alert", "row_index": 855, "rule_name": "Java Struts2代码注入漏洞", "stratum": "mixed_non_attack", "uid": "0648c7efbcf2534e"}
+{"fold": 0, "kind": "alert", "row_index": 1957, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "064e86f499ffc10a"}
+{"fold": 3, "kind": "alert", "row_index": 4376, "rule_name": "发现黑客工具Nmap扫描行为", "stratum": "mixed_non_attack", "uid": "06c94ea23afb01c4"}
+{"fold": 1, "kind": "alert", "row_index": 2379, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "07f6064c20d1b188"}
+{"fold": 4, "kind": "alert", "row_index": 3090, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "08245d705ebf510c"}
+{"fold": 0, "kind": "alert", "row_index": 2703, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "0ac976a6fe8bc76d"}
+{"fold": 0, "kind": "alert", "row_index": 6333, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "128e54c18c1c11eb"}
+{"fold": 0, "kind": "alert", "row_index": 7162, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "12bfa36f13b8016c"}
+{"fold": 4, "kind": "alert", "row_index": 6693, "rule_name": "Go pprof 调试信息泄露漏洞", "stratum": "mixed_non_attack", "uid": "13602d86f0d9aae7"}
+{"fold": 3, "kind": "alert", "row_index": 8121, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "139dc0d65a187ad3"}
+{"fold": 0, "kind": "alert", "row_index": 2860, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "153838c2c19016cb"}
+{"fold": 1, "kind": "alert", "row_index": 2335, "rule_name": "Swagger未授权访问行为", "stratum": "mixed_non_attack", "uid": "15b14e71fa22a842"}
+{"fold": 0, "kind": "alert", "row_index": 2577, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "167c09a412e8ecae"}
+{"fold": 1, "kind": "alert", "row_index": 4386, "rule_name": "Druid 存在未授权访问漏洞", "stratum": "mixed_non_attack", "uid": "16f949b2c2a237f8"}
+{"fold": 0, "kind": "alert", "row_index": 3390, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "17216975b6114c1b"}
+{"fold": 2, "kind": "alert", "row_index": 231, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "178d50ddee79c423"}
+{"fold": 0, "kind": "alert", "row_index": 7992, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "1a378731062e1eab"}
+{"fold": 3, "kind": "alert", "row_index": 6349, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_non_attack", "uid": "1baabde7961d6176"}
+{"fold": 4, "kind": "alert", "row_index": 5643, "rule_name": "Nginx range 过滤器整形溢出漏洞 (CVE–2017–7529)", "stratum": "mixed_non_attack", "uid": "1bbae5456ba6a593"}
+{"fold": 0, "kind": "alert", "row_index": 340, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "1d5500c634136f13"}
+{"fold": 0, "kind": "alert", "row_index": 4904, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "1e90d32d277d3ea6"}
+{"fold": 1, "kind": "alert", "row_index": 2983, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "21bc2e8d9150bdd2"}
+{"fold": 0, "kind": "alert", "row_index": 4481, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "21faf5b0a79bb945"}
+{"fold": 0, "kind": "alert", "row_index": 1618, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "2394bc2aeda0d4d5"}
+{"fold": 0, "kind": "alert", "row_index": 4572, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "25c84a0f6e60d7aa"}
+{"fold": 0, "kind": "alert", "row_index": 921, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "2701fee364a27c97"}
+{"fold": 0, "kind": "alert", "row_index": 1627, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "272e4df5ef53901a"}
+{"fold": 0, "kind": "alert", "row_index": 5757, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "287ce29d4a9b052c"}
+{"fold": 3, "kind": "alert", "row_index": 4329, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "2c662b06942c7d3e"}
+{"fold": 3, "kind": "alert", "row_index": 5897, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "2c76ff7b93b5f702"}
+{"fold": 3, "kind": "alert", "row_index": 3550, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "2c853ae6f9eedde5"}
+{"fold": 4, "kind": "alert", "row_index": 4185, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "2cf1c2cac5eacca2"}
+{"fold": 0, "kind": "alert", "row_index": 1836, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "2d45fe202de702c9"}
+{"fold": 3, "kind": "alert", "row_index": 5810, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "2d4c93196e458a2b"}
+{"fold": 0, "kind": "alert", "row_index": 6947, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "2fd1692a12aa7333"}
+{"fold": 1, "kind": "alert", "row_index": 7716, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "303e9c7c269c41e6"}
+{"fold": 3, "kind": "alert", "row_index": 7907, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "316cbfb5d693fefe"}
+{"fold": 0, "kind": "alert", "row_index": 6382, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "318aedf129bb916e"}
+{"fold": 2, "kind": "alert", "row_index": 1421, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "31d7f3f9d2cde872"}
+{"fold": 0, "kind": "alert", "row_index": 294, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "338c36f4e4adbc96"}
+{"fold": 1, "kind": "alert", "row_index": 7601, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "33a0d70238f69c6f"}
+{"fold": 3, "kind": "alert", "row_index": 1939, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "359a50a436f59706"}
+{"fold": 0, "kind": "alert", "row_index": 7406, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "370d1c8753ebcfe5"}
+{"fold": 0, "kind": "alert", "row_index": 6401, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "374fa0a792d6517d"}
+{"fold": 3, "kind": "alert", "row_index": 2845, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "384ef6fed26569e1"}
+{"fold": 0, "kind": "alert", "row_index": 7095, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "3b54c1ba1abb2008"}
+{"fold": 3, "kind": "alert", "row_index": 4786, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_non_attack", "uid": "3c6c96278561f055"}
+{"fold": 0, "kind": "alert", "row_index": 7720, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "3ed83f32ed58c9fc"}
+{"fold": 3, "kind": "alert", "row_index": 6131, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "3f196d219bb50b2c"}
+{"fold": 0, "kind": "alert", "row_index": 7019, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "3f498626d1acd5d8"}
+{"fold": 0, "kind": "alert", "row_index": 3563, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "406af865d989c1fb"}
+{"fold": 1, "kind": "alert", "row_index": 7966, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "40ab212a408f50e0"}
+{"fold": 3, "kind": "alert", "row_index": 6234, "rule_name": "发现黑客工具Nmap扫描行为", "stratum": "mixed_non_attack", "uid": "40d89d1edbc3b64c"}
+{"fold": 3, "kind": "alert", "row_index": 7185, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "418c8a74148381ef"}
+{"fold": 0, "kind": "alert", "row_index": 5692, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "4a2c6ff7525920d5"}
+{"fold": 4, "kind": "alert", "row_index": 7833, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "4c4f29ed030231d2"}
+{"fold": 0, "kind": "alert", "row_index": 4513, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "4d9465a599276d36"}
+{"fold": 0, "kind": "alert", "row_index": 5376, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "4f05ed1d3de097f0"}
+{"fold": 0, "kind": "alert", "row_index": 6797, "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "stratum": "mixed_non_attack", "uid": "4f13dc3caa65826b"}
+{"fold": 0, "kind": "alert", "row_index": 3148, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "4f81bfceecd9318e"}
+{"fold": 0, "kind": "alert", "row_index": 8184, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "4fab074b2d0b7e72"}
+{"fold": 3, "kind": "alert", "row_index": 8088, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "515bf001831ae6f2"}
+{"fold": 0, "kind": "alert", "row_index": 3308, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "5160f61a3221918b"}
+{"fold": 1, "kind": "alert", "row_index": 3076, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "51b8d62edea7fe2f"}
+{"fold": 0, "kind": "alert", "row_index": 526, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "52554b926d013907"}
+{"fold": 0, "kind": "alert", "row_index": 6360, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "52d2939e1d5829ee"}
+{"fold": 3, "kind": "alert", "row_index": 6013, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_non_attack", "uid": "53994d81b18597bf"}
+{"fold": 0, "kind": "alert", "row_index": 1271, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "53d49eec1ab951e4"}
+{"fold": 1, "kind": "alert", "row_index": 5839, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "5520b43af1a902ab"}
+{"fold": 3, "kind": "alert", "row_index": 638, "rule_name": "CloudBees Script Security Plugin 任意代码执行漏洞(CVE-2019-1003000)", "stratum": "mixed_non_attack", "uid": "552cccd1eb7459a9"}
+{"fold": 1, "kind": "alert", "row_index": 7524, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_non_attack", "uid": "56d663be2ab11728"}
+{"fold": 0, "kind": "alert", "row_index": 4588, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "59e66da880291c1d"}
+{"fold": 2, "kind": "alert", "row_index": 1694, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "5b656f3ed66f3623"}
+{"fold": 0, "kind": "alert", "row_index": 5420, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "5cfa5328f3d07b02"}
+{"fold": 0, "kind": "alert", "row_index": 5402, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "5cff02826c2a1dfd"}
+{"fold": 2, "kind": "alert", "row_index": 7045, "rule_name": "Apache Druid 远程代码执行漏洞(CVE-2021-25646)", "stratum": "mixed_non_attack", "uid": "5dc9a852bf836a81"}
+{"fold": 0, "kind": "alert", "row_index": 5427, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "5e21fc3434b20199"}
+{"fold": 3, "kind": "alert", "row_index": 6239, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_non_attack", "uid": "5e3c2dbf1b123756"}
+{"fold": 2, "kind": "alert", "row_index": 3448, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "60aaede8e2b5b387"}
+{"fold": 1, "kind": "alert", "row_index": 7756, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "60b23928173445b8"}
+{"fold": 2, "kind": "alert", "row_index": 282, "rule_name": "Spring Cloud Function SpEL表达式注入漏洞(CVE-2022-22963)", "stratum": "mixed_non_attack", "uid": "62e8f0a6bb7cc1d6"}
+{"fold": 3, "kind": "alert", "row_index": 1500, "rule_name": "发现Web服务探测行为", "stratum": "mixed_non_attack", "uid": "633fb6e37443d1a0"}
+{"fold": 1, "kind": "alert", "row_index": 7740, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "6345a547884fed44"}
+{"fold": 0, "kind": "alert", "row_index": 7927, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "636f6747959bb2a3"}
+{"fold": 1, "kind": "alert", "row_index": 767, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_non_attack", "uid": "637c3854bda5b0b4"}
+{"fold": 0, "kind": "alert", "row_index": 5240, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "64997667f368c933"}
+{"fold": 2, "kind": "alert", "row_index": 7290, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "65e8eef77318e5b4"}
+{"fold": 1, "kind": "alert", "row_index": 5716, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_non_attack", "uid": "689e4aacd597ab41"}
+{"fold": 0, "kind": "alert", "row_index": 1743, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "68e3039dd7845110"}
+{"fold": 0, "kind": "alert", "row_index": 5558, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "6927913c749fd93a"}
+{"fold": 4, "kind": "alert", "row_index": 3339, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "6976e70f2820f61d"}
+{"fold": 1, "kind": "alert", "row_index": 6549, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "69be103a6cbfa353"}
+{"fold": 0, "kind": "alert", "row_index": 1086, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "6af04a0233e78a36"}
+{"fold": 0, "kind": "alert", "row_index": 7446, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "6b50fc6db0f6532f"}
+{"fold": 3, "kind": "alert", "row_index": 7965, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_non_attack", "uid": "6f08601606ab094a"}
+{"fold": 0, "kind": "alert", "row_index": 2316, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "6f4cd9cf011b0558"}
+{"fold": 0, "kind": "alert", "row_index": 1330, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "6fe7d70671cd2f75"}
+{"fold": 3, "kind": "alert", "row_index": 2296, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_non_attack", "uid": "719ab8fd0a84ffed"}
+{"fold": 0, "kind": "alert", "row_index": 784, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "7286983011bd7530"}
+{"fold": 0, "kind": "alert", "row_index": 572, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "74e3184a794cda92"}
+{"fold": 0, "kind": "alert", "row_index": 1598, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "74e722c6b500af93"}
+{"fold": 4, "kind": "alert", "row_index": 6066, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "754dcbc80076bb05"}
+{"fold": 0, "kind": "alert", "row_index": 6603, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "75d4d167b3bce0a2"}
+{"fold": 0, "kind": "alert", "row_index": 6577, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "78dd5df79d0a6cf5"}
+{"fold": 0, "kind": "alert", "row_index": 5318, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "7a3e7eced38ea61d"}
+{"fold": 0, "kind": "alert", "row_index": 4357, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "7a7abb0b78f5bf39"}
+{"fold": 0, "kind": "alert", "row_index": 8249, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "7a8dd58b697dcad4"}
+{"fold": 1, "kind": "alert", "row_index": 4655, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_non_attack", "uid": "7aad444d72ef16f5"}
+{"fold": 0, "kind": "alert", "row_index": 1641, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "7f9c941385156161"}
+{"fold": 0, "kind": "alert", "row_index": 4466, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "800f4c57fc8d5213"}
+{"fold": 1, "kind": "alert", "row_index": 5112, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "809d1f1928fa9d4e"}
+{"fold": 0, "kind": "alert", "row_index": 6778, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "80c036d183de9079"}
+{"fold": 3, "kind": "alert", "row_index": 7880, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_non_attack", "uid": "818b6dad293f936f"}
+{"fold": 2, "kind": "alert", "row_index": 7928, "rule_name": "Spring-Cloud-Config-Server目录穿越漏洞(CVE-2020-5405)", "stratum": "mixed_non_attack", "uid": "84b4abc9724986ef"}
+{"fold": 0, "kind": "alert", "row_index": 4018, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "85d21f56ac763160"}
+{"fold": 4, "kind": "alert", "row_index": 1416, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "886125cd79c5a90d"}
+{"fold": 2, "kind": "alert", "row_index": 663, "rule_name": "Apache Druid 远程代码执行漏洞(CVE-2021-25646)", "stratum": "mixed_non_attack", "uid": "88ab0762562f1404"}
+{"fold": 0, "kind": "alert", "row_index": 2371, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "88e9bea63d9ddafc"}
+{"fold": 3, "kind": "alert", "row_index": 1391, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_non_attack", "uid": "8a813a41bf825280"}
+{"fold": 1, "kind": "alert", "row_index": 2999, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "8af7a9d76f430580"}
+{"fold": 3, "kind": "alert", "row_index": 8148, "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "stratum": "mixed_non_attack", "uid": "8b33c67d31fdba07"}
+{"fold": 2, "kind": "alert", "row_index": 6523, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "8d08b6580f9964da"}
+{"fold": 0, "kind": "alert", "row_index": 1363, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "8e060ea53473205c"}
+{"fold": 4, "kind": "alert", "row_index": 1629, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "8e9b20d6346b95ba"}
+{"fold": 3, "kind": "alert", "row_index": 6555, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "90463ddb2b7bacc2"}
+{"fold": 1, "kind": "alert", "row_index": 560, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "90975b6c8debeb4b"}
+{"fold": 0, "kind": "alert", "row_index": 826, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "90f2535f803af085"}
+{"fold": 0, "kind": "alert", "row_index": 4795, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "91324605c80c0e8b"}
+{"fold": 1, "kind": "alert", "row_index": 202, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "914b44198a8926c9"}
+{"fold": 0, "kind": "alert", "row_index": 7579, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "92ef1b7889ec362a"}
+{"fold": 0, "kind": "alert", "row_index": 4336, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "93eeece6a8160df6"}
+{"fold": 0, "kind": "alert", "row_index": 3433, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "97858861fdefd0c6"}
+{"fold": 0, "kind": "alert", "row_index": 5159, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "982df9dc711abe1e"}
+{"fold": 0, "kind": "alert", "row_index": 45, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "99e47438c7a5574b"}
+{"fold": 0, "kind": "alert", "row_index": 7398, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "9f172e8d4ed8e401"}
+{"fold": 0, "kind": "alert", "row_index": 4331, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "9fc79e1f17fc2078"}
+{"fold": 0, "kind": "alert", "row_index": 7731, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "a00509250a3d5707"}
+{"fold": 1, "kind": "alert", "row_index": 7396, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "a0b2e21a19c227ba"}
+{"fold": 0, "kind": "alert", "row_index": 3559, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "a2e1149e4efacb9c"}
+{"fold": 3, "kind": "alert", "row_index": 157, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "a2f7d17e654d72ac"}
+{"fold": 0, "kind": "alert", "row_index": 1631, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "a313c825120d38a8"}
+{"fold": 1, "kind": "alert", "row_index": 3169, "rule_name": "发现管理员用户弱口令登录行为", "stratum": "mixed_non_attack", "uid": "a3b742e9d091122e"}
+{"fold": 2, "kind": "alert", "row_index": 2349, "rule_name": "Spring Cloud Function SpEL表达式注入漏洞(CVE-2022-22963)", "stratum": "mixed_non_attack", "uid": "a4e9d030e8382fe6"}
+{"fold": 1, "kind": "alert", "row_index": 708, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "a5368e349bf20f2d"}
+{"fold": 3, "kind": "alert", "row_index": 4882, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "a8c363370dcd690a"}
+{"fold": 1, "kind": "alert", "row_index": 6606, "rule_name": "Swagger未授权访问行为", "stratum": "mixed_non_attack", "uid": "a9215c3aedc919a9"}
+{"fold": 0, "kind": "alert", "row_index": 4265, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "a9281dfefa87a6ad"}
+{"fold": 3, "kind": "alert", "row_index": 6587, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "aaf84e2490c0c576"}
+{"fold": 3, "kind": "alert", "row_index": 4528, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "ab64aab3ec1f0eb2"}
+{"fold": 0, "kind": "alert", "row_index": 4870, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "ad8ded73902e9592"}
+{"fold": 0, "kind": "alert", "row_index": 5583, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "adc427adfafba7a2"}
+{"fold": 3, "kind": "alert", "row_index": 8064, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "aed1b8571cf34501"}
+{"fold": 0, "kind": "alert", "row_index": 6681, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b08abe8eee41981c"}
+{"fold": 3, "kind": "alert", "row_index": 2971, "rule_name": "发现Web服务探测行为", "stratum": "mixed_non_attack", "uid": "b1d0f1ecd2a1e67d"}
+{"fold": 0, "kind": "alert", "row_index": 7172, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b247bc8a0e2ff4f1"}
+{"fold": 0, "kind": "alert", "row_index": 4383, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b28356e21cd7236b"}
+{"fold": 4, "kind": "alert", "row_index": 1488, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "b3c5d00443ed017c"}
+{"fold": 1, "kind": "alert", "row_index": 4672, "rule_name": "Druid 存在未授权访问漏洞", "stratum": "mixed_non_attack", "uid": "b3e7328d0c25f79f"}
+{"fold": 0, "kind": "alert", "row_index": 1816, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b4dc20cbb9361dbc"}
+{"fold": 0, "kind": "alert", "row_index": 7267, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b586031be6aa3d95"}
+{"fold": 0, "kind": "alert", "row_index": 1588, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b63563402bb5f3da"}
+{"fold": 4, "kind": "alert", "row_index": 6364, "rule_name": "Nginx range 过滤器整形溢出漏洞 (CVE–2017–7529)", "stratum": "mixed_non_attack", "uid": "b7a78bbac8277543"}
+{"fold": 3, "kind": "alert", "row_index": 5541, "rule_name": "发现PUT方式上传TXT/HTML文件", "stratum": "mixed_non_attack", "uid": "b8b1afaf41cfac25"}
+{"fold": 0, "kind": "alert", "row_index": 447, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b8e458412ac75f7f"}
+{"fold": 3, "kind": "alert", "row_index": 3896, "rule_name": "Java代码执行攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b905b5b71c89fffc"}
+{"fold": 0, "kind": "alert", "row_index": 6594, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "b92f76ec90e0d92b"}
+{"fold": 2, "kind": "alert", "row_index": 1234, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "bbb6124ba444dd9f"}
+{"fold": 0, "kind": "alert", "row_index": 6988, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "bbe7b80ee57cc540"}
+{"fold": 0, "kind": "alert", "row_index": 355, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "bc268ff473808024"}
+{"fold": 0, "kind": "alert", "row_index": 209, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "bc36f1d544f4cdde"}
+{"fold": 3, "kind": "alert", "row_index": 5844, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_non_attack", "uid": "bc66fe7906dcc15f"}
+{"fold": 0, "kind": "alert", "row_index": 7103, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "bd2fc3608b80d7d8"}
+{"fold": 4, "kind": "alert", "row_index": 2722, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "bd77e8fbd61b3cc6"}
+{"fold": 2, "kind": "alert", "row_index": 7707, "rule_name": "Oracle Fusion Middleware Oracle Reports Developer组件未明安全漏洞", "stratum": "mixed_non_attack", "uid": "be204ff1f567f98c"}
+{"fold": 0, "kind": "alert", "row_index": 2909, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "c03a59e47dbc256c"}
+{"fold": 0, "kind": "alert", "row_index": 3415, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "c2d9d73ce090dc69"}
+{"fold": 2, "kind": "alert", "row_index": 724, "rule_name": "Oracle Fusion Middleware Oracle Reports Developer组件未明安全漏洞", "stratum": "mixed_non_attack", "uid": "c32dbe5b3fd33d41"}
+{"fold": 2, "kind": "alert", "row_index": 4618, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "c36681463d05d200"}
+{"fold": 3, "kind": "alert", "row_index": 3584, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "c4fe3e62d8a9ff0e"}
+{"fold": 1, "kind": "alert", "row_index": 1893, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "c562ed74c217dddd"}
+{"fold": 1, "kind": "alert", "row_index": 3935, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "c5e82e9b961c60c4"}
+{"fold": 4, "kind": "alert", "row_index": 6499, "rule_name": "Go pprof 调试信息泄露漏洞", "stratum": "mixed_non_attack", "uid": "c625c47c99262ed9"}
+{"fold": 4, "kind": "alert", "row_index": 4647, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "c7a67ff338495f7b"}
+{"fold": 0, "kind": "alert", "row_index": 2021, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "cae65adebdd5925b"}
+{"fold": 0, "kind": "alert", "row_index": 864, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "cbbf395d59583516"}
+{"fold": 0, "kind": "alert", "row_index": 315, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "cd19ac3cdb7684f2"}
+{"fold": 0, "kind": "alert", "row_index": 8195, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "cd21eb36f32ffe08"}
+{"fold": 0, "kind": "alert", "row_index": 4800, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "cdf1f05d21cfff61"}
+{"fold": 0, "kind": "alert", "row_index": 3706, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "ce8d69cafed4780b"}
+{"fold": 0, "kind": "alert", "row_index": 6358, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "ceed565c2668bec1"}
+{"fold": 3, "kind": "alert", "row_index": 6822, "rule_name": "React Server Components 远程代码执行漏洞(CVE-2025-55182)", "stratum": "mixed_non_attack", "uid": "d03e0f45ca18f97d"}
+{"fold": 1, "kind": "alert", "row_index": 2353, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "d25064237b8a561b"}
+{"fold": 1, "kind": "alert", "row_index": 3461, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_non_attack", "uid": "d2ac61befb602a07"}
+{"fold": 0, "kind": "alert", "row_index": 1143, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "d2ce4b2baf00c333"}
+{"fold": 0, "kind": "alert", "row_index": 5296, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "d8d0199167a5b3cd"}
+{"fold": 1, "kind": "alert", "row_index": 2077, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "d9b15dae31199259"}
+{"fold": 1, "kind": "alert", "row_index": 4501, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "db4c36b173651a42"}
+{"fold": 0, "kind": "alert", "row_index": 4381, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "dbe7724b3f218d3d"}
+{"fold": 0, "kind": "alert", "row_index": 4823, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "dd007481c76b0cd2"}
+{"fold": 3, "kind": "alert", "row_index": 2467, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "dd2f9a243b614251"}
+{"fold": 0, "kind": "alert", "row_index": 2276, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "dd39372e9bfc82ee"}
+{"fold": 0, "kind": "alert", "row_index": 3241, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "ddad5b2ece6f2904"}
+{"fold": 0, "kind": "alert", "row_index": 2637, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "dfd9ddaa026f26d4"}
+{"fold": 0, "kind": "alert", "row_index": 6387, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "dfdcb9e87596c98c"}
+{"fold": 1, "kind": "alert", "row_index": 3631, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_non_attack", "uid": "dfec0fc81b4b149a"}
+{"fold": 4, "kind": "alert", "row_index": 6522, "rule_name": "Nginx range 过滤器整形溢出漏洞 (CVE–2017–7529)", "stratum": "mixed_non_attack", "uid": "e115933d963e6cc4"}
+{"fold": 0, "kind": "alert", "row_index": 1805, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "e29f990606d2d426"}
+{"fold": 1, "kind": "alert", "row_index": 4753, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_non_attack", "uid": "e3f976a6ac9c5436"}
+{"fold": 3, "kind": "alert", "row_index": 771, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "e58c92af5362f825"}
+{"fold": 0, "kind": "alert", "row_index": 4084, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "e619394791c1c9b1"}
+{"fold": 0, "kind": "alert", "row_index": 3805, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "e623faf0ef17ddb3"}
+{"fold": 0, "kind": "alert", "row_index": 4442, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "e6abb7c36918e24b"}
+{"fold": 0, "kind": "alert", "row_index": 3808, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "e7d71817f119538e"}
+{"fold": 0, "kind": "alert", "row_index": 3874, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "e899b8090fab37f6"}
+{"fold": 0, "kind": "alert", "row_index": 7453, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "e8c10f830af0c368"}
+{"fold": 0, "kind": "alert", "row_index": 5987, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "eac76d5aea5f9c1b"}
+{"fold": 4, "kind": "alert", "row_index": 1933, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "eb6ac0c99957c10b"}
+{"fold": 2, "kind": "alert", "row_index": 1, "rule_name": "Spring Cloud Function SpEL表达式注入漏洞(CVE-2022-22963)", "stratum": "mixed_non_attack", "uid": "ee4309be30ac3935"}
+{"fold": 1, "kind": "alert", "row_index": 4785, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "eee044862af228c0"}
+{"fold": 0, "kind": "alert", "row_index": 6110, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "efb485997fe9b27c"}
+{"fold": 3, "kind": "alert", "row_index": 2996, "rule_name": "基于Basic Authentication认证弱口令", "stratum": "mixed_non_attack", "uid": "effe25c1ed2e332a"}
+{"fold": 2, "kind": "alert", "row_index": 8301, "rule_name": "跨站脚本攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "f18302f25adbcb86"}
+{"fold": 4, "kind": "alert", "row_index": 6803, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_non_attack", "uid": "f18e279e307260e1"}
+{"fold": 1, "kind": "alert", "row_index": 5665, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "f2597de2cc9ef468"}
+{"fold": 3, "kind": "alert", "row_index": 4035, "rule_name": "发现Web服务探测行为", "stratum": "mixed_non_attack", "uid": "f2d63b0fe99582b5"}
+{"fold": 0, "kind": "alert", "row_index": 3168, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "f3c08dbf0d880e23"}
+{"fold": 3, "kind": "alert", "row_index": 6022, "rule_name": "Web弱口令登录", "stratum": "mixed_non_attack", "uid": "f4623564e5dcb0e3"}
+{"fold": 2, "kind": "alert", "row_index": 878, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_non_attack", "uid": "f4b35b0d7bc12d43"}
+{"fold": 0, "kind": "alert", "row_index": 2872, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "f54abb286d141967"}
+{"fold": 1, "kind": "alert", "row_index": 1248, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_non_attack", "uid": "f743381da5947516"}
+{"fold": 4, "kind": "alert", "row_index": 6550, "rule_name": "Nginx range 过滤器整形溢出漏洞 (CVE–2017–7529)", "stratum": "mixed_non_attack", "uid": "f77b2929d996a47e"}
+{"fold": 0, "kind": "alert", "row_index": 6933, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "f7e094e04b67b15d"}
+{"fold": 0, "kind": "alert", "row_index": 2127, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "f84ec984c6e6d5e5"}
+{"fold": 0, "kind": "alert", "row_index": 5838, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "f9aac0a52221e50a"}
+{"fold": 0, "kind": "alert", "row_index": 7728, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "faf6f91ce3a180b7"}
+{"fold": 0, "kind": "alert", "row_index": 3565, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "fcd75b311220d4ba"}
+{"fold": 3, "kind": "alert", "row_index": 1159, "rule_name": "发现Web服务探测行为", "stratum": "mixed_non_attack", "uid": "fd6f670db01a01c9"}
+{"fold": 0, "kind": "alert", "row_index": 4515, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "fd9d13ec9d5d6dfc"}
+{"fold": 0, "kind": "alert", "row_index": 1521, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "fe85bf791d5ae727"}
+{"fold": 0, "kind": "alert", "row_index": 764, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "ff258919304db514"}
+{"fold": 0, "kind": "alert", "row_index": 4909, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "ff2e43404e69a407"}
+{"fold": 0, "kind": "alert", "row_index": 6757, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "ff6cc2df0bdac164"}
+{"fold": 1, "kind": "alert", "row_index": 728, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "005ad3c4dd291345"}
+{"fold": 3, "kind": "alert", "row_index": 1483, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "00a5b961069b4812"}
+{"fold": 2, "kind": "alert", "row_index": 5336, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "012c9b606e6a5828"}
+{"fold": 0, "kind": "alert", "row_index": 4435, "rule_name": "发现敏感信息泄露", "stratum": "single_non_attack", "uid": "0325ac753e88e16a"}
+{"fold": 4, "kind": "alert", "row_index": 3430, "rule_name": "发现应用程序错误信息", "stratum": "single_non_attack", "uid": "0429e66045bda022"}
+{"fold": 1, "kind": "alert", "row_index": 1991, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "04c4b9a49ec35c86"}
+{"fold": 0, "kind": "alert", "row_index": 1623, "rule_name": "发现数据库敏感文件下载", "stratum": "single_non_attack", "uid": "0532a2f468151361"}
+{"fold": 1, "kind": "alert", "row_index": 3568, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "064f921358947913"}
+{"fold": 2, "kind": "alert", "row_index": 7996, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "06e5b3f666e9304a"}
+{"fold": 0, "kind": "alert", "row_index": 4066, "rule_name": "异常页面导致服务器路径泄漏", "stratum": "single_non_attack", "uid": "07fcea7b727c50b5"}
+{"fold": 1, "kind": "alert", "row_index": 7088, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "0921fe54712d8eb5"}
+{"fold": 1, "kind": "alert", "row_index": 2072, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "0938dc1f7d0cd044"}
+{"fold": 4, "kind": "alert", "row_index": 5934, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "0c170350f84c0e31"}
+{"fold": 0, "kind": "alert", "row_index": 2986, "rule_name": "发现数据库敏感文件下载", "stratum": "single_non_attack", "uid": "0dd3a3f674400485"}
+{"fold": 3, "kind": "alert", "row_index": 1125, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "0f2ebb195db527ee"}
+{"fold": 1, "kind": "alert", "row_index": 422, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "0fbfb5a87237a6f6"}
+{"fold": 4, "kind": "alert", "row_index": 533, "rule_name": "3C环境自动监测动态管控系统任意文件下载漏洞", "stratum": "single_non_attack", "uid": "107089e0874cf1cb"}
+{"fold": 2, "kind": "alert", "row_index": 5469, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "111da21018952272"}
+{"fold": 0, "kind": "alert", "row_index": 4887, "rule_name": "CSS/JS脚本文件编码不规范(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "1441710df513cf7d"}
+{"fold": 1, "kind": "alert", "row_index": 1426, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "166726c4cc72dc5f"}
+{"fold": 4, "kind": "alert", "row_index": 6143, "rule_name": "Horde Groupware后门漏洞", "stratum": "single_non_attack", "uid": "168a1c7a723c96a9"}
+{"fold": 2, "kind": "alert", "row_index": 2815, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "1705d62a3065d42a"}
+{"fold": 1, "kind": "alert", "row_index": 1961, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "181c7a0e55dad90c"}
+{"fold": 3, "kind": "alert", "row_index": 5709, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "184a90ba720e6d91"}
+{"fold": 4, "kind": "alert", "row_index": 2480, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "185f6a2992279ea8"}
+{"fold": 1, "kind": "alert", "row_index": 4956, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "19ffb23ffc79d1db"}
+{"fold": 2, "kind": "alert", "row_index": 1776, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "1b3a6505da9a6a19"}
+{"fold": 2, "kind": "alert", "row_index": 4174, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "1c500c051bab751b"}
+{"fold": 4, "kind": "alert", "row_index": 3437, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "1e9e8ccebd21d7c7"}
+{"fold": 3, "kind": "alert", "row_index": 5760, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "20e394b7bfe255f0"}
+{"fold": 3, "kind": "alert", "row_index": 5856, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "2254d463f2de4c0b"}
+{"fold": 2, "kind": "alert", "row_index": 5606, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "24e1b0b260bc32b8"}
+{"fold": 1, "kind": "alert", "row_index": 536, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "24ee8d9a75e057db"}
+{"fold": 1, "kind": "alert", "row_index": 5273, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "2598ce6d638888e7"}
+{"fold": 3, "kind": "alert", "row_index": 3276, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "2670b4359a980649"}
+{"fold": 1, "kind": "alert", "row_index": 8173, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "26b444ada38aa4dc"}
+{"fold": 1, "kind": "alert", "row_index": 485, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "26b92a327a190468"}
+{"fold": 1, "kind": "alert", "row_index": 625, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "2a43eec875659228"}
+{"fold": 4, "kind": "alert", "row_index": 1840, "rule_name": "3C环境自动监测动态管控系统任意文件下载漏洞", "stratum": "single_non_attack", "uid": "2bc1861cbcb07617"}
+{"fold": 2, "kind": "alert", "row_index": 5936, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "2dd5840c55bf9f48"}
+{"fold": 3, "kind": "alert", "row_index": 3970, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "2e10c93d7521433e"}
+{"fold": 1, "kind": "alert", "row_index": 584, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "2f7ef84b568beb1a"}
+{"fold": 1, "kind": "alert", "row_index": 7085, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "30b18ce11b6830e0"}
+{"fold": 3, "kind": "alert", "row_index": 1405, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "30ca123ff1c99a9c"}
+{"fold": 1, "kind": "alert", "row_index": 4756, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "318d227b1357006d"}
+{"fold": 3, "kind": "alert", "row_index": 5057, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "31a50a066cb8cbeb"}
+{"fold": 4, "kind": "alert", "row_index": 5755, "rule_name": "Microsoft SharePoint 跨站脚本漏洞", "stratum": "single_non_attack", "uid": "321f4296db823faa"}
+{"fold": 1, "kind": "alert", "row_index": 3062, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "32e602a75f77e750"}
+{"fold": 0, "kind": "alert", "row_index": 7523, "rule_name": "发现Web空口令登录行为", "stratum": "single_non_attack", "uid": "33c9b95de80a0830"}
+{"fold": 2, "kind": "alert", "row_index": 5319, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "35408285cd446a29"}
+{"fold": 3, "kind": "alert", "row_index": 7542, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "357f9b1cdc6690a7"}
+{"fold": 1, "kind": "alert", "row_index": 5265, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "368d512a6b27a3dc"}
+{"fold": 0, "kind": "alert", "row_index": 3547, "rule_name": "DS_Store 信息泄露", "stratum": "single_non_attack", "uid": "3861be6ebd3b2268"}
+{"fold": 3, "kind": "alert", "row_index": 4965, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "39169fa98392e663"}
+{"fold": 1, "kind": "alert", "row_index": 6339, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "39c5cd1fca14477c"}
+{"fold": 1, "kind": "alert", "row_index": 4121, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "3b3c16eaabb630f7"}
+{"fold": 0, "kind": "alert", "row_index": 3990, "rule_name": "发现数据库敏感文件下载", "stratum": "single_non_attack", "uid": "3b67acbe396c534b"}
+{"fold": 1, "kind": "alert", "row_index": 1558, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "3b723a9e623fef18"}
+{"fold": 1, "kind": "alert", "row_index": 1960, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "3bbe37cca0677748"}
+{"fold": 1, "kind": "alert", "row_index": 7866, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "3c5cc7de5be6c306"}
+{"fold": 1, "kind": "alert", "row_index": 4116, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "3d54a0ba7e4c9658"}
+{"fold": 4, "kind": "alert", "row_index": 338, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "4021a70fd99b3df1"}
+{"fold": 1, "kind": "alert", "row_index": 6160, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "404239f8fffaeb12"}
+{"fold": 1, "kind": "alert", "row_index": 2912, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "414c6876102ce3c7"}
+{"fold": 4, "kind": "alert", "row_index": 6215, "rule_name": "发现使用PUT方式上传可疑文件", "stratum": "single_non_attack", "uid": "4345138fa449d517"}
+{"fold": 1, "kind": "alert", "row_index": 2803, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "45731fbe3a1c0527"}
+{"fold": 0, "kind": "alert", "row_index": 3050, "rule_name": "发现目录启用了自动目录列表功能", "stratum": "single_non_attack", "uid": "46a6ebc871857644"}
+{"fold": 3, "kind": "alert", "row_index": 4567, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "479e6197e3d16573"}
+{"fold": 2, "kind": "alert", "row_index": 3715, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "47ccb16cdd965358"}
+{"fold": 2, "kind": "alert", "row_index": 3495, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "487bfbd6038e32a2"}
+{"fold": 3, "kind": "alert", "row_index": 5281, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "4bb87ccd1baf0712"}
+{"fold": 3, "kind": "alert", "row_index": 6172, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "4c6eda2e1af7ec8b"}
+{"fold": 2, "kind": "alert", "row_index": 5735, "rule_name": "Python代码执行攻击(机器学习)", "stratum": "single_non_attack", "uid": "4db80abeafd79c43"}
+{"fold": 1, "kind": "alert", "row_index": 1809, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "51a9e510b0846509"}
+{"fold": 1, "kind": "alert", "row_index": 7054, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "535a29d1310707ef"}
+{"fold": 1, "kind": "alert", "row_index": 3314, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "548159cb4c75657d"}
+{"fold": 3, "kind": "alert", "row_index": 2369, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "5524aa11b91c7d10"}
+{"fold": 2, "kind": "alert", "row_index": 2708, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "55543632c5325f97"}
+{"fold": 4, "kind": "alert", "row_index": 779, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "557222b834b9e354"}
+{"fold": 0, "kind": "alert", "row_index": 7457, "rule_name": "异常页面导致服务器路径泄漏", "stratum": "single_non_attack", "uid": "55e3a32f635db20e"}
+{"fold": 4, "kind": "alert", "row_index": 2951, "rule_name": "Microsoft SharePoint 跨站脚本漏洞", "stratum": "single_non_attack", "uid": "58c1b7ac02e74ec8"}
+{"fold": 3, "kind": "alert", "row_index": 4916, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "58c4de5f2a05f891"}
+{"fold": 1, "kind": "alert", "row_index": 4586, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "59ed07977ceacf29"}
+{"fold": 1, "kind": "alert", "row_index": 1950, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "5b96c5e3f73cd1fb"}
+{"fold": 0, "kind": "alert", "row_index": 2630, "rule_name": "CSS/JS脚本文件编码不规范(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "5c120af8381a8604"}
+{"fold": 0, "kind": "alert", "row_index": 6833, "rule_name": "发现敏感信息泄露", "stratum": "single_non_attack", "uid": "5c4f5716057f9178"}
+{"fold": 2, "kind": "alert", "row_index": 5374, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "5c5d99e5293db06a"}
+{"fold": 3, "kind": "alert", "row_index": 6657, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "5d3c6c34d7133a2d"}
+{"fold": 4, "kind": "alert", "row_index": 680, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "5dfa733079315d1d"}
+{"fold": 1, "kind": "alert", "row_index": 1318, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "5e0281ee9e6f2514"}
+{"fold": 0, "kind": "alert", "row_index": 3472, "rule_name": "Elasticsearch未授权访问漏洞", "stratum": "single_non_attack", "uid": "5ec21d64c6c6091b"}
+{"fold": 1, "kind": "alert", "row_index": 2515, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "5f187386d7dc98b3"}
+{"fold": 1, "kind": "alert", "row_index": 423, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "625a469e3756ac4a"}
+{"fold": 4, "kind": "alert", "row_index": 4022, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "62cbbddf1b786e31"}
+{"fold": 3, "kind": "alert", "row_index": 3427, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "65ae968eee91aea0"}
+{"fold": 3, "kind": "alert", "row_index": 3038, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "673baffe13635135"}
+{"fold": 0, "kind": "alert", "row_index": 7814, "rule_name": "异常页面导致服务器路径泄漏", "stratum": "single_non_attack", "uid": "676cd5faf4ec63c1"}
+{"fold": 3, "kind": "alert", "row_index": 2279, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "677ea695ed719686"}
+{"fold": 0, "kind": "alert", "row_index": 642, "rule_name": "异常页面导致服务器路径泄漏", "stratum": "single_non_attack", "uid": "680e79af21a5f8cc"}
+{"fold": 4, "kind": "alert", "row_index": 713, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "685ef482c1e00b60"}
+{"fold": 3, "kind": "alert", "row_index": 5767, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "6a6fbbdf9140b307"}
+{"fold": 1, "kind": "alert", "row_index": 3121, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "6bfb93201a1b21ac"}
+{"fold": 1, "kind": "alert", "row_index": 5907, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "71807c0680c2fab4"}
+{"fold": 3, "kind": "alert", "row_index": 5362, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "736d935b1c8cbe87"}
+{"fold": 0, "kind": "alert", "row_index": 2229, "rule_name": "发现敏感信息泄露", "stratum": "single_non_attack", "uid": "73ec31fb17a9d141"}
+{"fold": 1, "kind": "alert", "row_index": 1553, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "75996a58b5e914c9"}
+{"fold": 0, "kind": "alert", "row_index": 6044, "rule_name": "Elasticsearch未授权访问漏洞", "stratum": "single_non_attack", "uid": "7632b12e51d653f1"}
+{"fold": 1, "kind": "alert", "row_index": 4092, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "767eddfd3b53475e"}
+{"fold": 3, "kind": "alert", "row_index": 5202, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "778adc3bd19ec518"}
+{"fold": 2, "kind": "alert", "row_index": 7432, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "7878eb75b85a5009"}
+{"fold": 4, "kind": "alert", "row_index": 839, "rule_name": "3C环境自动监测动态管控系统任意文件下载漏洞", "stratum": "single_non_attack", "uid": "7ba17c9778acc8c5"}
+{"fold": 3, "kind": "alert", "row_index": 5490, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "7cb71e9e9cc42d4d"}
+{"fold": 3, "kind": "alert", "row_index": 4356, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "7f49f202b8b11018"}
+{"fold": 4, "kind": "alert", "row_index": 4295, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "8099631a7eb34c72"}
+{"fold": 3, "kind": "alert", "row_index": 4530, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "8238e0377d506017"}
+{"fold": 3, "kind": "alert", "row_index": 2835, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "8418d2729fa7aec2"}
+{"fold": 3, "kind": "alert", "row_index": 5623, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "852fc159ce963b43"}
+{"fold": 3, "kind": "alert", "row_index": 2339, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "89484022092a63f7"}
+{"fold": 1, "kind": "alert", "row_index": 5452, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "8964af119ed37bad"}
+{"fold": 0, "kind": "alert", "row_index": 5335, "rule_name": "发现扫描工具-zgrab", "stratum": "single_non_attack", "uid": "89904478ae16986c"}
+{"fold": 2, "kind": "alert", "row_index": 1855, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "89e999c2307ac795"}
+{"fold": 1, "kind": "alert", "row_index": 4932, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "8a0783320dafc564"}
+{"fold": 0, "kind": "alert", "row_index": 3269, "rule_name": "Python代码执行漏洞(通用)", "stratum": "single_non_attack", "uid": "8a260d9b70461404"}
+{"fold": 3, "kind": "alert", "row_index": 2300, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "8ab399ce4a9c06d9"}
+{"fold": 1, "kind": "alert", "row_index": 2088, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "8aec5c4a9115b08e"}
+{"fold": 3, "kind": "alert", "row_index": 2492, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "8b4723de9baab5c5"}
+{"fold": 0, "kind": "alert", "row_index": 4262, "rule_name": "发现目录启用了自动目录列表功能", "stratum": "single_non_attack", "uid": "8b5efbf19278d254"}
+{"fold": 1, "kind": "alert", "row_index": 7678, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "8e6242d8a2b23ffb"}
+{"fold": 1, "kind": "alert", "row_index": 8300, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "900ae317337f0a2b"}
+{"fold": 3, "kind": "alert", "row_index": 5674, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "91c092439ea92255"}
+{"fold": 3, "kind": "alert", "row_index": 5667, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "92afbd30c1010e52"}
+{"fold": 3, "kind": "alert", "row_index": 2398, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "92b60cb159d94d22"}
+{"fold": 3, "kind": "alert", "row_index": 4224, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "92e98f8c394d1ef8"}
+{"fold": 3, "kind": "alert", "row_index": 5707, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "933f6d7d3b8b36e0"}
+{"fold": 3, "kind": "alert", "row_index": 1135, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "954ed0d4f9053a32"}
+{"fold": 0, "kind": "alert", "row_index": 1341, "rule_name": "发现扫描工具-zgrab", "stratum": "single_non_attack", "uid": "96ad4f3fd00ef9d3"}
+{"fold": 4, "kind": "alert", "row_index": 4728, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "9731aacd9ead0f38"}
+{"fold": 3, "kind": "alert", "row_index": 609, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "983c9cbf48b1edba"}
+{"fold": 1, "kind": "alert", "row_index": 6073, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "983d7fc115eccb36"}
+{"fold": 1, "kind": "alert", "row_index": 4151, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "9c855e204906b1f4"}
+{"fold": 2, "kind": "alert", "row_index": 2883, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "a04815520b3d36d9"}
+{"fold": 0, "kind": "alert", "row_index": 5255, "rule_name": "Python代码执行漏洞(通用)", "stratum": "single_non_attack", "uid": "a145906aacc67ceb"}
+{"fold": 2, "kind": "alert", "row_index": 8202, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "a186b3f17c100e14"}
+{"fold": 1, "kind": "alert", "row_index": 2946, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "a25e362f9cdbdec8"}
+{"fold": 4, "kind": "alert", "row_index": 4048, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "a3a735a5a7a1bdd4"}
+{"fold": 2, "kind": "alert", "row_index": 6717, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "a463a005fc182b4a"}
+{"fold": 1, "kind": "alert", "row_index": 1567, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "a5877051de432a39"}
+{"fold": 2, "kind": "alert", "row_index": 6888, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "a75999ad704814fc"}
+{"fold": 1, "kind": "alert", "row_index": 3761, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "a77f45fde48c47e8"}
+{"fold": 2, "kind": "alert", "row_index": 4248, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "a7d8001d56d1e4c0"}
+{"fold": 2, "kind": "alert", "row_index": 1085, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "a8df80b2b147af94"}
+{"fold": 2, "kind": "alert", "row_index": 7371, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "a906131cbdf9885a"}
+{"fold": 3, "kind": "alert", "row_index": 7748, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "aa938d8557484d55"}
+{"fold": 3, "kind": "alert", "row_index": 1819, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "aa945298b4ccba3a"}
+{"fold": 1, "kind": "alert", "row_index": 6147, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "aac7a6baa2313863"}
+{"fold": 2, "kind": "alert", "row_index": 7994, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "aada8a232ec7e185"}
+{"fold": 4, "kind": "alert", "row_index": 3186, "rule_name": "Microsoft SharePoint 跨站脚本漏洞", "stratum": "single_non_attack", "uid": "abf504d66ed79e34"}
+{"fold": 0, "kind": "alert", "row_index": 61, "rule_name": "发现扫描工具-zgrab", "stratum": "single_non_attack", "uid": "accc8084d1610418"}
+{"fold": 1, "kind": "alert", "row_index": 5036, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "acf39398b47ffff6"}
+{"fold": 3, "kind": "alert", "row_index": 6203, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "ad2b612339bc75a6"}
+{"fold": 1, "kind": "alert", "row_index": 2533, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ae4e6fb4431f4875"}
+{"fold": 1, "kind": "alert", "row_index": 4805, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "af231e58a7d2d0ba"}
+{"fold": 4, "kind": "alert", "row_index": 3275, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "b01823f894934b0a"}
+{"fold": 1, "kind": "alert", "row_index": 2653, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "b0fac501176db728"}
+{"fold": 1, "kind": "alert", "row_index": 4425, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "b0fcf0542915af19"}
+{"fold": 4, "kind": "alert", "row_index": 3668, "rule_name": "GIT项目源代码探测", "stratum": "single_non_attack", "uid": "b13208a8a6eca9bb"}
+{"fold": 3, "kind": "alert", "row_index": 6583, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "b1df33a7e4bce3af"}
+{"fold": 1, "kind": "alert", "row_index": 3646, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "b2998c8bddf9c49b"}
+{"fold": 0, "kind": "alert", "row_index": 5797, "rule_name": "发现数据库敏感文件下载", "stratum": "single_non_attack", "uid": "b58e9213faf8b8ac"}
+{"fold": 4, "kind": "alert", "row_index": 3410, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "b615672bd261b206"}
+{"fold": 1, "kind": "alert", "row_index": 7458, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "b665eb3c303ca21c"}
+{"fold": 3, "kind": "alert", "row_index": 4177, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "b6bf1d60a07d09a2"}
+{"fold": 1, "kind": "alert", "row_index": 6391, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "b7c98a5cd684f3a3"}
+{"fold": 4, "kind": "alert", "row_index": 707, "rule_name": "发现应用程序错误信息", "stratum": "single_non_attack", "uid": "b87e53dbcca75503"}
+{"fold": 2, "kind": "alert", "row_index": 5048, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "bd8487540fb0d738"}
+{"fold": 3, "kind": "alert", "row_index": 6067, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "bf86992c19685522"}
+{"fold": 1, "kind": "alert", "row_index": 1311, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "bfbaba9e4dee4c6a"}
+{"fold": 4, "kind": "alert", "row_index": 4839, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "c1797dfa479fe1f3"}
+{"fold": 4, "kind": "alert", "row_index": 3361, "rule_name": "发现应用程序错误信息", "stratum": "single_non_attack", "uid": "c1b07ede99026ee8"}
+{"fold": 4, "kind": "alert", "row_index": 47, "rule_name": "基于Basic Authentication认证的暴力破解", "stratum": "single_non_attack", "uid": "c3aa65f506a0e4d7"}
+{"fold": 3, "kind": "alert", "row_index": 2674, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "c42cdd2129194e6a"}
+{"fold": 2, "kind": "alert", "row_index": 6815, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "c4e96e344d9b81ac"}
+{"fold": 3, "kind": "alert", "row_index": 6146, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "c590e5656c2694c1"}
+{"fold": 4, "kind": "alert", "row_index": 1842, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "c65af1f0d193af50"}
+{"fold": 3, "kind": "alert", "row_index": 5966, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "c7426b8b5e5249af"}
+{"fold": 1, "kind": "alert", "row_index": 2549, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "c81d125202b6606d"}
+{"fold": 1, "kind": "alert", "row_index": 3807, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "c9556c1a194633af"}
+{"fold": 2, "kind": "alert", "row_index": 7751, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "c99fb9aff87c6b48"}
+{"fold": 2, "kind": "alert", "row_index": 2631, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "ca6d51b9912e7199"}
+{"fold": 4, "kind": "alert", "row_index": 3223, "rule_name": "发现使用PUT方式上传可疑文件", "stratum": "single_non_attack", "uid": "cbcaf7c0a5bd2a0e"}
+{"fold": 1, "kind": "alert", "row_index": 4961, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "cc17fa4553b768b0"}
+{"fold": 1, "kind": "alert", "row_index": 5408, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ccdd9872ec3347f5"}
+{"fold": 1, "kind": "alert", "row_index": 6575, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ce0a009edb349b7b"}
+{"fold": 1, "kind": "alert", "row_index": 4506, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ce80bb35fecbe60c"}
+{"fold": 4, "kind": "alert", "row_index": 5613, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "d282f7074397ff77"}
+{"fold": 3, "kind": "alert", "row_index": 1359, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "d2dad6ae2a19fe56"}
+{"fold": 1, "kind": "alert", "row_index": 874, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "d3d41dd5081e833e"}
+{"fold": 2, "kind": "alert", "row_index": 1160, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "d4084af859bc8bab"}
+{"fold": 4, "kind": "alert", "row_index": 3798, "rule_name": "基于Basic Authentication认证的暴力破解", "stratum": "single_non_attack", "uid": "d5b42cb7ecbdfb17"}
+{"fold": 3, "kind": "alert", "row_index": 4521, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "d64051524b5e9246"}
+{"fold": 2, "kind": "alert", "row_index": 6749, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "d862768b8e5027a6"}
+{"fold": 1, "kind": "alert", "row_index": 270, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "d9633c4596ae703f"}
+{"fold": 1, "kind": "alert", "row_index": 4492, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "daa0f8195d58768a"}
+{"fold": 1, "kind": "alert", "row_index": 7242, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "daa41d4a66193797"}
+{"fold": 3, "kind": "alert", "row_index": 3483, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "dffcef1b360f6640"}
+{"fold": 0, "kind": "alert", "row_index": 5589, "rule_name": "发现Web空口令登录行为", "stratum": "single_non_attack", "uid": "e181939a80fccae4"}
+{"fold": 2, "kind": "alert", "row_index": 5352, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "e22a99ef294aedc1"}
+{"fold": 3, "kind": "alert", "row_index": 5367, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "e2319ed0e0a34bd3"}
+{"fold": 4, "kind": "alert", "row_index": 4430, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "e2568d36d3ecea66"}
+{"fold": 2, "kind": "alert", "row_index": 8298, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "e2f5b002c747366d"}
+{"fold": 1, "kind": "alert", "row_index": 3558, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "e36e9db98b9aea36"}
+{"fold": 3, "kind": "alert", "row_index": 5053, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "e554aebd0f35beca"}
+{"fold": 4, "kind": "alert", "row_index": 8118, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "e57f709043f90a46"}
+{"fold": 1, "kind": "alert", "row_index": 3011, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "e60ee22412db288f"}
+{"fold": 2, "kind": "alert", "row_index": 1952, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "e6916f01a76f6a25"}
+{"fold": 3, "kind": "alert", "row_index": 4820, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "e6c2dfd41c0bd789"}
+{"fold": 1, "kind": "alert", "row_index": 7942, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "e6f7a3864184ae22"}
+{"fold": 1, "kind": "alert", "row_index": 777, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "e8dd9f39192e15f8"}
+{"fold": 0, "kind": "alert", "row_index": 59, "rule_name": "发现Web空口令登录行为", "stratum": "single_non_attack", "uid": "e9440d55acecb982"}
+{"fold": 1, "kind": "alert", "row_index": 926, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "e94e15f726a54176"}
+{"fold": 1, "kind": "alert", "row_index": 2036, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "e96cdbd94155f50d"}
+{"fold": 3, "kind": "alert", "row_index": 3266, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "e9fcf2bc66deb142"}
+{"fold": 3, "kind": "alert", "row_index": 301, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "eaa94bf43dfd9a0b"}
+{"fold": 1, "kind": "alert", "row_index": 408, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "eaad8a2a1aa1b720"}
+{"fold": 1, "kind": "alert", "row_index": 2171, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ec566c6edeca9ddb"}
+{"fold": 0, "kind": "alert", "row_index": 2076, "rule_name": "Nacos Derby远程命令执行漏洞(QVD-2024-26473)", "stratum": "single_non_attack", "uid": "ec6ff19160ff50b0"}
+{"fold": 1, "kind": "alert", "row_index": 5522, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ed3fb9379f5812f7"}
+{"fold": 1, "kind": "alert", "row_index": 7217, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ee3e30647cba1d6b"}
+{"fold": 1, "kind": "alert", "row_index": 7532, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "ef007a0eb281899e"}
+{"fold": 4, "kind": "alert", "row_index": 5120, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "ef7715709a37bd1c"}
+{"fold": 0, "kind": "alert", "row_index": 1179, "rule_name": "CSS/JS脚本文件编码不规范(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "efe0665c4c0938d6"}
+{"fold": 3, "kind": "alert", "row_index": 6043, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "efe24e86cb3a2e76"}
+{"fold": 3, "kind": "alert", "row_index": 3055, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "f2489d8388450330"}
+{"fold": 0, "kind": "alert", "row_index": 1938, "rule_name": "发现数据库敏感文件下载", "stratum": "single_non_attack", "uid": "f3aed0152e89695d"}
+{"fold": 1, "kind": "alert", "row_index": 5485, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "f3cffdc0b83561a1"}
+{"fold": 1, "kind": "alert", "row_index": 285, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "f46bdce069b0d3a1"}
+{"fold": 0, "kind": "alert", "row_index": 7585, "rule_name": "发现Web空口令登录行为", "stratum": "single_non_attack", "uid": "f4c8ede91352240c"}
+{"fold": 0, "kind": "alert", "row_index": 7915, "rule_name": "异常页面导致服务器路径泄漏", "stratum": "single_non_attack", "uid": "f50cd3c27dbfab21"}
+{"fold": 3, "kind": "alert", "row_index": 4194, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "f558b98b06e4b89e"}
+{"fold": 3, "kind": "alert", "row_index": 2666, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "f6ba7a4523ab562d"}
+{"fold": 0, "kind": "alert", "row_index": 5974, "rule_name": "发现扫描工具-zgrab", "stratum": "single_non_attack", "uid": "f77bccc90d12512f"}
+{"fold": 0, "kind": "alert", "row_index": 1507, "rule_name": "发现Web空口令登录行为", "stratum": "single_non_attack", "uid": "f8eb632d60469934"}
+{"fold": 2, "kind": "alert", "row_index": 384, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "f9344d953212adc3"}
+{"fold": 1, "kind": "alert", "row_index": 1544, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "f9f12098e84ea1e8"}
+{"fold": 1, "kind": "alert", "row_index": 2405, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "fbb4038976f3442d"}
+{"fold": 1, "kind": "alert", "row_index": 7521, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "fc40cc43a0fa5089"}
+{"fold": 1, "kind": "alert", "row_index": 6771, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "fc562c2ab74d8dcf"}
+{"fold": 0, "kind": "alert", "row_index": 207, "rule_name": "Elasticsearch未授权访问漏洞", "stratum": "single_non_attack", "uid": "fdcfa5f1eea96654"}
+{"fold": 1, "kind": "alert", "row_index": 6342, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "fe12f6cc9499c81e"}
+{"fold": 4, "kind": "alert", "row_index": 6665, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "fed16fc313b98563"}
+{"alerts": 3, "folds": [4], "kind": "rule", "rule_name": "3C环境自动监测动态管控系统任意文件下载漏洞"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Adobe ColdFusion 反序列化漏洞（CVE-2017-3066）"}
+{"alerts": 2, "folds": [0], "kind": "rule", "rule_name": "Apache APISIX远程任意代码执行漏洞(CVE-2022-24112)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Apache Axis2 默认口令漏洞(CVE-2010-0219)"}
+{"alerts": 2, "folds": [2], "kind": "rule", "rule_name": "Apache Druid 远程代码执行漏洞(CVE-2021-25646)"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "Apache Druid服务端请求伪造(SSRF)漏洞(CVE-2025-27888)"}
+{"alerts": 2, "folds": [4], "kind": "rule", "rule_name": "Apache Flink 任意文件上传漏洞(CVE-2020-17518)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Apache HTTP Server 路径穿越/远程命令执行漏洞(CVE-2021-42013)"}
+{"alerts": 2, "folds": [0], "kind": "rule", "rule_name": "Apache HugeGraph远程命令执行漏洞(CVE-2024-27348)"}
+{"alerts": 18, "folds": [3], "kind": "rule", "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)"}
+{"alerts": 2, "folds": [1], "kind": "rule", "rule_name": "Apache NiFi 未授权访问漏洞(CVE-2024-56512)"}
+{"alerts": 1, "folds": [3], "kind": "rule", "rule_name": "Apache OFBiz 任意文件读取漏洞(CVE-2023-50968)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Apache Shiro 身份验证绕过漏洞(CVE-2016-6802)"}
+{"alerts": 2, "folds": [0], "kind": "rule", "rule_name": "Apache Shiro权限绕过漏洞(CVE-2020-1957/CVE-2020-11989)"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "Apache SkyWalking SQL注入漏洞(CVE-2020-9483)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Apache Struts 2 任意代码执行漏洞"}
+{"alerts": 7, "folds": [2], "kind": "rule", "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)"}
+{"alerts": 11, "folds": [0], "kind": "rule", "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)"}
+{"alerts": 5, "folds": [2], "kind": "rule", "rule_name": "Apache Struts2 远程代码执行漏洞（CVE-2018-11776/S2-057）"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Apache Unomi 远程代码执行漏洞(CVE-2020-13942)"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "Atlassian Jira Server 和 Jira Data Center 目录遍历漏洞(CVE-2020-29453)"}
+{"alerts": 12, "folds": [1], "kind": "rule", "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)"}
+{"alerts": 11, "folds": [1], "kind": "rule", "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "BeanShell 远程代码执行漏洞"}
+{"alerts": 3, "folds": [0], "kind": "rule", "rule_name": "CSS/JS脚本文件编码不规范(机器学习/编码不规范)"}
+{"alerts": 2, "folds": [3], "kind": "rule", "rule_name": "CloudBees Script Security Plugin 任意代码执行漏洞(CVE-2019-1003000)"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "DS_Store 信息泄露"}
+{"alerts": 3, "folds": [1], "kind": "rule", "rule_name": "Druid 存在未授权访问漏洞"}
+{"alerts": 2, "folds": [0], "kind": "rule", "rule_name": "EJS模板注入漏洞"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "ElasticSearch Snapshot API 目录穿越漏洞(CVE-2015-5531)"}
+{"alerts": 3, "folds": [0], "kind": "rule", "rule_name": "Elasticsearch未授权访问漏洞"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "F5 BIG-IP TMUI 远程代码执行漏洞(CVE-2023-46747)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "F5 BIG-IP 远程命令执行漏洞(CVE-2022-1388)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "GIT项目源代码探测"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "Geoserver XML外部实体注入(XXE)漏洞(CVE-2025-30220)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Geoserver远程代码执行漏洞(CVE-2024-36401)"}
+{"alerts": 3, "folds": [4], "kind": "rule", "rule_name": "Go pprof 调试信息泄露漏洞"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "Hadoop YARN ResourceManager 未授权访问"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "Harbor权限许可和访问控制问题漏洞(CVE-2019-16097)"}
+{"alerts": 3, "folds": [1], "kind": "rule", "rule_name": "Hessian反序列化漏洞(http)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Horde Groupware后门漏洞"}
+{"alerts": 4, "folds": [0], "kind": "rule", "rule_name": "Horde Groupware后门漏洞(CVE-2012-0209)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Huawei Auth-HTTP Serve 文件读取漏洞"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "JBOSSAS 5.x/6.x 反序列化命令执行漏洞(CVE-2017-12149)"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "JBoss JMXInvokerServlet 反序列化漏洞"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "JBoss war包上传漏洞"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Java Struts2代码注入漏洞"}
+{"alerts": 14, "folds": [3], "kind": "rule", "rule_name": "Java代码执行攻击(机器学习)"}
+{"alerts": 3, "folds": [0], "kind": "rule", "rule_name": "Java反序列化绕过攻击"}
+{"alerts": 5, "folds": [2], "kind": "rule", "rule_name": "Java框架通用代码执行攻击"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Jenkins 远程代码执行（CVE-2019-1003000）"}
+{"alerts": 3, "folds": [1], "kind": "rule", "rule_name": "Joomla  API未授权访问漏洞(CVE-2023-23752)"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "Joomla! ChronoForums 目录遍历漏洞 (CVE-2021-28377)"}
+{"alerts": 6, "folds": [0], "kind": "rule", "rule_name": "Joomla！1.5 <3.4.5  x-forwarded-for对象注入远程执行代码（CVE-2015-8562）"}
+{"alerts": 1, "folds": [3], "kind": "rule", "rule_name": "Microsoft IIS CGI文件名错误解码漏洞(MS01-026)"}
+{"alerts": 3, "folds": [4], "kind": "rule", "rule_name": "Microsoft SharePoint 跨站脚本漏洞"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "Nacos Derby远程命令执行漏洞(QVD-2024-26473)"}
+{"alerts": 5, "folds": [4], "kind": "rule", "rule_name": "Nginx range 过滤器整形溢出漏洞 (CVE–2017–7529)"}
+{"alerts": 1, "folds": [3], "kind": "rule", "rule_name": "Nostromo Web服务器的远程命令执行(CVE-2019-16278)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Novell ZENworks Asset Management Web Console 信息泄露漏洞"}
+{"alerts": 2, "folds": [0], "kind": "rule", "rule_name": "OA系统 use_finger.php USER_ID SQL注入漏洞"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Oracle 9iAS OracleJSP泄漏JSP文件信息漏洞"}
+{"alerts": 2, "folds": [2], "kind": "rule", "rule_name": "Oracle 9iAS已认证用户访问敏感服务漏洞"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "Oracle 9i默认配置文件信息泄露漏洞"}
+{"alerts": 2, "folds": [2], "kind": "rule", "rule_name": "Oracle Fusion Middleware Oracle Reports Developer组件未明安全漏洞"}
+{"alerts": 7, "folds": [0], "kind": "rule", "rule_name": "PHP代码执行攻击"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "PHP代码执行攻击(机器学习)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Python代码执行攻击(机器学习)"}
+{"alerts": 2, "folds": [0], "kind": "rule", "rule_name": "Python代码执行漏洞(通用)"}
+{"alerts": 2, "folds": [3], "kind": "rule", "rule_name": "React Server Components 远程代码执行漏洞(CVE-2025-55182)"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "Red Hat JBoss Portal 安全漏洞"}
+{"alerts": 33, "folds": [2], "kind": "rule", "rule_name": "SQL注入(编码不规范)"}
+{"alerts": 59, "folds": [3], "kind": "rule", "rule_name": "SQL注入攻击"}
+{"alerts": 136, "folds": [0], "kind": "rule", "rule_name": "SQL注入攻击(机器学习)"}
+{"alerts": 88, "folds": [1], "kind": "rule", "rule_name": "SQL注入攻击(机器学习/编码不规范)"}
+{"alerts": 5, "folds": [0], "kind": "rule", "rule_name": "Shell命令执行(机器学习)"}
+{"alerts": 3, "folds": [2], "kind": "rule", "rule_name": "Spring Cloud Function SpEL表达式注入漏洞(CVE-2022-22963)"}
+{"alerts": 3, "folds": [0], "kind": "rule", "rule_name": "Spring Data Commons 远程代码执行漏洞(CVE-2018-1273)"}
+{"alerts": 9, "folds": [1], "kind": "rule", "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "Spring-Cloud-Config-Server目录穿越漏洞(CVE-2020-5405)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Struts2 XWork ParameterInterceptors补丁绕过远程代码执行漏洞（S2-005/CVE-2010-1870）"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "Struts2 XWork ParameterInterceptors补丁绕过远程代码执行漏洞（S2-009/CVE-2011-3923 ）"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "Struts2-032命令执行漏洞(CVE-2016-3081)"}
+{"alerts": 2, "folds": [2], "kind": "rule", "rule_name": "Struts2-045远程命令执行漏洞(CVE-2017-5638)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "Struts2-046远程命令执行漏洞"}
+{"alerts": 3, "folds": [1], "kind": "rule", "rule_name": "Swagger未授权访问行为"}
+{"alerts": 2, "folds": [2], "kind": "rule", "rule_name": "ThinkPHP 5.x 远程代码执行"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "ThinkPHP Framework Remote Code Execute Vulnerabiltiy"}
+{"alerts": 1, "folds": [3], "kind": "rule", "rule_name": "ThinkPHP远程代码执行漏洞 (CVE-2022-47945)"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "Tomcat远程代码执行漏洞(CVE-2020-9484)"}
+{"alerts": 1, "folds": [3], "kind": "rule", "rule_name": "WebServer文件解析漏洞攻击"}
+{"alerts": 18, "folds": [3], "kind": "rule", "rule_name": "Web弱口令登录"}
+{"alerts": 2, "folds": [1], "kind": "rule", "rule_name": "Windows命令执行攻击(机器学习)"}
+{"alerts": 4, "folds": [1], "kind": "rule", "rule_name": "XML外部实体注入攻击(XXE)"}
+{"alerts": 3, "folds": [2], "kind": "rule", "rule_name": "XXL-JOB未授权远程命令执行漏洞"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "geoserver默认口令漏洞"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "htdig任意文件包含漏洞"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "vBulletin 任意代码执行漏洞"}
+{"alerts": 10, "folds": [3], "kind": "rule", "rule_name": "发现PUT方式上传TXT/HTML文件"}
+{"alerts": 6, "folds": [3], "kind": "rule", "rule_name": "发现Web服务探测行为"}
+{"alerts": 5, "folds": [0], "kind": "rule", "rule_name": "发现Web空口令登录行为"}
+{"alerts": 2, "folds": [2], "kind": "rule", "rule_name": "发现java可疑类绕过攻击"}
+{"alerts": 20, "folds": [4], "kind": "rule", "rule_name": "发现使用HTTP代理行为"}
+{"alerts": 2, "folds": [4], "kind": "rule", "rule_name": "发现使用PUT方式上传可疑文件"}
+{"alerts": 37, "folds": [4], "kind": "rule", "rule_name": "发现尝试请求Linux下敏感文件"}
+{"alerts": 3, "folds": [4], "kind": "rule", "rule_name": "发现应用程序错误信息"}
+{"alerts": 4, "folds": [0], "kind": "rule", "rule_name": "发现扫描工具-zgrab"}
+{"alerts": 3, "folds": [0], "kind": "rule", "rule_name": "发现敏感信息泄露"}
+{"alerts": 85, "folds": [2], "kind": "rule", "rule_name": "发现敏感目录/文件探测行为"}
+{"alerts": 5, "folds": [0], "kind": "rule", "rule_name": "发现数据库敏感文件下载"}
+{"alerts": 2, "folds": [0], "kind": "rule", "rule_name": "发现目录启用了自动目录列表功能"}
+{"alerts": 72, "folds": [4], "kind": "rule", "rule_name": "发现目录穿越攻击行为"}
+{"alerts": 9, "folds": [1], "kind": "rule", "rule_name": "发现管理员用户弱口令登录行为"}
+{"alerts": 6, "folds": [0], "kind": "rule", "rule_name": "发现系统命令注入行为"}
+{"alerts": 2, "folds": [1], "kind": "rule", "rule_name": "发现脚本文件上传行为"}
+{"alerts": 7, "folds": [2], "kind": "rule", "rule_name": "发现读取Windows敏感文件行为"}
+{"alerts": 15, "folds": [1], "kind": "rule", "rule_name": "发现通过OPTIONS探测服务器信息"}
+{"alerts": 6, "folds": [3], "kind": "rule", "rule_name": "发现黑客工具Nmap扫描行为"}
+{"alerts": 8, "folds": [3], "kind": "rule", "rule_name": "基于Basic Authentication认证弱口令"}
+{"alerts": 2, "folds": [4], "kind": "rule", "rule_name": "基于Basic Authentication认证的暴力破解"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "多家厂商test-cgi脚本目录远程遍历漏洞"}
+{"alerts": 5, "folds": [0], "kind": "rule", "rule_name": "异常页面导致服务器路径泄漏"}
+{"alerts": 21, "folds": [1], "kind": "rule", "rule_name": "敏感信息扫描(机器学习)"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "极限OA video_file.php 任意文件读取漏洞"}
+{"alerts": 1, "folds": [1], "kind": "rule", "rule_name": "深信服EDR远程命令执行漏洞"}
+{"alerts": 19, "folds": [1], "kind": "rule", "rule_name": "疑似访问/下载脚本文件"}
+{"alerts": 10, "folds": [2], "kind": "rule", "rule_name": "跨站脚本攻击(机器学习)"}
+{"alerts": 44, "folds": [3], "kind": "rule", "rule_name": "路径穿越攻击(机器学习)"}
+{"alerts": 4, "folds": [2], "kind": "rule", "rule_name": "通用命令执行漏洞"}
+{"alerts": 1, "folds": [2], "kind": "rule", "rule_name": "通用命令注入绕过攻击"}
+{"alerts": 1, "folds": [0], "kind": "rule", "rule_name": "金和OA C6系统download.jsp接口任意文件读取漏洞"}
+{"alerts": 1, "folds": [3], "kind": "rule", "rule_name": "金和OA信息泄露漏洞"}
+{"alerts": 2, "folds": [1], "kind": "rule", "rule_name": "金和OA系统C6未授权任意文件读取漏洞"}
+{"alerts": 1, "folds": [4], "kind": "rule", "rule_name": "金和OA系统DownLoadBgImage任意文件读取漏洞"}

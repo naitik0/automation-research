@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import subprocess
 import sys
+from datetime import datetime, timezone
 
 import requests
 
@@ -22,7 +23,9 @@ def start(model_key: str) -> None:
         raise SystemExit(f"{model_key} is not a local model")
     stop(quiet=True)
     RUNS.mkdir(parents=True, exist_ok=True)
-    log = open(RUNS / f"server_{model_key}.log", "w", encoding="utf-8")
+    log = open(RUNS / f"server_{model_key}.log", "a", encoding="utf-8")   # append: earlier sessions' logs are kept
+    log.write(f"\n===== server start {datetime.now(timezone.utc).isoformat(timespec='seconds')} {model_key} =====\n")
+    log.flush()
     flags = subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP if sys.platform == "win32" else 0
     p = subprocess.Popen(server_command(model_key), stdout=log, stderr=subprocess.STDOUT, creationflags=flags)
     PIDFILE.write_text(json.dumps({"pid": p.pid, "model": model_key}))
