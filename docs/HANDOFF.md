@@ -7,7 +7,7 @@
 
 ## Update 2026-10-09: offline preparation done, clean Llama dry run ready (not run)
 
-The user settled **D3** (temperature 0, reasoning effort low, 1,024 tokens), **D6** (`/apply-template` + `/completion`), **D7** (all 2,000 published rows) and **D8** (budget about $7–8). They are now listed as settled in protocol §12 and recorded in `config/protocol.lock.json`. The user also approved **D10**, now written into the protocol (§4, §12, change log): for RQ1 the references read each published row's own `record` as the test input, training uses pinned-dataset rows outside the test set, and unmatched published rows stay in the test set and are reported as a limitation (37 rows over 15 files, 0–5 per file). API credentials are still unset.
+The user settled **D3** (temperature 0, reasoning effort low, 1,024 tokens), **D6** (`/apply-template` + `/completion`), **D7** (all 2,000 published rows) and **D8** (budget about $7–8). They, and D9, are now listed as settled in protocol §12 and recorded in `config/protocol.lock.json`. The user also approved **D10**, now written into the protocol (§4, §12, change log): for RQ1 the references read each published row's own `record` as the test input, training uses pinned-dataset rows outside the test set, and unmatched published rows stay in the test set and are reported as a limitation (37 rows over 15 files, 0–5 per file). API credentials are still unset.
 
 - **Built (commits `21fbe01`, `b00d7c5`):** `src/metrics.py`, `references.py`, `grouped_cv.py`, `validate_run.py`, `lock.py`, `checks.py`; 78 offline tests; `experiments/a1/README.md`; `config/label_tokens.json`; `manifests/rq3_folds.jsonl`; `manifests/token_lengths_samples_qwen3-4b.jsonl`.
 - **Runner changes:**
@@ -19,7 +19,7 @@ The user settled **D3** (temperature 0, reasoning effort low, 1,024 tokens), **D
 - **Offline checks:** P1, P2, P2b, P3, P11, P14 and P15 pass (`python -m src.checks all`; reports in `runs/dryrun/checks/`). The remaining checks need model calls.
 - **Hashes:**
   - harness `171e9e68338cc886`;
-  - lock sha256 `f87bd45e…cd31d76`, generated from a clean `src/` (the lock records commit `3efc0ef`; `src/` is unchanged since `b00d7c5`);
+  - lock sha256 `b7c1139b…9dc034f`, generated from a clean `src/` (`src/` is unchanged since `b00d7c5`);
   - clean Llama run config hash `0f76c90d…cf63`, the same configuration as the old run under a different harness.
 - **Ready, not run:**
   1. `python -m src.server start llama-3.2-3b`

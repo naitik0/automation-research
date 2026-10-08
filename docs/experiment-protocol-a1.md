@@ -1,6 +1,6 @@
 # Experiment protocol A1
 
-**Status:** approved 2026-10-09; amended 2026-10-09 before production (§4 test inputs, D10; D3/D6/D7/D8 settled; see the change log) · implements A1 of the approved [problem brief](problem-brief.md)
+**Status:** approved 2026-10-09; amended 2026-10-09 before production (§4 test inputs, D10; D3/D6/D7/D8/D9 settled; see the change log) · implements A1 of the approved [problem brief](problem-brief.md)
 **Rule:** nothing in §1–§10 may change after the production run starts. A change needs a new protocol version and a rerun of the affected cells. No result from the dry run (§11) is used in any reported analysis.
 
 Facts in this document come from the pinned SecAlertBench files (commit `42a8488`), the pilot ([notes/soc-alert-triage-pilot.md](../notes/soc-alert-triage-pilot.md)), the llama.cpp b11509 server README, Groq's documentation (model page, reasoning, OpenAI compatibility and rate-limit pages, read 2026-10-09), and Anthropic's model reference. Items marked **[D#]** refer to the decisions in §12.
@@ -403,13 +403,12 @@ Dry-run outputs are kept under `runs/dryrun/` and **never** reused in results.
 | D6 | Local endpoint: `/apply-template` + `/completion` (the documented way to get probabilities); equivalence checked in P5. |
 | D7 | Published-file test rows (RQ1): all 2,000 rows as published (reproduces the headline numbers exactly). |
 | D8 | Accounts, licences, spend: a Groq Developer (paid) plan and an Anthropic API key, the Llama 3.2 Community Licence ("Built with Llama") accepted, and about $7.10 authorised (planned budget about $7–8). |
+| D9 | The 16th published model (Gemini): analyse the 15 available published per-alert prediction files. Windows Defender is never bypassed and the quarantined `gemini-3-flash-preview.json` is not recovered; the 16th model enters only through its published summary metrics. |
 | D10 | RQ1 references read each published row's own `record` (what that published model was shown) as the test input; training uses pinned-dataset rows outside the test set, excluding exact content-key duplicates. Unmatched published rows stay in the test set; their count is recorded and reported as a limitation (§4). |
 
 ### Still open
 
-| # | Decision | Recommendation | Alternative |
-|---|---|---|---|
-| D9 | The 16th published model (Gemini) | Analyse 15 models per alert; use the 16th only through its published summary | Open the file in a sandbox or VM with a Defender exclusion (your security call) |
+None: every decision was settled on 2026-10-09.
 
 After these are settled, the next steps are to implement `experiments/a1/`, run the dry run, and report P1–P15. Production runs only after you see the dry-run report.
 
@@ -419,3 +418,4 @@ After these are settled, the next steps are to implement `experiments/a1/`, run 
 |---|---|---|
 | 2026-10-09 | §4: the test input for a published file is the row's own published `record`; unmatched published rows stay in the test set, with their count reported as a limitation. Added D10 to §12. | Under-specified in the approved text. Settled by the user during offline preparation, before production and before any reference result was computed; it changes only the reference baselines, not any LLM input or output. |
 | 2026-10-09 | §12: D3, D6, D7 and D8 moved from "Still open" to "Settled", each as its recommended option, with no change of substance. The note on **[D#]** markers now refers to §12 instead of "awaiting approval". | The user explicitly approved all four. |
+| 2026-10-09 | §12: D9 moved from "Still open" to "Settled" as its recommended option (15 per-alert files; the 16th model through its published summary only). The alternative (a sandbox or VM with a Defender exclusion) is rejected: Defender is never bypassed and the quarantined file is not recovered. | The user explicitly settled D9. |
