@@ -1,0 +1,215 @@
+{
+  "socbed_suricata": {
+    "n": 170,
+    "label_misuse_counts": {
+      "False": 32,
+      "True": 138
+    },
+    "distinct_rules": 23,
+    "top_level_keys": {
+      "full_alert": 170,
+      "features": 170,
+      "metadata": 170
+    },
+    "first_row": {
+      "full_alert": {
+        "event": {
+          "@timestamp": "2022-12-19T08:44:32.677Z",
+          "@version": "1",
+          "facility": 21,
+          "facility_label": "local5",
+          "host": "172.16.0.1",
+          "logsource": "companyrouter",
+          "message": "[1:2024897:1] ET USER_AGENTS Go HTTP Client User-Agent [Classification: Misc activity] [Priority: 3] {TCP} 172.16.0.1:56306 -> 172.16.0.3:9200\n",
+          "pid": "2096",
+          "priority": 171,
+          "program": "suricata",
+          "severity": 3,
+          "severity_label": "Error",
+          "timestamp": "2022-12-19T09:44:32.677115+01:00",
+          "timestamp8601": "2022-12-19T09:44:32.677115+01:00",
+          "type": "syslog_raw"
+        },
+        "rule": {
+          "name": "ET USER_AGENTS Go HTTP Client User-Agent"
+        },
+        "metadata": {
+          "misuse": false
+        }
+      },
+      "features": {
+        "timestamp": "2022-12-19T08:44:32.677Z",
+        "protocol": "TCP",
+        "rule_name": "ET USER_AGENTS Go HTTP Client User-Agent",
+        "rule_id": "2024897",
+        "rule_level": "3",
+        "rule_category": [
+          "Misc activity"
+        ],
+        "source_ip": "172.16.0.1",
+        "destination_ip": "172.16.0.3",
+        "source_port": 56306,
+        "destination_port": 9200
+      },
+      "metadata": {
+        "alert_source": "socbed_suricata",
+        "alert_id": "72917fdf-7680-4845-b2c8-6b417bcf881e",
+        "alert_index": 1,
+        "misuse": false
+      }
+    }
+  },
+  "socbed_sigma": {
+    "n": 172,
+    "label_misuse_counts": {
+      "False": 136,
+      "True": 36
+    },
+    "distinct_rules": 25,
+    "top_level_keys": {
+      "full_alert": 172,
+      "features": 172,
+      "metadata": 172
+    },
+    "first_row": {
+      "full_alert": {
+        "event": {
+          "@timestamp": "2022-12-19T08:42:33.921Z",
+          "agent": {
+            "ephemeral_id": "f998276c-afe4-4463-aba7-6d1241c5c07f",
+            "hostname": "CLIENT2",
+            "id": "a5ea4d3e-40c5-43d5-9a2e-ed2c48327430",
+            "name": "CLIENT2",
+            "type": "winlogbeat",
+            "version": "7.10.2"
+          },
+          "ecs": {
+            "version": "1.5.0"
+          },
+          "event": {
+            "action": "File created (rule: FileCreate)",
+            "category": [
+              "file"
+            ],
+            "code": 11,
+            "created": "2022-12-19T08:46:33.292Z",
+            "kind": "event",
+            "module": "sysmon",
+            "provider": "Microsoft-Windows-Sysmon",
+            "type": [
+              "creation"
+            ]
+          },
+          "file": {
+            "directory": "C:\\Users\\setup\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup",
+            "extension": "ini",
+            "name": "desktop.ini",
+            "path": "C:\\Users\\setup\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\desktop.ini"
+          },
+          "host": {
+            "name": "CLIENT"
+          },
+          "log": {
+            "level": "information"
+          },
+          "message": "File created:\nRuleName: T1023\nUtcTime: 2022-12-19 08:42:33.921\nProcessGuid: {4901c233-23f4-63a0-4500-000000000400}\nProcessId: 4048\nImage: C:\\Windows\\Explorer.EXE\nTargetFilename: C:\\Users\\setup\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\desktop.ini\nCreationUtcTime: 2022-12-19 08:42:33.921\nUser: CLIENT\\setup",
+          "process": {
+            "entity_id": "{4901c233-23f4-63a0-4500-000000000400}",
+            "executable": "C:\\Windows\\Explorer.EXE",
+            "name": "Explorer.EXE",
+            "pid": 4048
+          },
+          "rule": {
+            "name": "T1023"
+          },
+          "winlog": {
+            "api": "wineventlog",
+            "channel": "Microsoft-Windows-Sysmon/Operational",
+            "computer_name": "CLIENT",
+            "event_data": {
+              "CreationUtcTime": "2022-12-19 08:42:33.921",
+              "User": "CLIENT\\setup"
+            },
+            "event_id": 11,
+            "opcode": "Info",
+            "process": {
+              "pid": 1808,
+              "thread": {
+                "id": 2672
+              }
+            },
+            "provider_guid": "{5770385f-c22a-43e0-bf4c-06f5698ffbd9}",
+            "provider_name": "Microsoft-Windows-Sysmon",
+            "record_id": 570,
+            "task": "File created (rule: FileCreate)",
+            "user": {
+              "domain": "NT AUTHORITY",
+              "identifier": "S-1-5-18",
+              "name": "SYSTEM",
+              "type": "User"
+            },
+            "version": 2
+          }
+        },
+        "rule": {
+          "name": "Startup Folder File Write",
+          "authors": [
+            "Roberto Rodriguez (Cyb3rWard0g)",
+            "OTR (Open Threat Research)"
+          ],
+          "level": "medium",
+          "source": "sigma",
+          "status": "experimental",
+          "falsepositives": [
+            "An FP could be caused by legitimate application writing shortcuts for example. This folder should always be inspected to make sure that all the files in there are legitimate"
+          ],
+          "id": "2aa0a6b4-a865-495b-ab51-c28249537b75",
+          "logsource": {
+            "category": "file_event",
+            "product": "windows"
+          },
+          "references": [
+            "https://github.com/OTRF/detection-hackathon-apt29/issues/12",
+            "https://threathunterplaybook.com/evals/apt29/detections/5.B.1_611FCA99-97D0-4873-9E51-1C1BA2DBB40D.html"
+          ],
+          "tags": [
+            "attack.persistence",
+            "attack.t1547.001"
+          ]
+        },
+        "metadata": {
+          "group": "Sigma",
+          "kind": "individual",
+          "document": {
+            "kind": "jsonl",
+            "path": "simulation_datasets/simulation_1/EntireSimulation_winlogbeat.jsonl"
+          },
+          "timestamp": "2022-12-19T08:42:33.921+00:00",
+          "misuse": false
+        }
+      },
+      "features": {
+        "timestamp": "2022-12-19T08:42:33.921Z",
+        "event_code": 11,
+        "event_source": "Microsoft-Windows-Sysmon",
+        "log_level": "information",
+        "rule_name": "Startup Folder File Write",
+        "rule_id": "2aa0a6b4-a865-495b-ab51-c28249537b75",
+        "rule_level": "medium",
+        "hostname": "CLIENT",
+        "rule_attacktechniques": [
+          "t1547"
+        ],
+        "rule_attacktactics": [
+          "persistence"
+        ]
+      },
+      "metadata": {
+        "alert_source": "socbed_sigma",
+        "alert_id": "dadfe5de-0049-47c4-abe9-5be1fa6282e3",
+        "alert_index": 1,
+        "misuse": false
+      }
+    }
+  }
+}

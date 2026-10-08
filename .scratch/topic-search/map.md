@@ -43,11 +43,14 @@ An approved **problem brief** (see `CONTEXT.md`) for one **chosen problem** in A
 - [Gap scan: Security of low-code AI workflow automation](issues/02-gap-scan-low-code-workflow-security.md): main hunch wrong, since JAW (arXiv:2605.11229) already hijacks n8n templates; a narrower gap remains in measuring n8n's built-in defences and attack rates across models.
 - [Which LLMs can we actually run for experiments on our hardware and budget?](issues/05-feasible-model-setup.md): Qwen3-4B and Llama 3.2 3B local, gpt-oss-120b on Groq free tier, Claude Haiku 4.5 as reference; about $10–15. Small models are weak at multi-turn tool calling.
 - [Gap scan: LLM detection of Docker and infrastructure-as-code misconfigurations](issues/04-gap-scan-docker-iac-misconfiguration.md): crowded, narrow gap; best angle is LLMs vs KICS on hand-labelled docker-compose files, plus showing that tool-derived ground truth distorts results. Cheap, but needs 10–15 hours of hand labelling.
+- [Choose the problem](issues/06-choose-the-problem.md): the chosen problem is SOC alert triage, "Are LLM alert triagers better than cheap baselines?" The core experiment is a rule-shortcut audit on SecAlertBench (reusing its published per-alert predictions); the second compares LLMs with risk-based alerting on CATS. Docker Compose vs KICS is the fallback, behind 4 kill criteria; the two n8n candidates are rejected.
+- [Feasibility pilot for SOC alert triage](issues/08-feasibility-pilot-soc-alert-triage.md): kill criteria 1, 2 and 4 did not fire. Scored like the benchmark (per-model balanced samples), a rule-majority lookup gets F1 0.898 / FPR 0.036 against the LLM average of 0.709 / 0.441; data usable (Gemini file removed by Defender); local Qwen3-4B takes 9 s/alert (about 24–27 h of planned runs), but answered "Attack" every time.
+- [Prior-work check for SOC alert triage](issues/09-prior-work-check-soc-alert-triage.md): kill criterion 3 did not fire; neither a baseline on SecAlertBench nor LLM-vs-RBA found. The SecAlertBench paper itself was not found (main residual risk); Uetz et al. is submitted to USENIX Security '27, not accepted.
+- [Venue shortlist for the SOC alert triage paper](issues/10-venue-shortlist.md): CODASPY 2027 (23 Nov), AsiaCCS 2027 (11 Dec), AI-SEC 2027 (10 Dec), then WOSOC and DIMVA with estimated dates; plan an 8–10 page paper with A1 as the core.
 
 ## Not yet specified
 
-- **Feasibility pilot for the chosen problem:** a smoke test (dataset loads, a model runs the task, one metric computes) before the brief is approved. Its shape depends on which problem is chosen.
-- **Venue shortlist:** which specific conferences fit the chosen problem, and their page limits and deadlines. May shape the brief's scope.
+_(nothing: no kill criterion fired, so the fallback problem needs no pilot of its own.)_
 
 ## Out of scope
 

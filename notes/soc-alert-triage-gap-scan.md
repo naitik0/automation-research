@@ -40,7 +40,7 @@
 
 **Non-LLM alert triage (the baselines LLM papers skip):**
 
-- **Uetz et al.**, "Can Risk-Based Alerting Mitigate Cybersecurity Alert Fatigue?": the CATS suite, eight labelled alert datasets (seven public), and AUROC µ=0.92 across datasets. It states that LLM-based approaches "should be evaluated against RBA as a baseline and clearly demonstrate that their additional cost is justified" (§8). arXiv:2609.02465 (2 Sep 2026); USENIX Security '27.
+- **Uetz et al.**, "Can Risk-Based Alerting Mitigate Cybersecurity Alert Fatigue?": the CATS suite, eight labelled alert datasets (seven public), and AUROC µ=0.92 across datasets. It states that LLM-based approaches "should be evaluated against RBA as a baseline and clearly demonstrate that their additional cost is justified" (§8). arXiv:2609.02465 (2 Sep 2026); "Submitted to USENIX Security '27" per the arXiv comment (under review, not accepted; checked 2026-10-08).
 - **PACT**: active learning over an XGBoost screener on AIT-ADS and BOTSv1. arXiv:2605.22324 (May 2026; submitted to ACSAC 2026).
 - **Survey**: Ndichu et al. synthesise 119 records (2015–2026) and name gaps in "operational validation, adversarial robustness, cross-environment generalization, and evaluation practice". arXiv:2605.08316 (May 2026; submitted to ACM CSUR).
 
@@ -185,7 +185,7 @@ These came up in search results but we did not open the primary source in this s
 - arXiv:2510.20930: Hans et al., Security Logs to ATT&CK Insights. https://arxiv.org/abs/2510.20930
 - arXiv:2605.24421: Pandey & Bhujang, Poisoning the Watchtower. https://arxiv.org/abs/2605.24421
 - arXiv:2607.14493: Karanjai et al., LogInject / Context Contamination. https://arxiv.org/abs/2607.14493
-- arXiv:2609.02465: Uetz et al., Can Risk-Based Alerting Mitigate Cybersecurity Alert Fatigue? (USENIX Security '27); full PDF text read. https://arxiv.org/abs/2609.02465
+- arXiv:2609.02465: Uetz et al., Can Risk-Based Alerting Mitigate Cybersecurity Alert Fatigue? (submitted to USENIX Security '27, under review); full PDF text read. https://arxiv.org/abs/2609.02465
 - CATS repository and datasets. https://github.com/962012d09b/cats
 - arXiv:2605.22324: Ndichu et al., PACT. https://arxiv.org/abs/2605.22324
 - arXiv:2605.08316: Ndichu et al., AI-Driven Security Alert Screening survey. https://arxiv.org/abs/2605.08316

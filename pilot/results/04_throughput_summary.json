@@ -1,0 +1,46 @@
+{
+  "alerts_completed": 118,
+  "alerts_planned": 200,
+  "request_errors": 0,
+  "unparseable": 0,
+  "seconds_per_alert": {
+    "mean": 8.966335836103408,
+    "mean_bootstrap_95ci": [
+      7.770955425197795,
+      10.186327000795785
+    ],
+    "median": 5.919187545776367,
+    "p95": 22.59027409553528,
+    "max": 40.81301474571228
+  },
+  "prompt_tokens": {
+    "mean": 1001.7118644067797,
+    "median": 740.0,
+    "max": 3119
+  },
+  "confusion_zero_shot": {
+    "TP": 68,
+    "FN": 0,
+    "FP": 50,
+    "TN": 0
+  },
+  "projection": {
+    "A1_two_models_4471_alerts_each": {
+      "alerts": 8942,
+      "hours_at_mean": 22.271381957343518,
+      "hours_at_ci_high": 25.30170445586553
+    },
+    "A2_reduced_two_cats_sets_two_models": {
+      "alerts": 684,
+      "hours_at_mean": 1.7036038088596475,
+      "hours_at_ci_high": 1.9354021301511992
+    },
+    "worst_case_A1_all_8322_alerts_two_models_plus_A2_reduced": {
+      "alerts": 17328,
+      "hours_at_mean": 43.157963157777736,
+      "hours_at_ci_high": 49.030187297163714
+    }
+  },
+  "kill_threshold_hours": 72,
+  "criterion_4_fires": false
+}

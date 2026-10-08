@@ -18,6 +18,14 @@ _Avoid_: Novelty claim, gap (when used without citations)
 The single candidate problem the project commits to, as stated in the problem brief.
 _Avoid_: Final topic, selected idea
 
+**Fallback problem**:
+The one candidate problem named in advance to become the chosen problem if a kill criterion fires, without reopening the whole comparison.
+_Avoid_: Backup topic, plan B
+
+**Kill criterion**:
+A condition, agreed before the feasibility pilot, which if met drops the chosen problem in favour of the fallback problem.
+_Avoid_: Abort condition, red flag
+
 **Problem brief**:
-A 1–2 page document stating the chosen problem: its research question, why it matters, gap evidence, a feasibility check, a rough approach, and 1–2 rejected candidate problems with reasons.
+A 1–2 page document stating the chosen problem: its research question, why it matters, gap evidence, a feasibility check, a rough approach, 1–2 rejected candidate problems with reasons, and the fallback problem with its kill criteria.
 _Avoid_: Proposal, topic summary

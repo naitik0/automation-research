@@ -1,0 +1,118 @@
+{"i": 0, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 40.81301474571228, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1996, "completion_tokens": 2}
+{"i": 1, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 3.883375406265259, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 642, "completion_tokens": 2}
+{"i": 2, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 9.627102136611938, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1339, "completion_tokens": 2}
+{"i": 3, "truth": "Attack", "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "seconds": 3.232039451599121, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 565, "completion_tokens": 2}
+{"i": 4, "truth": "Attack", "rule_name": "发现敏感目录/文件探测行为", "seconds": 3.1597068309783936, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 546, "completion_tokens": 2}
+{"i": 5, "truth": "Attack", "rule_name": "PHP代码执行攻击", "seconds": 4.188043117523193, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 709, "completion_tokens": 2}
+{"i": 6, "truth": "Attack", "rule_name": "发现敏感目录/文件探测行为", "seconds": 3.1227917671203613, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 521, "completion_tokens": 2}
+{"i": 7, "truth": "Non-Attack", "rule_name": "SQL注入(编码不规范)", "seconds": 5.4564056396484375, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 881, "completion_tokens": 2}
+{"i": 8, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 5.932270765304565, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 937, "completion_tokens": 2}
+{"i": 9, "truth": "Non-Attack", "rule_name": "发现使用HTTP代理行为", "seconds": 2.595001459121704, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 461, "completion_tokens": 2}
+{"i": 10, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 7.499381065368652, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1156, "completion_tokens": 2}
+{"i": 11, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 11.18863821029663, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1580, "completion_tokens": 2}
+{"i": 12, "truth": "Non-Attack", "rule_name": "Web弱口令登录", "seconds": 12.020427227020264, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1634, "completion_tokens": 2}
+{"i": 13, "truth": "Attack", "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "seconds": 3.621654987335205, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 594, "completion_tokens": 2}
+{"i": 14, "truth": "Attack", "rule_name": "路径穿越攻击(机器学习)", "seconds": 3.112748622894287, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 530, "completion_tokens": 2}
+{"i": 15, "truth": "Non-Attack", "rule_name": "Python代码执行攻击(机器学习)", "seconds": 14.563848495483398, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1938, "completion_tokens": 2}
+{"i": 16, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 3.6713483333587646, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 627, "completion_tokens": 2}
+{"i": 17, "truth": "Attack", "rule_name": "发现PUT方式上传TXT/HTML文件", "seconds": 3.7089085578918457, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 648, "completion_tokens": 2}
+{"i": 18, "truth": "Non-Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 12.47305941581726, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1698, "completion_tokens": 2}
+{"i": 19, "truth": "Attack", "rule_name": "发现管理员用户弱口令登录行为", "seconds": 12.660046100616455, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 636, "completion_tokens": 2}
+{"i": 20, "truth": "Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 4.779606580734253, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 791, "completion_tokens": 2}
+{"i": 21, "truth": "Non-Attack", "rule_name": "SQL注入(编码不规范)", "seconds": 10.905746698379517, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1479, "completion_tokens": 2}
+{"i": 22, "truth": "Attack", "rule_name": "发现敏感目录/文件探测行为", "seconds": 3.3655998706817627, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 578, "completion_tokens": 2}
+{"i": 23, "truth": "Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 3.5481059551239014, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 576, "completion_tokens": 2}
+{"i": 24, "truth": "Non-Attack", "rule_name": "基于Basic Authentication认证的暴力破解", "seconds": 7.348618984222412, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1134, "completion_tokens": 2}
+{"i": 25, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 2.644979238510132, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 503, "completion_tokens": 2}
+{"i": 26, "truth": "Non-Attack", "rule_name": "Apache Log4j2 远程代码执行漏洞(CVE-2021-44228/CVE-2021-45046)", "seconds": 11.462767839431763, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1592, "completion_tokens": 2}
+{"i": 27, "truth": "Attack", "rule_name": "Apache NiFi 未授权访问漏洞(CVE-2024-56512)", "seconds": 4.820708513259888, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 773, "completion_tokens": 2}
+{"i": 28, "truth": "Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 3.1226024627685547, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 521, "completion_tokens": 2}
+{"i": 29, "truth": "Non-Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 10.90158486366272, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1483, "completion_tokens": 2}
+{"i": 30, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 7.476764917373657, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1125, "completion_tokens": 2}
+{"i": 31, "truth": "Non-Attack", "rule_name": "SQL注入攻击", "seconds": 24.915818691253662, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 3119, "completion_tokens": 2}
+{"i": 32, "truth": "Attack", "rule_name": "路径穿越攻击(机器学习)", "seconds": 4.648559808731079, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 728, "completion_tokens": 2}
+{"i": 33, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 3.2350831031799316, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 577, "completion_tokens": 2}
+{"i": 34, "truth": "Non-Attack", "rule_name": "DS_Store 信息泄露", "seconds": 4.684094190597534, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 752, "completion_tokens": 2}
+{"i": 35, "truth": "Non-Attack", "rule_name": "疑似访问/下载脚本文件", "seconds": 6.092134237289429, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 928, "completion_tokens": 2}
+{"i": 36, "truth": "Attack", "rule_name": "发现敏感目录/文件探测行为", "seconds": 3.8069400787353516, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 646, "completion_tokens": 2}
+{"i": 37, "truth": "Non-Attack", "rule_name": "发现应用程序错误信息", "seconds": 12.00673508644104, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1644, "completion_tokens": 2}
+{"i": 38, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 14.11127758026123, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1901, "completion_tokens": 2}
+{"i": 39, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 7.393666505813599, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1117, "completion_tokens": 2}
+{"i": 40, "truth": "Attack", "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "seconds": 4.09998345375061, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 693, "completion_tokens": 2}
+{"i": 41, "truth": "Attack", "rule_name": "Shell命令执行(机器学习)", "seconds": 2.600475311279297, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 507, "completion_tokens": 2}
+{"i": 42, "truth": "Non-Attack", "rule_name": "发现Web空口令登录行为", "seconds": 10.529715061187744, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1419, "completion_tokens": 2}
+{"i": 43, "truth": "Non-Attack", "rule_name": "SQL注入(编码不规范)", "seconds": 5.550359725952148, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 885, "completion_tokens": 2}
+{"i": 44, "truth": "Attack", "rule_name": "发现系统命令注入行为", "seconds": 4.085169792175293, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 690, "completion_tokens": 2}
+{"i": 45, "truth": "Attack", "rule_name": "Nginx range 过滤器整形溢出漏洞 (CVE–2017–7529)", "seconds": 5.483035326004028, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 465, "completion_tokens": 2}
+{"i": 46, "truth": "Attack", "rule_name": "疑似访问/下载脚本文件", "seconds": 8.220054388046265, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 694, "completion_tokens": 2}
+{"i": 47, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 10.30865216255188, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1061, "completion_tokens": 2}
+{"i": 48, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 14.395814895629883, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1398, "completion_tokens": 2}
+{"i": 49, "truth": "Attack", "rule_name": "Joomla  API未授权访问漏洞(CVE-2023-23752)", "seconds": 5.716568946838379, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 573, "completion_tokens": 2}
+{"i": 50, "truth": "Non-Attack", "rule_name": "SQL注入(编码不规范)", "seconds": 22.53945541381836, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 2065, "completion_tokens": 2}
+{"i": 51, "truth": "Attack", "rule_name": "Java框架通用代码执行攻击", "seconds": 10.454892635345459, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1042, "completion_tokens": 2}
+{"i": 52, "truth": "Non-Attack", "rule_name": "SQL注入(编码不规范)", "seconds": 8.159778833389282, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 881, "completion_tokens": 2}
+{"i": 53, "truth": "Attack", "rule_name": "Oracle Fusion Middleware Oracle Reports Developer组件未明安全漏洞", "seconds": 4.596860885620117, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 530, "completion_tokens": 2}
+{"i": 54, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 21.377013683319092, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1965, "completion_tokens": 2}
+{"i": 55, "truth": "Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 4.709443092346191, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 521, "completion_tokens": 2}
+{"i": 56, "truth": "Attack", "rule_name": "敏感信息扫描(机器学习)", "seconds": 3.959202527999878, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 480, "completion_tokens": 2}
+{"i": 57, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 22.34952402114868, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 2087, "completion_tokens": 2}
+{"i": 58, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 4.790838956832886, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 536, "completion_tokens": 2}
+{"i": 59, "truth": "Attack", "rule_name": "敏感信息扫描(机器学习)", "seconds": 7.857637882232666, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 845, "completion_tokens": 2}
+{"i": 60, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 32.53260898590088, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 2896, "completion_tokens": 2}
+{"i": 61, "truth": "Attack", "rule_name": "路径穿越攻击(机器学习)", "seconds": 3.432584285736084, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 405, "completion_tokens": 2}
+{"i": 62, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 26.168768644332886, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 2340, "completion_tokens": 2}
+{"i": 63, "truth": "Non-Attack", "rule_name": "Web弱口令登录", "seconds": 5.593315839767456, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 593, "completion_tokens": 2}
+{"i": 64, "truth": "Attack", "rule_name": "Apache Struts 2 安全漏洞(CVE-2018-11776)", "seconds": 17.300333261489868, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1706, "completion_tokens": 2}
+{"i": 65, "truth": "Attack", "rule_name": "基于Basic Authentication认证弱口令", "seconds": 5.39082670211792, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 625, "completion_tokens": 2}
+{"i": 66, "truth": "Attack", "rule_name": "发现敏感目录/文件探测行为", "seconds": 5.752708196640015, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 661, "completion_tokens": 2}
+{"i": 67, "truth": "Non-Attack", "rule_name": "Flink未授权访问漏洞", "seconds": 5.149208307266235, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 588, "completion_tokens": 2}
+{"i": 68, "truth": "Attack", "rule_name": "Buffalo WSR-2533DHPL2 配置文件注入漏洞(CVE-2021-20091)", "seconds": 18.55321717262268, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1789, "completion_tokens": 2}
+{"i": 69, "truth": "Attack", "rule_name": "Apache Struts2 远程代码执行漏洞（CVE-2018-11776/S2-057）", "seconds": 5.597828388214111, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 654, "completion_tokens": 2}
+{"i": 70, "truth": "Attack", "rule_name": "Apache CouchDB 垂直权限绕过漏洞(CVE-2017-12635)", "seconds": 6.867898225784302, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 767, "completion_tokens": 2}
+{"i": 71, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 15.182255983352661, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1427, "completion_tokens": 2}
+{"i": 72, "truth": "Non-Attack", "rule_name": "SQL注入攻击", "seconds": 18.07470726966858, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1690, "completion_tokens": 2}
+{"i": 73, "truth": "Attack", "rule_name": "发现敏感目录/文件探测行为", "seconds": 5.886876583099365, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 679, "completion_tokens": 2}
+{"i": 74, "truth": "Attack", "rule_name": "跨站脚本攻击(机器学习)", "seconds": 4.603214502334595, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 516, "completion_tokens": 2}
+{"i": 75, "truth": "Attack", "rule_name": "利用sql注入执行命令", "seconds": 5.188236474990845, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 582, "completion_tokens": 2}
+{"i": 76, "truth": "Attack", "rule_name": "EJS模板注入漏洞", "seconds": 10.764252424240112, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1145, "completion_tokens": 2}
+{"i": 77, "truth": "Non-Attack", "rule_name": "异常页面导致服务器路径泄漏", "seconds": 8.343828201293945, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 891, "completion_tokens": 2}
+{"i": 78, "truth": "Attack", "rule_name": "路径穿越攻击(机器学习)", "seconds": 5.31574559211731, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 617, "completion_tokens": 2}
+{"i": 79, "truth": "Attack", "rule_name": "敏感信息扫描(机器学习)", "seconds": 3.952353000640869, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 491, "completion_tokens": 2}
+{"i": 80, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 24.313810110092163, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 2247, "completion_tokens": 2}
+{"i": 81, "truth": "Attack", "rule_name": "Apache Shiro权限绕过漏洞(CVE-2020-1957/CVE-2020-11989)", "seconds": 7.577340602874756, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 784, "completion_tokens": 2}
+{"i": 82, "truth": "Attack", "rule_name": "XML外部实体注入攻击(XXE)", "seconds": 7.483288764953613, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 822, "completion_tokens": 2}
+{"i": 83, "truth": "Non-Attack", "rule_name": "发现Web空口令登录行为", "seconds": 15.537715673446655, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1477, "completion_tokens": 2}
+{"i": 84, "truth": "Attack", "rule_name": "Shell命令执行(机器学习)", "seconds": 3.996001958847046, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 500, "completion_tokens": 2}
+{"i": 85, "truth": "Attack", "rule_name": "Hadoop YARN ResourceManager 未授权访问", "seconds": 3.392996311187744, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 435, "completion_tokens": 2}
+{"i": 86, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 6.04006552696228, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 698, "completion_tokens": 2}
+{"i": 87, "truth": "Attack", "rule_name": "疑似访问/下载脚本文件", "seconds": 5.119420051574707, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 592, "completion_tokens": 2}
+{"i": 88, "truth": "Non-Attack", "rule_name": "发现目录启用了自动目录列表功能", "seconds": 10.48319149017334, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1144, "completion_tokens": 2}
+{"i": 89, "truth": "Non-Attack", "rule_name": "Oracle Fusion Middleware Oracle Reports Developer组件未明安全漏洞", "seconds": 6.87183690071106, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 762, "completion_tokens": 2}
+{"i": 90, "truth": "Attack", "rule_name": "敏感信息扫描(机器学习)", "seconds": 5.976978778839111, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 663, "completion_tokens": 2}
+{"i": 91, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 4.092112064361572, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 491, "completion_tokens": 2}
+{"i": 92, "truth": "Attack", "rule_name": "Hadoop YARN ResourceManager 未授权访问", "seconds": 3.42250394821167, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 458, "completion_tokens": 2}
+{"i": 93, "truth": "Attack", "rule_name": "基于Basic Authentication认证弱口令", "seconds": 5.273712873458862, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 598, "completion_tokens": 2}
+{"i": 94, "truth": "Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 4.5763702392578125, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 558, "completion_tokens": 2}
+{"i": 95, "truth": "Attack", "rule_name": "发现目录穿越攻击行为", "seconds": 5.762179374694824, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 661, "completion_tokens": 2}
+{"i": 96, "truth": "Attack", "rule_name": "敏感信息扫描(机器学习)", "seconds": 3.8778371810913086, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 476, "completion_tokens": 2}
+{"i": 97, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 16.490427494049072, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1668, "completion_tokens": 2}
+{"i": 98, "truth": "Attack", "rule_name": "XML外部实体注入攻击(XXE)", "seconds": 7.86208701133728, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 876, "completion_tokens": 2}
+{"i": 99, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 22.59027409553528, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 2092, "completion_tokens": 2}
+{"i": 100, "truth": "Attack", "rule_name": "发现PUT方式上传TXT/HTML文件", "seconds": 3.7049312591552734, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 427, "completion_tokens": 2}
+{"i": 101, "truth": "Attack", "rule_name": "发现系统命令注入行为", "seconds": 8.328435182571411, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 899, "completion_tokens": 2}
+{"i": 102, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 16.5691978931427, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1618, "completion_tokens": 2}
+{"i": 103, "truth": "Attack", "rule_name": "发现尝试请求Linux下敏感文件", "seconds": 5.431066036224365, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 624, "completion_tokens": 2}
+{"i": 104, "truth": "Attack", "rule_name": "Apache solr XML 实体注入漏洞（CVE-2017-12629）", "seconds": 10.556315422058105, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1110, "completion_tokens": 2}
+{"i": 105, "truth": "Attack", "rule_name": "路径穿越攻击(机器学习)", "seconds": 5.464988470077515, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 589, "completion_tokens": 2}
+{"i": 106, "truth": "Attack", "rule_name": "发现管理员用户弱口令登录行为", "seconds": 5.906104326248169, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 646, "completion_tokens": 2}
+{"i": 107, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习/编码不规范)", "seconds": 22.575093746185303, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 2082, "completion_tokens": 2}
+{"i": 108, "truth": "Attack", "rule_name": "发现PUT方式上传TXT/HTML文件", "seconds": 4.045637607574463, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 498, "completion_tokens": 2}
+{"i": 109, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 10.491901636123657, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1099, "completion_tokens": 2}
+{"i": 110, "truth": "Non-Attack", "rule_name": "SQL注入攻击", "seconds": 9.258860111236572, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 994, "completion_tokens": 2}
+{"i": 111, "truth": "Non-Attack", "rule_name": "Web弱口令登录", "seconds": 4.61336350440979, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 567, "completion_tokens": 2}
+{"i": 112, "truth": "Attack", "rule_name": "Apache Tomcat DefaultServlet文件泄露漏洞(CVE-2002-1148)", "seconds": 6.022487163543701, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 705, "completion_tokens": 2}
+{"i": 113, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 20.861438274383545, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1937, "completion_tokens": 2}
+{"i": 114, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 20.72589659690857, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1977, "completion_tokens": 2}
+{"i": 115, "truth": "Non-Attack", "rule_name": "SQL注入攻击(机器学习)", "seconds": 14.518413782119751, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 1370, "completion_tokens": 2}
+{"i": 116, "truth": "Attack", "rule_name": "发现敏感目录/文件探测行为", "seconds": 5.56297492980957, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 624, "completion_tokens": 2}
+{"i": 117, "truth": "Attack", "rule_name": "Apache Struts 多个开放重定向漏洞(CVE-2013-2248)", "seconds": 3.413919687271118, "error": null, "raw": "Attack", "pred": "Attack", "prompt_tokens": 430, "completion_tokens": 2}

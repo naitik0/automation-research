@@ -1,1 +1,4 @@
 .claude/worktrees/
+pilot/data/
+pilot/tools/
+pilot/__pycache__/
