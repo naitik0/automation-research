@@ -4,6 +4,7 @@ Type: research
 Status: open
 Blocked by: none
 Map: [Topic search](../map.md)
+Findings: branch `research/iac-misconfiguration`, file `notes/iac-misconfiguration-gap-scan.md` (in progress)
 
 ## Question
 

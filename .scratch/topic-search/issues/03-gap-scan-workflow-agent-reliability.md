@@ -4,6 +4,7 @@ Type: research
 Status: open
 Blocked by: none
 Map: [Topic search](../map.md)
+Findings: branch `research/workflow-agent-reliability`, file `notes/workflow-agent-reliability-gap-scan.md` (in progress)
 
 ## Question
 

@@ -4,6 +4,7 @@ Type: research
 Status: open
 Blocked by: none
 Map: [Topic search](../map.md)
+Findings: branch `research/low-code-workflow-security`, file `notes/low-code-workflow-security-gap-scan.md` (in progress)
 
 ## Question
 

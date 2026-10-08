@@ -4,6 +4,7 @@ Type: research
 Status: open
 Blocked by: none
 Map: [Topic search](../map.md)
+Findings: branch `research/soc-alert-triage`, file `notes/soc-alert-triage-gap-scan.md` (in progress)
 
 ## Question
 

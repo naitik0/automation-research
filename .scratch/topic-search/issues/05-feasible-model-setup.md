@@ -4,6 +4,7 @@ Type: research
 Status: open
 Blocked by: none
 Map: [Topic search](../map.md)
+Findings: branch `research/model-setup`, file `notes/model-setup.md` (in progress)
 
 ## Question
 
