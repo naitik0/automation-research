@@ -1,0 +1,77 @@
+{
+  "class_post_dryrun_totals": {
+    "attack": 2389,
+    "non_attack": 5775
+  },
+  "dryrun_sha256": "5a01bc40ad2b14258049e633d482f52ca7783bc370433865b32fa7e4cbd41d6b",
+  "excluded_too_long": 0,
+  "frame_info": {
+    "conflicting_keys": [
+      "8369909fd46031d7"
+    ],
+    "content_keys": 8205,
+    "frame": 8204,
+    "rows": 8322
+  },
+  "frame_per_stratum": {
+    "mixed_attack": 906,
+    "mixed_non_attack": 2536,
+    "single_attack": 1503,
+    "single_non_attack": 3259
+  },
+  "mixed_rules_total": 31,
+  "overlap_dryrun_production": 0,
+  "p14_concentration_shared_sample": {
+    "alerts": 1000,
+    "largest_rule": "SQL注入攻击(机器学习)",
+    "largest_rule_alerts": 136,
+    "largest_rule_pct": 13.6,
+    "mixed_rules": 30,
+    "per_stratum": {
+      "mixed_attack": {
+        "alerts": 250,
+        "largest_rule": "发现敏感目录/文件探测行为",
+        "largest_rule_alerts": 84,
+        "largest_rule_pct": 33.6,
+        "rules": 25
+      },
+      "mixed_non_attack": {
+        "alerts": 250,
+        "largest_rule": "SQL注入攻击(机器学习)",
+        "largest_rule_alerts": 131,
+        "largest_rule_pct": 52.4,
+        "rules": 29
+      },
+      "single_attack": {
+        "alerts": 250,
+        "largest_rule": "路径穿越攻击(机器学习)",
+        "largest_rule_alerts": 44,
+        "largest_rule_pct": 17.6,
+        "rules": 81
+      },
+      "single_non_attack": {
+        "alerts": 250,
+        "largest_rule": "SQL注入攻击(机器学习/编码不规范)",
+        "largest_rule_alerts": 88,
+        "largest_rule_pct": 35.2,
+        "rules": 23
+      }
+    },
+    "single_rules": 104,
+    "unique_rules": 134
+  },
+  "post_dryrun_per_stratum": {
+    "mixed_attack": 896,
+    "mixed_non_attack": 2526,
+    "single_attack": 1493,
+    "single_non_attack": 3249
+  },
+  "post_dryrun_total": 8164,
+  "shared_sha256": "4d0b8f124779824d4c375d561d78ef64f040d09c14a569dec02dee5be5dbfb9f",
+  "weights": {
+    "mixed_attack": 0.7501046462955211,
+    "mixed_non_attack": 0.8748051948051948,
+    "single_attack": 1.2498953537044788,
+    "single_non_attack": 1.1251948051948053
+  }
+}

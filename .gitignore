@@ -2,3 +2,8 @@
 pilot/data/
 pilot/tools/
 pilot/__pycache__/
+experiments/a1/.venv/
+experiments/a1/data/
+experiments/a1/tools/
+experiments/a1/runs/
+__pycache__/

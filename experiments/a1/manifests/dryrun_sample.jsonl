@@ -1,0 +1,40 @@
+{"label": "Attack", "row_index": 1848, "rule_name": "Go pprof 调试信息泄露漏洞", "stratum": "mixed_attack", "uid": "05f93e9192823eb8", "weight": null}
+{"label": "Attack", "row_index": 5074, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "060823fa4a683292", "weight": null}
+{"label": "Attack", "row_index": 5833, "rule_name": "Bash远程代码执行漏洞(CVE-2014-6271)", "stratum": "mixed_attack", "uid": "20f4a445b1f5b7e5", "weight": null}
+{"label": "Attack", "row_index": 1597, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "3aa69271f4342f6e", "weight": null}
+{"label": "Attack", "row_index": 3926, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "4cc7d0d0daa43af9", "weight": null}
+{"label": "Attack", "row_index": 3602, "rule_name": "发现目录穿越攻击行为", "stratum": "mixed_attack", "uid": "4e899a1866643111", "weight": null}
+{"label": "Attack", "row_index": 220, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "58f4dca7c0122091", "weight": null}
+{"label": "Attack", "row_index": 873, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "7f4a7bb1594de733", "weight": null}
+{"label": "Attack", "row_index": 6303, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "c3e5fb41e40ade2f", "weight": null}
+{"label": "Attack", "row_index": 5263, "rule_name": "发现敏感目录/文件探测行为", "stratum": "mixed_attack", "uid": "e2682cb555ca059c", "weight": null}
+{"label": "Attack", "row_index": 1762, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "030f42185d1c1924", "weight": null}
+{"label": "Attack", "row_index": 4202, "rule_name": "通用命令执行漏洞", "stratum": "single_attack", "uid": "0e2c131dc6105d54", "weight": null}
+{"label": "Attack", "row_index": 3907, "rule_name": "Apache APISIX 默认密钥漏洞(CVE-2020-13945)", "stratum": "single_attack", "uid": "25825c0be549f208", "weight": null}
+{"label": "Attack", "row_index": 55, "rule_name": "Java框架通用代码执行攻击", "stratum": "single_attack", "uid": "4ec48e5235613385", "weight": null}
+{"label": "Attack", "row_index": 8197, "rule_name": "Java框架通用代码执行攻击", "stratum": "single_attack", "uid": "4ec4b21942d022d6", "weight": null}
+{"label": "Attack", "row_index": 7357, "rule_name": "敏感信息扫描(机器学习)", "stratum": "single_attack", "uid": "5e0445a8d140b300", "weight": null}
+{"label": "Attack", "row_index": 7405, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "69aa5fda7cbaf8ac", "weight": null}
+{"label": "Attack", "row_index": 1930, "rule_name": "发现尝试请求Linux下敏感文件", "stratum": "single_attack", "uid": "70bca970f672cb2f", "weight": null}
+{"label": "Attack", "row_index": 1104, "rule_name": "路径穿越攻击(机器学习)", "stratum": "single_attack", "uid": "76da93364e222af4", "weight": null}
+{"label": "Attack", "row_index": 3006, "rule_name": "金和OA UploadFileDownLoadnew任意文件读取漏洞", "stratum": "single_attack", "uid": "93ccb359704e9d1d", "weight": null}
+{"label": "Non-Attack", "row_index": 7623, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "201e516f422a9340", "weight": null}
+{"label": "Non-Attack", "row_index": 5798, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "47ac0c47d51b7dfc", "weight": null}
+{"label": "Non-Attack", "row_index": 3064, "rule_name": "发现通过OPTIONS探测服务器信息", "stratum": "mixed_non_attack", "uid": "537b742e4d92183c", "weight": null}
+{"label": "Non-Attack", "row_index": 4913, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "6df90abb39448357", "weight": null}
+{"label": "Non-Attack", "row_index": 3518, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "7d75aa66cc294788", "weight": null}
+{"label": "Non-Attack", "row_index": 6425, "rule_name": "发现Web服务探测行为", "stratum": "mixed_non_attack", "uid": "a720bdfbac6a9c87", "weight": null}
+{"label": "Non-Attack", "row_index": 2233, "rule_name": "Bash Shellshock 任意命令执行漏洞(CVE-2014-6271)", "stratum": "mixed_non_attack", "uid": "d4d2747be3522f5d", "weight": null}
+{"label": "Non-Attack", "row_index": 4257, "rule_name": "Spring Framework 远程命令执行漏洞(CVE-2022-22965)", "stratum": "mixed_non_attack", "uid": "e4c8c894bb8a52bf", "weight": null}
+{"label": "Non-Attack", "row_index": 4748, "rule_name": "疑似访问/下载脚本文件", "stratum": "mixed_non_attack", "uid": "ee9351d41b9ecc90", "weight": null}
+{"label": "Non-Attack", "row_index": 5940, "rule_name": "SQL注入攻击(机器学习)", "stratum": "mixed_non_attack", "uid": "f8eb47f669a26e96", "weight": null}
+{"label": "Non-Attack", "row_index": 603, "rule_name": "SQL注入(编码不规范)", "stratum": "single_non_attack", "uid": "0f40cfd789fafe6b", "weight": null}
+{"label": "Non-Attack", "row_index": 6465, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "11250ba2d1aa3ff5", "weight": null}
+{"label": "Non-Attack", "row_index": 5321, "rule_name": "发现使用HTTP代理行为", "stratum": "single_non_attack", "uid": "3b600b51548cc88f", "weight": null}
+{"label": "Non-Attack", "row_index": 5921, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "6240d7e7421b6ea3", "weight": null}
+{"label": "Non-Attack", "row_index": 2018, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "669431bd94a6a993", "weight": null}
+{"label": "Non-Attack", "row_index": 7209, "rule_name": "SQL注入攻击", "stratum": "single_non_attack", "uid": "7064d1992dbdb44f", "weight": null}
+{"label": "Non-Attack", "row_index": 4244, "rule_name": "发现使用PUT方式上传可疑文件", "stratum": "single_non_attack", "uid": "a181392fcaec84aa", "weight": null}
+{"label": "Non-Attack", "row_index": 7824, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "b2c851311e9efaa0", "weight": null}
+{"label": "Non-Attack", "row_index": 1461, "rule_name": "SQL注入攻击(机器学习/编码不规范)", "stratum": "single_non_attack", "uid": "c2380480eec25379", "weight": null}
+{"label": "Non-Attack", "row_index": 7186, "rule_name": "发现应用程序错误信息", "stratum": "single_non_attack", "uid": "cf3bae4423f018a7", "weight": null}

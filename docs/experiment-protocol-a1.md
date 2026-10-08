@@ -1,4 +1,4 @@
-# Experiment protocol A1 (proposed)
+# Experiment protocol A1
 
 **Status:** approved 2026-10-09 · implements A1 of the approved [problem brief](problem-brief.md)
 **Rule:** nothing in §1–§10 may change after the production run starts. A change needs a new protocol version and a rerun of the affected cells. No result from the dry run (§11) is used in any reported analysis.
