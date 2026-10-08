@@ -1,0 +1,300 @@
+{
+  "benchmark_sources_identical": {
+    "build_user_content_identical": true,
+    "parse_label_identical": true,
+    "valid_labels_identical": true
+  },
+  "conditions": {
+    "a": [],
+    "b": [
+      "rule_name"
+    ],
+    "c": [
+      "rule_name",
+      "attack_type",
+      "kill_chain_all"
+    ]
+  },
+  "decisions": {
+    "D1": "250 per stratum, uniform within strata, no per-rule cap, inverse-probability weights",
+    "D10": "RQ1 references: test input is each published row's own record; training on pinned-dataset rows outside the test set (exact content-key duplicates excluded); unmatched published rows kept, counted, reported as a limitation (protocol amendment 2026-10-09)",
+    "D2": "invalid responses never re-asked; counted as failures in primary metrics",
+    "D3": "gpt-oss-120b: temperature 0, reasoning_effort low, max_completion_tokens 1024 (confirmed 2026-10-09)",
+    "D4": "TF-IDF on visible alert fields only (§4.1), fitted per condition",
+    "D5": "paired bootstrap; paired rule-cluster bootstrap as sensitivity analysis",
+    "D6": "local models: llama-server /apply-template + /completion for probabilities (confirmed 2026-10-09)",
+    "D7": "RQ1: all 2,000 published rows as published, labels from true_label (confirmed 2026-10-09)",
+    "D8": "planned budget about $7-8 kept (confirmed 2026-10-09); API credentials not yet configured",
+    "D9": "15 published per-alert files; gemini-3-flash-preview summary only"
+  },
+  "environment": {
+    "packages": {
+      "anthropic": "1.12.1",
+      "numpy": "1.26.4",
+      "pytest": "8.4.2",
+      "requests": "2.32.3",
+      "scikit-learn": "1.8.0"
+    },
+    "python": "3.12.10"
+  },
+  "field_order": [
+    "attack_type",
+    "dip",
+    "host",
+    "method",
+    "rule_name",
+    "rsp_body",
+    "kill_chain_all",
+    "proto",
+    "xff",
+    "dport",
+    "rsp_status",
+    "parameter",
+    "sip",
+    "rsp_header",
+    "uri",
+    "req_header",
+    "req_body",
+    "sport"
+  ],
+  "files": {
+    "../../docs/experiment-protocol-a1.md": "38414feb90b7ebc0649dc99cb4178f9a45ff86908b25fe4ca4e1b86b0614c8fa",
+    "../../docs/problem-brief.md": "be23791808e338315f2e8d7ed83e698feec3b3ad1b2876614eac80feb9ed4dba",
+    "data/rq1/Foundation-Sec-8B-Instruct.json": "515494c1a5de9f102b029d835d7edc309df9754d59358f2be1b1781a6f315cfb",
+    "data/rq1/SecGPT-14B.json": "e2d716d376d1f2542a7952bb2c461bde6df7b0a5e8319c8981904b1e9a01eb66",
+    "data/rq1/SecGPT-7B.json": "65a9cc94b26e9bb33e074f8abbc52835196126097f504f558a9a41cd880cf093",
+    "data/rq1/claude-sonnet-4-5-20250929.json": "f39bd587b2510d19a5e30b8562c9d1c08fbee397fb1c9170c8a9a8d3d1edc209",
+    "data/rq1/deepseek-v3.1.json": "6c4c363c0540ef8f558619b8553763fe5b9798cf85da75132b894b1bb1789f79",
+    "data/rq1/glm-4.7.json": "d10637bbebd883f44f17985d9bfef2e8463528c13b2b42d079ececa58e5d71eb",
+    "data/rq1/gpt-5.1-chat.json": "31d2743a8ff931359da1cdbc9fd4552cf297ce6865c6cadc903e0cb215da1468",
+    "data/rq1/kimi-k2-instruct-0905.json": "17afc98884479a419ce76c4debd0d1c13e20d47dbc673d9ed48a92a5598fa80d",
+    "data/rq1/llama-3.1-405b-instruct.json": "53f9e36e91c38000ca610d50612352d7dc0ac5e1063fa00525d927d676712db4",
+    "data/rq1/llama-3.1-70b-instruct.json": "a03533c269422a7dd6f9d6f9c28f963d974bbdafa4f9b6719f2c0a004e1c9434",
+    "data/rq1/llama-3.1-8b-instruct.json": "c116ca693a865d8f7b24ec3fa46e9b9e75e3a87dcd741b5edda526744067dddb",
+    "data/rq1/qwen3-14b.json": "51e4fa33828cafcc4ae27637db7e7e8df48532b78aa57485b8f0782a7e6d2610",
+    "data/rq1/qwen3-235b-a22b-instruct-2507.json": "0627ecfd93bb986c1c998135f2054ac4a50a78538022b33e524489e79cbb24d0",
+    "data/rq1/qwen3-30b-a3b-instruct-2507.json": "8326466a7a983e59b4af673314021258bb55f24929e974a6f29101e7a637bad4",
+    "data/rq1/qwen3-32b.json": "77be19158c595946978c4b1686c4c1ee704685be653de173eb127f5b2e331523",
+    "data/run_rq1_api_test_eval.py": "fc077cc16a1a54d7f53cec408c2335ce557c32d54bbdc5878d101e4f2eeca993",
+    "data/secalertbench.json": "33f95305d1c42f8e615e4f94066119570859dee7eb086dff7c2273536c932ea3",
+    "manifests/dryrun_sample.jsonl": "5a01bc40ad2b14258049e633d482f52ca7783bc370433865b32fa7e4cbd41d6b",
+    "manifests/rq3_folds.jsonl": "9d1eba3d4b86f4bc5efc6470d6f75925f2300391ddca20f230c02dbcd13e6a10",
+    "manifests/sample_summary.json": "b19bb5e655c11c662b20b626a0e236e2f0a6cefef694c9bdac29f2ca5a6eabc3",
+    "manifests/shared_sample.jsonl": "4d0b8f124779824d4c375d561d78ef64f040d09c14a569dec02dee5be5dbfb9f",
+    "manifests/token_lengths_frame_llama-3.2-3b.jsonl": "2b7ee7f4d80af46ad848650461b6a966a9647dca4f0194caa6741a7172b06e54",
+    "manifests/token_lengths_frame_qwen3-4b.jsonl": "d9574e482696067db02fceec99032f29e8a93c3746c94ad0dd7aa4c4771c3507",
+    "manifests/token_lengths_samples_llama-3.2-3b.jsonl": "31a4c3105e2745c2dd67a6c8573b41c6c026b1dd1f7b4e35e7f305625918be2f",
+    "manifests/token_lengths_samples_qwen3-4b.jsonl": "48646c0b301d3294d48cda9f58c3956a9a066bef35dbf8242422cbc600d1b1d9",
+    "requirements.txt": "3e6ecd086cfa1b54c9d7c405927a81bfdf9838069e3bc17caa1f671d9d2ca6c1",
+    "tools/cudart-llama-bin-win-cuda-13.4-x64.zip": "738f8c251ac22b70c3ae6f83a10cf222725df0395246a2cf58f32bdb85fbe668",
+    "tools/llama-b11509-bin-win-cuda-13.4-x64.zip": "12e4cf85d76aeef246cc793da9f2c62d03240505ce528bf180159665eaf66e2c",
+    "tools/llama.cpp/LICENSE-LLVM-OpenMP": "fdad1758a9e1f9d5a81e18879b3406772115edc92c24bfa36b70c654f325e8e4",
+    "tools/llama.cpp/cublas64_13.dll": "1119dbca0a808e0c8850bb4221e330daf0b5ddb348d62d37b6ac533854723df9",
+    "tools/llama.cpp/cublasLt64_13.dll": "0f5bc315fef706b5626248ebd74e8a48a9e82fa2f0cad38330f5f70984913107",
+    "tools/llama.cpp/cudart64_13.dll": "05bfafcb97bd53b0089568a96e1e5bd6921637bd0853ff7f5342bd31a6a16890",
+    "tools/llama.cpp/ggml-base.dll": "8c2913a5ca43429b5306cecb125d3a3eb56de931d071b03d3f9b222131b832ed",
+    "tools/llama.cpp/ggml-cpu-alderlake.dll": "5969a6ae236d6380e6181081603489cc4658717350f7a0454099325754f74cff",
+    "tools/llama.cpp/ggml-cpu-cannonlake.dll": "ae9102dda3e2bafbc1bf149d675c3b2bf5fe8898194c7f8e9519b07628665ce8",
+    "tools/llama.cpp/ggml-cpu-cascadelake.dll": "8131a6be2a583a4605ae5cd3a0a0fc7afed4ae4f6082918849ae19270d5773b4",
+    "tools/llama.cpp/ggml-cpu-cooperlake.dll": "cef639d3680320d75ae20dad528a02eb2ed6d15757c56228ef19f525b8cd8ac2",
+    "tools/llama.cpp/ggml-cpu-haswell.dll": "b5455dbf7aa2b05430184fb13c71ce1f663980e7a76df2923b200419f4ef63f6",
+    "tools/llama.cpp/ggml-cpu-icelake.dll": "35f370815c370c7576c40deacf9e372b19e1646c7159e8f7bd0e8d3c1a52770c",
+    "tools/llama.cpp/ggml-cpu-ivybridge.dll": "a14926a74f77d95185ef8dab83afda046e2e22084ac334a00d3a494266259d34",
+    "tools/llama.cpp/ggml-cpu-piledriver.dll": "801629d3d4ef2fd93a1f1db75202870f437d865c16fae2b6057ec7146ce73013",
+    "tools/llama.cpp/ggml-cpu-sandybridge.dll": "67313b73ab5e625e598e1b9f7cfc3cff0fe7f6f11843a04a73e33d1f86a679a6",
+    "tools/llama.cpp/ggml-cpu-sapphirerapids.dll": "924f20d3a2e5573f5cdb0257d7034008459244193dfd42d0099a309d0d7bd1ea",
+    "tools/llama.cpp/ggml-cpu-skylakex.dll": "6035b7a77d9810d51863bf0eb6d9a9a7b1805d722cac1772772bece6f56126ee",
+    "tools/llama.cpp/ggml-cpu-sse42.dll": "6643495c2a4641e95eaba338243a9d530e4da25eea87eb0ff817093bd7d1fa32",
+    "tools/llama.cpp/ggml-cpu-x64.dll": "3d8c487330d67933c57e29e0bf0bd25fed9a6aab446d3f0e5d94a498dd379efc",
+    "tools/llama.cpp/ggml-cpu-zen4.dll": "6cde23d845afda30f1c7409d35e1ded46a219b0cd0eaa031d35223d49c9740b3",
+    "tools/llama.cpp/ggml-cuda.dll": "2421da1a44214e51eb6d6aadfbabbe1558df5caf480c2c9c90a59c4163bbdc6c",
+    "tools/llama.cpp/ggml-rpc-server.exe": "8e8d20a2a4307bf8e0ab170d06201a883bc766644125625e774f83d32d16f6eb",
+    "tools/llama.cpp/ggml-rpc.dll": "85b452af677276cb0daf93212fd4c47d592810cc6643f23960a5606fd9f5cae0",
+    "tools/llama.cpp/ggml.dll": "f0ff956ad0f26daf61af3a2feb2a0d7a13201c94ac23015a367d6d1547ba769a",
+    "tools/llama.cpp/libomp.dll": "a12116ba72d1d6820407cf30be23da04ce79d6bb8a71a5ee71759c5a1faa6f1c",
+    "tools/llama.cpp/llama-batched-bench-impl.dll": "b586c4c34f19c14485e177dadbd57f4b14ca508d1704d8585f6245e38d5e4451",
+    "tools/llama.cpp/llama-batched-bench.exe": "bf2e33eb7fc9bf830aa9cd69bcacfc19821c059fb8557b140c69ff6091c3c228",
+    "tools/llama.cpp/llama-bench-impl.dll": "4a9f9b6ac204edf50555409bede287b9686113646fbf3818c076d6fca3a6d2fa",
+    "tools/llama.cpp/llama-bench.exe": "4eb02acfce8f950063d6c81f939027fc9c2d7e8e703bb76018dac2cdabebcbcc",
+    "tools/llama.cpp/llama-cli-impl.dll": "a9f16b2bd06e4d47eee433842f4653f5c8c4da8f2022d5b61019133519ede3a9",
+    "tools/llama.cpp/llama-cli.exe": "2c14eddaac65b6e5d924e59f853c3202c381fdc0c9188be7f891a209bc27b9fb",
+    "tools/llama.cpp/llama-common.dll": "3fcb21dc86e07f7355a2dcad28de07282bc8e4c187806c514c3e57bbd9c00b07",
+    "tools/llama.cpp/llama-completion-impl.dll": "9003a79bed8a075dee474eb41e369c91251d91d7417e66e466668d6484984146",
+    "tools/llama.cpp/llama-completion.exe": "80694e83ae2c72253254ec2ecd1c3db6978f79b686320f48217c0e31e2ed9dbd",
+    "tools/llama.cpp/llama-fit-params-impl.dll": "4b8a5f7539f1538defb04449266422d4e5a85c56d7941ce591957023dbd5b4ec",
+    "tools/llama.cpp/llama-fit-params.exe": "4fd67c20f0cc2f39233f58bc230aa5f5ab4536a40e4843d38b644df6b1b02489",
+    "tools/llama.cpp/llama-gemma3-cli.exe": "d212d2f4e71bcc143c33548318c0405d1abdf5ad3d4ecce52283d6c63a254212",
+    "tools/llama.cpp/llama-gguf-split.exe": "bee02d64a940ff3673c5fc1cf2662a0a5567b321013798db9197dcd889ffdbd6",
+    "tools/llama.cpp/llama-imatrix.exe": "f03ecc607683eaff54b197e3c880388fb8e9fa7177c0dc2ce9617ee7b64ad44e",
+    "tools/llama.cpp/llama-llava-cli.exe": "d212d2f4e71bcc143c33548318c0405d1abdf5ad3d4ecce52283d6c63a254212",
+    "tools/llama.cpp/llama-minicpmv-cli.exe": "d212d2f4e71bcc143c33548318c0405d1abdf5ad3d4ecce52283d6c63a254212",
+    "tools/llama.cpp/llama-mtmd-cli.exe": "0a38112f9210f30094591da85ce74de2994631e1e70de8b44b95a739ff9ca208",
+    "tools/llama.cpp/llama-mtmd-debug.exe": "25831fdf371c7dbaeefd822dfcc597a7aab2951366407f37d8ff8db9352c32fb",
+    "tools/llama.cpp/llama-perplexity-impl.dll": "da89b2e8b64a4717a8a67c660d5ce953dd0f0f0a45eece72fd1ed0e9d668a38a",
+    "tools/llama.cpp/llama-perplexity.exe": "ae9117cab8e59e36d439325b294ff2c95a3bc838b569c37913fd3ba60f832c41",
+    "tools/llama.cpp/llama-quantize-impl.dll": "4d7a1dae7bcbb1422e791a6356d089fc1f39f0be5dddd5d7e9d1f364259100cc",
+    "tools/llama.cpp/llama-quantize.exe": "c8b2af11e902691c5f22169585c450c5e5e051f3983f4088d86ca1f600ce158f",
+    "tools/llama.cpp/llama-qwen2vl-cli.exe": "d212d2f4e71bcc143c33548318c0405d1abdf5ad3d4ecce52283d6c63a254212",
+    "tools/llama.cpp/llama-results.exe": "3c4ee8620e386401d86b654eb2e7df6be0585661ec458242daa1f510a5d08fcb",
+    "tools/llama.cpp/llama-server-impl.dll": "6d848c2be7181cd29f522c14615762cd6a78995216a30a81cf5513e936c63357",
+    "tools/llama.cpp/llama-server.exe": "8c3cd1ebb0898b93093ff11e67c46fcdbb22b02fdbeecff047b6409af00701d6",
+    "tools/llama.cpp/llama-tokenize.exe": "ba6737f2e57dde01441f14a2ee940c187949a0b731cbffd161bc910fd9e9fe1f",
+    "tools/llama.cpp/llama-tts.exe": "48e4b2d9abbc73747e1e5055dc77a460e3f2ac039a6198086e37687b96081a47",
+    "tools/llama.cpp/llama.dll": "6ce458f139e0378d4f532e5d77c0db7a85e09ac47cc5f686a07bf2ac9e3b153d",
+    "tools/llama.cpp/llama.exe": "8b12550929632de6e4cae02005411d8bd40327659854af06e0ef294cfab6c191",
+    "tools/llama.cpp/mtmd.dll": "c600fd4ad7d4fd34197844d96c01862b8363822f25fde15357947a0c6aa080be",
+    "tools/models/Llama-3.2-3B-Instruct-Q4_K_M.gguf": "6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff",
+    "tools/models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597"
+  },
+  "harness": {
+    "commit": "b00d7c5d9402097a886b280e57ea9a1f27acb1b4",
+    "hash": "171e9e68338cc886",
+    "src_uncommitted_changes": false
+  },
+  "label_tokens": {
+    "llama-3.2-3b": {
+      "A": [
+        29702
+      ],
+      "A_pieces": [
+        "Attack"
+      ],
+      "N": [
+        8284,
+        12,
+        29702
+      ],
+      "N_pieces": [
+        "Non",
+        "-",
+        "Attack"
+      ],
+      "k": 1,
+      "prompt_prefix_unchanged": true,
+      "recorded_at": "2026-10-08T20:11:06+00:00",
+      "source": "logged by the runner in runs/dryrun/llama-3.2-3b/main/run_meta.json (llama-server b11509-1167d3f42, Llama-3.2-3B-Instruct-Q4_K_M.gguf); re-checked live by run_llm at every start"
+    },
+    "qwen3-4b": {
+      "A": [
+        28602
+      ],
+      "A_pieces": [
+        "Attack"
+      ],
+      "N": [
+        8121,
+        12,
+        28602
+      ],
+      "N_pieces": [
+        "Non",
+        "-",
+        "Attack"
+      ],
+      "k": 1,
+      "prompt_prefix_unchanged": true,
+      "recorded_at": "2026-10-08T20:08:52+00:00",
+      "source": "llama-server /tokenize, build b11509-1167d3f42"
+    }
+  },
+  "max_prompt_tokens": 8176,
+  "models": {
+    "claude-haiku-4.5": {
+      "kind": "anthropic",
+      "params": {
+        "max_tokens": 16,
+        "model_id": "claude-haiku-4-5-20251001",
+        "temperature": 0.0
+      },
+      "source": "claude-haiku-4-5-20251001"
+    },
+    "gpt-oss-120b": {
+      "kind": "groq",
+      "params": {
+        "include_reasoning": true,
+        "max_completion_tokens": 1024,
+        "model_id": "openai/gpt-oss-120b",
+        "reasoning_effort": "low",
+        "seed": 1234,
+        "temperature": 0
+      },
+      "source": "openai/gpt-oss-120b"
+    },
+    "llama-3.2-3b": {
+      "kind": "local",
+      "params": {
+        "cache_prompt": false,
+        "gguf": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+        "n_predict": 16,
+        "n_probs": 20,
+        "seed": 1234,
+        "server_args": [
+          "-ngl",
+          "99",
+          "-c",
+          "8192",
+          "-np",
+          "1",
+          "--seed",
+          "1234",
+          "--no-cache-prompt",
+          "--jinja",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8089"
+        ],
+        "temperature": -1,
+        "template_kwargs": {
+          "date_string": "26 Jul 2024"
+        }
+      },
+      "source": "bartowski/Llama-3.2-3B-Instruct-GGUF@5ab33fa94d1d04e903623ae72c95d1696f09f9e8"
+    },
+    "qwen3-4b": {
+      "kind": "local",
+      "params": {
+        "cache_prompt": false,
+        "gguf": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+        "n_predict": 16,
+        "n_probs": 20,
+        "seed": 1234,
+        "server_args": [
+          "-ngl",
+          "99",
+          "-c",
+          "8192",
+          "-np",
+          "1",
+          "--seed",
+          "1234",
+          "--no-cache-prompt",
+          "--jinja",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8089"
+        ],
+        "temperature": -1,
+        "template_kwargs": {}
+      },
+      "source": "unsloth/Qwen3-4B-Instruct-2507-GGUF@a06e946bb6b655725eafa393f4a9745d460374c9"
+    }
+  },
+  "pins": {
+    "Qwen3-4B-Instruct-2507-Q4_K_M.gguf": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "cudart-llama-bin-win-cuda-13.4-x64.zip": "738f8c251ac22b70c3ae6f83a10cf222725df0395246a2cf58f32bdb85fbe668",
+    "llama-b11509-bin-win-cuda-13.4-x64.zip": "12e4cf85d76aeef246cc793da9f2c62d03240505ce528bf180159665eaf66e2c",
+    "secalertbench.json": "33f95305d1c42f8e615e4f94066119570859dee7eb086dff7c2273536c932ea3",
+    "secalertbench_commit": "42a84889fda912ca432c994924a1ccd4b9df6274"
+  },
+  "protocol": "docs/experiment-protocol-a1.md (approved 2026-10-09; amended 2026-10-09: §4 test inputs, D10)",
+  "seeds": {
+    "bootstrap": 20261012,
+    "call_order": 20261011,
+    "dryrun": 20261010,
+    "folds": 20261009,
+    "production": 20261009
+  },
+  "system_sha256": "0f1f8ec30d51173080ae69d74f24db41760d96e8e4de5564acd89b629a4891f6"
+}
