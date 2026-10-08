@@ -18,6 +18,7 @@
   "decisions": {
     "D1": "250 per stratum, uniform within strata, no per-rule cap, inverse-probability weights",
     "D10": "RQ1 references: test input is each published row's own record; training on pinned-dataset rows outside the test set (exact content-key duplicates excluded); unmatched published rows kept, counted, reported as a limitation (protocol amendment 2026-10-09)",
+    "D11": "Qwen3-4B: hard-label metrics only, no AUROC; score coverage and unavailability reasons reported as a diagnostic, never imputed; P8 coverage gate not applied to it; AUROC unchanged where the score is available (protocol amendment 2026-10-09, after the Qwen dry-run P8 stop)",
     "D2": "invalid responses never re-asked; counted as failures in primary metrics",
     "D3": "gpt-oss-120b: temperature 0, reasoning_effort low, max_completion_tokens 1024 (confirmed 2026-10-09)",
     "D4": "TF-IDF on visible alert fields only (§4.1), fitted per condition",
@@ -58,7 +59,7 @@
     "sport"
   ],
   "files": {
-    "../../docs/experiment-protocol-a1.md": "178cd2d2acf26848768f59ccc75b62ba1cd9faeae99dc68eaa52db5ef518ba6c",
+    "../../docs/experiment-protocol-a1.md": "1585237374874eb9f88dedb08a1878c13cda5ce08e83afa3fa453a8a9e1e8116",
     "../../docs/problem-brief.md": "be23791808e338315f2e8d7ed83e698feec3b3ad1b2876614eac80feb9ed4dba",
     "data/rq1/Foundation-Sec-8B-Instruct.json": "515494c1a5de9f102b029d835d7edc309df9754d59358f2be1b1781a6f315cfb",
     "data/rq1/SecGPT-14B.json": "e2d716d376d1f2542a7952bb2c461bde6df7b0a5e8319c8981904b1e9a01eb66",
@@ -147,8 +148,8 @@
     "tools/models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597"
   },
   "harness": {
-    "commit": "26da196984eed7ec5efcb3218cf9fac2e2bc2d55",
-    "hash": "171e9e68338cc886",
+    "commit": "156c7c34de16200d0326063334ebaecd004da5f1",
+    "hash": "d2e23ceaaf7041f0",
     "src_uncommitted_changes": false
   },
   "label_tokens": {
@@ -200,6 +201,7 @@
   "max_prompt_tokens": 8176,
   "models": {
     "claude-haiku-4.5": {
+      "auroc": false,
       "kind": "anthropic",
       "params": {
         "max_tokens": 16,
@@ -209,6 +211,7 @@
       "source": "claude-haiku-4-5-20251001"
     },
     "gpt-oss-120b": {
+      "auroc": false,
       "kind": "groq",
       "params": {
         "include_reasoning": true,
@@ -221,6 +224,7 @@
       "source": "openai/gpt-oss-120b"
     },
     "llama-3.2-3b": {
+      "auroc": true,
       "kind": "local",
       "params": {
         "cache_prompt": false,
@@ -252,6 +256,7 @@
       "source": "bartowski/Llama-3.2-3B-Instruct-GGUF@5ab33fa94d1d04e903623ae72c95d1696f09f9e8"
     },
     "qwen3-4b": {
+      "auroc": false,
       "kind": "local",
       "params": {
         "cache_prompt": false,
@@ -288,7 +293,7 @@
     "secalertbench.json": "33f95305d1c42f8e615e4f94066119570859dee7eb086dff7c2273536c932ea3",
     "secalertbench_commit": "42a84889fda912ca432c994924a1ccd4b9df6274"
   },
-  "protocol": "docs/experiment-protocol-a1.md (approved 2026-10-09; amended 2026-10-09: §4 test inputs, D10)",
+  "protocol": "docs/experiment-protocol-a1.md (approved 2026-10-09; amended 2026-10-09: D3/D6-D11)",
   "seeds": {
     "bootstrap": 20261012,
     "call_order": 20261011,

@@ -3,7 +3,8 @@ P7/P8/P9/P13 report. Kept outside src/ so adding it does not change the locked h
 
   python scripts/live_checks.py p4 --model qwen3-4b       # re-render prompts: /apply-template only, no generation
   python scripts/live_checks.py p5 --model qwen3-4b       # 20 pilot-style /v1/chat/completions calls (generation)
-  python scripts/live_checks.py report --model qwen3-4b   # P7, P8, P9, P13 from runs/dryrun/<model>/{final,p9}
+  python scripts/live_checks.py report --model qwen3-4b   # P7, P8, P9, P13 from runs/dryrun/<model>/{<subdir>,p9}
+All take --subdir (default final): the main dry-run directory.
 
 Reports go to runs/dryrun/checks/<model>_<check>.json. No performance metric is computed.
 """
@@ -45,12 +46,12 @@ def _server(model: str) -> LocalClient:
     return c
 
 
-def p4(model: str) -> dict:
+def p4(model: str, subdir: str = "final") -> dict:
     """Template stability: re-rendering every prompt of the finished run gives the recorded hash, and the
     template's own text (prompt minus the two messages) holds no date or run-varying text."""
     c, kw = _server(model), MODELS[model]["template_kwargs"] or None
     data = load_dataset()
-    calls = _run(model, "final")
+    calls = _run(model, subdir)
     manifest = {r["uid"]: r for r in read_jsonl(MANIFESTS / "dryrun_sample.jsonl")}
     differ = 0
     for x in calls:
@@ -67,12 +68,12 @@ def p4(model: str) -> dict:
             "date_like_text_in_scaffold": hits, "template_kwargs": kw}
 
 
-def p5(model: str) -> dict:
+def p5(model: str, subdir: str = "final") -> dict:
     """Endpoint equivalence: for the first 20 dry-run alerts in call order, condition (a), the pilot's
     /v1/chat/completions label equals the label the run obtained via /apply-template + /completion."""
     c = _server(model)
     data = load_dataset()
-    final = {(x["alert_uid"], x["condition"]): x for x in _run(model, "final")}
+    final = {(x["alert_uid"], x["condition"]): x for x in _run(model, subdir)}
     alerts = [m for m, cond in call_order(read_jsonl(MANIFESTS / "dryrun_sample.jsonl")) if cond == "a"][:P5_ALERTS]
     out_dir = RUNS / "dryrun" / model / "p5"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -99,11 +100,11 @@ def p5(model: str) -> dict:
             "pilot_request": PILOT_BODY, "harness": harness_hash()}
 
 
-def report(model: str) -> dict:
+def report(model: str, subdir: str = "final") -> dict:
     """P7 validity, P8 score extraction, P9 determinism and P13 timing from the finished runs."""
     lock = load_lock()
-    calls = _run(model, "final")
-    meta = json.loads((RUNS / "dryrun" / model / "final" / "run_meta.json").read_text(encoding="utf-8"))
+    calls = _run(model, subdir)
+    meta = json.loads((RUNS / "dryrun" / model / subdir / "run_meta.json").read_text(encoding="utf-8"))
     lt = meta["label_tokens"]
     cells = {}
     for key, sel in [(f"condition_{c}", lambda x, c=c: x["condition"] == c) for c in "abc"] + \
@@ -163,8 +164,10 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("check", choices=["p4", "p5", "report"])
     ap.add_argument("--model", required=True, choices=[k for k, m in MODELS.items() if m["kind"] == "local"])
+    ap.add_argument("--subdir", default="final", help="the main dry-run directory to check")
     a = ap.parse_args(argv)
-    rep = {"check": a.check, "model": a.model, **{"p4": p4, "p5": p5, "report": report}[a.check](a.model)}
+    fn = {"p4": p4, "p5": p5, "report": report}[a.check]
+    rep = {"check": a.check, "model": a.model, "subdir": a.subdir, **fn(a.model, a.subdir)}
     write_json(CHECKS / f"{a.model}_{a.check}.json", rep)
     print(json.dumps(rep, indent=1, ensure_ascii=False))
     return 0

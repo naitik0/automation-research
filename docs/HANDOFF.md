@@ -5,6 +5,39 @@
 - The dry run is **incomplete** and **not valid**.
 - Nothing may run until the user says so.
 
+## Update 2026-10-09 (later): Llama dry run done; Qwen stopped at P8; protocol amended (D11)
+
+- **Llama 3.2 3B: clean 120-call dry run done and accepted by the user.**
+  - Directory `runs/dryrun/llama-3.2-3b/final`; harness `171e9e68338cc886`; config hash `0f76c90d…cf63`.
+  - Results: 120/120 `ok`, 0 invalid, 0 failed, 0 resent; `validate_run` PASS.
+  - Diagnostics: score coverage 100% in every cell (P7 and P8 pass); 5.27 s per call on average.
+  - Read-only comparison with the old 94 calls: identical labels, generated tokens, rendered-prompt hashes and scores.
+- **Qwen3-4B: stopped at the P8 gate after 60 of 120 calls.**
+  - Directory `runs/dryrun/qwen3-4b/final`; harness `171e9e68338cc886`.
+  - Results: 0 invalid. Score coverage was 3/20, 3/20 and 9/20 in conditions (a), (b) and (c); in all 45 unavailable cases `Non-Attack` was absent from the top 20.
+  - P4, P5 and P9 were not run.
+  - These 60 calls are dry-run and debugging material only. The new harness refuses to resume that directory.
+- **D11 (user decision, before production and before any Qwen performance metric):**
+  - Qwen3-4B is evaluated on hard-label metrics only, and no AUROC is reported for it.
+  - Its score coverage and the reasons for unavailability are reported as a diagnostic, never imputed.
+  - P8's 95% coverage gate doesn't apply to Qwen.
+  - The AUROC procedure is unchanged where the score is available.
+  - `n_probs` stays 20 and Llama is not rerun.
+  - Recorded in protocol §7, §7.1, P8, §12 and the change log; commit `156c7c3`.
+- **Current harness:** `d2e23ceaaf7041f0`. It adds a per-model `auroc` flag in `models.py` (not a request parameter) and D11 in the lock.
+  - Request parameters, call IDs and config hashes are unchanged (Llama `0f76c90d…`, Qwen `4d013ecb…`).
+  - Lock sha256: `ba57aa56…b2de38`, generated from the clean commit `156c7c3`.
+- **Live checks:** `scripts/live_checks.py` (P4, P5, per-model P7/P8/P9/P13 report). It sits outside `src/`, so it isn't part of the harness.
+- **Next, needs approval: a fresh Qwen dry run in a new directory under the current harness.**
+  1. `python -m src.run_llm --model qwen3-4b --subdir final-d11 --max-new-calls 60` (twice)
+  2. P9: `--subdir p9 --first 20`
+  3. P5: `python scripts/live_checks.py p5 --model qwen3-4b`
+  4. P4: `python scripts/live_checks.py p4 --model qwen3-4b`
+  5. `validate_run`, then `python scripts/live_checks.py report`
+
+  Steps 3–5 all take `--subdir final-d11`.
+- **Llama:** P4, P9 and P10 are still pending.
+
 ## Update 2026-10-09: offline preparation done, clean Llama dry run ready (not run)
 
 The user settled **D3** (temperature 0, reasoning effort low, 1,024 tokens), **D6** (`/apply-template` + `/completion`), **D7** (all 2,000 published rows) and **D8** (budget about $7–8). They, and D9, are now listed as settled in protocol §12 and recorded in `config/protocol.lock.json`. The user also approved **D10**, now written into the protocol (§4, §12, change log): for RQ1 the references read each published row's own `record` as the test input, training uses pinned-dataset rows outside the test set, and unmatched published rows stay in the test set and are reported as a limitation (37 rows over 15 files, 0–5 per file). API credentials are still unset.
