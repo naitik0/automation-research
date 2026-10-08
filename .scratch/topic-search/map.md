@@ -41,6 +41,7 @@ An approved **problem brief** (see `CONTEXT.md`) for one **chosen problem** in A
 - [Gap scan: Reliability of LLM agents in multi-step workflow automation](issues/03-gap-scan-workflow-agent-reliability.md): crowded area, weak-to-moderate gap; best angle is runtime reliability of LLM steps in public n8n templates (overlaps with low-code security).
 - [Gap scan: Security of low-code AI workflow automation](issues/02-gap-scan-low-code-workflow-security.md): main hunch wrong, since JAW (arXiv:2605.11229) already hijacks n8n templates; a narrower gap remains in measuring n8n's built-in defences and attack rates across models.
 - [Which LLMs can we actually run for experiments on our hardware and budget?](issues/05-feasible-model-setup.md): Qwen3-4B and Llama 3.2 3B local, gpt-oss-120b on Groq free tier, Claude Haiku 4.5 as reference; about $10–15. Small models are weak at multi-turn tool calling.
+- [Gap scan: LLM detection of Docker and infrastructure-as-code misconfigurations](issues/04-gap-scan-docker-iac-misconfiguration.md): crowded, narrow gap; best angle is LLMs vs KICS on hand-labelled docker-compose files, plus showing that tool-derived ground truth distorts results. Cheap, but needs 10–15 hours of hand labelling.
 
 ## Not yet specified
 
