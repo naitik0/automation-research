@@ -37,6 +37,9 @@ DECISIONS = {
     "D7": "RQ1: all 2,000 published rows as published, labels from true_label (confirmed 2026-10-09)",
     "D8": "planned budget about $7-8 kept (confirmed 2026-10-09); API credentials not yet configured",
     "D9": "15 published per-alert files; gemini-3-flash-preview summary only",
+    "D11": "Qwen3-4B: hard-label metrics only, no AUROC; score coverage and unavailability reasons reported as a "
+           "diagnostic, never imputed; P8 coverage gate not applied to it; AUROC unchanged where the score is "
+           "available (protocol amendment 2026-10-09, after the Qwen dry-run P8 stop)",
     "D10": "RQ1 references: test input is each published row's own record; training on pinned-dataset rows outside "
            "the test set (exact content-key duplicates excluded); unmatched published rows kept, counted, reported "
            "as a limitation (protocol amendment 2026-10-09)",
@@ -84,14 +87,14 @@ def build() -> dict:
     label_tokens = json.loads(LABEL_TOKENS_PATH.read_text(encoding="utf-8")) if LABEL_TOKENS_PATH.exists() else {}
     src_status = _git("status", "--porcelain", "--", "src")
     return {
-        "protocol": "docs/experiment-protocol-a1.md (approved 2026-10-09; amended 2026-10-09: §4 test inputs, D10)",
+        "protocol": "docs/experiment-protocol-a1.md (approved 2026-10-09; amended 2026-10-09: D3/D6-D11)",
         "pins": PINS, "files": files,
         "seeds": {"production": SEED_PRODUCTION, "dryrun": SEED_DRYRUN, "call_order": SEED_CALL_ORDER,
                   "bootstrap": SEED_BOOTSTRAP, "folds": SEED_FOLDS},
         "conditions": {k: list(v) for k, v in CONDITIONS.items()}, "field_order": list(FIELD_ORDER),
         "max_prompt_tokens": MAX_PROMPT_TOKENS,
-        "models": {k: {"kind": m["kind"], "source": m.get("hf") or m.get("model_id"), "params": model_params(k)}
-                   for k, m in MODELS.items()},
+        "models": {k: {"kind": m["kind"], "source": m.get("hf") or m.get("model_id"), "params": model_params(k),
+                       "auroc": m["auroc"]} for k, m in MODELS.items()},
         "system_sha256": SYSTEM_SHA256, "benchmark_sources_identical": sources,
         "label_tokens": label_tokens,
         "decisions": DECISIONS,
@@ -125,6 +128,8 @@ def verify(lock: dict, only=None) -> list[str]:
     for k in MODELS:
         if lock["models"][k]["params"] != model_params(k):
             problems.append(f"model parameters differ from the lock: {k}")
+        if lock["models"][k].get("auroc") != MODELS[k]["auroc"]:
+            problems.append(f"AUROC reporting differs from the lock: {k}")
     return problems
 
 

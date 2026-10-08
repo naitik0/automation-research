@@ -13,19 +13,21 @@ LOCAL_SERVER_ARGS = ["-ngl", "99", "-c", "8192", "-np", "1", "--seed", "1234", "
                      "--host", "127.0.0.1", "--port", "8089"]
 LOCAL_PARAMS = {"n_predict": 16, "temperature": -1, "n_probs": 20, "cache_prompt": False, "seed": 1234}
 
+# "auroc": whether AUROC is reported for the model (§7). Qwen3-4B is hard-label only (D11): its §7.1 score is still
+# extracted, but only its coverage is reported, as a diagnostic. Not part of the request parameters.
 MODELS = {
     "qwen3-4b": {"kind": "local", "gguf": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
                  "hf": "unsloth/Qwen3-4B-Instruct-2507-GGUF@a06e946bb6b655725eafa393f4a9745d460374c9",
-                 "template_kwargs": {}},
-    "llama-3.2-3b": {"kind": "local", "gguf": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+                 "template_kwargs": {}, "auroc": False},
+    "llama-3.2-3b": {"kind": "local", "gguf": "Llama-3.2-3B-Instruct-Q4_K_M.gguf", "auroc": True,
                      "hf": "bartowski/Llama-3.2-3B-Instruct-GGUF@5ab33fa94d1d04e903623ae72c95d1696f09f9e8",
                      # §3 / P4: the Llama 3.2 template inserts today's date ("Today Date: 09 Oct 2026" on 2026-10-09),
                      # so the date is pinned as the protocol specifies.
                      "template_kwargs": {"date_string": "26 Jul 2024"}},
-    "gpt-oss-120b": {"kind": "groq", "model_id": "openai/gpt-oss-120b",
+    "gpt-oss-120b": {"kind": "groq", "model_id": "openai/gpt-oss-120b", "auroc": False,
                      "params": {"temperature": 0, "max_completion_tokens": 1024, "reasoning_effort": "low",
                                 "include_reasoning": True, "seed": 1234}},
-    "claude-haiku-4.5": {"kind": "anthropic", "model_id": "claude-haiku-4-5-20251001",
+    "claude-haiku-4.5": {"kind": "anthropic", "model_id": "claude-haiku-4-5-20251001", "auroc": False,
                          "params": {"temperature": 0.0, "max_tokens": 16}},
 }
 

@@ -32,7 +32,7 @@ any server or API.
 | `src/common.py` | paths, pins, seeds, field order, content key and UID, frame |
 | `src/prompts.py` | benchmark prompt and parser (read with `ast`, never executed) |
 | `src/tfidf_text.py` | §4.1 TF-IDF input text |
-| `src/models.py`, `src/server.py` | model parameters (§3), transport clients, llama-server start/stop |
+| `src/models.py`, `src/server.py` | model parameters (§3), transport clients, llama-server start/stop; per-model `auroc` flag (Qwen3-4B is hard-label only, D11) |
 | `src/score.py` | §7.1 label-probability score |
 | `src/sample.py`, `src/token_lengths.py` | §1 manifests, length check, P14 |
 | `src/run_llm.py` | checkpointed runner (§8, §9); checks the lock and refuses to mix harnesses in one run directory |
@@ -42,6 +42,7 @@ any server or API.
 | `src/grouped_cv.py` | §5 RQ3 folds, P15, held-out TF-IDF |
 | `src/lock.py` | `config/protocol.lock.json`: pins, hashes, parameters, label tokens, harness |
 | `src/checks.py` | offline dry-run checks; reports in `runs/dryrun/checks/` |
+| `scripts/live_checks.py` | dry-run checks that need a server or finished runs: P4, P5, and the per-model P7/P8/P9/P13 report. Outside `src/`, so it is not part of the locked harness |
 | `manifests/` | samples, token lengths, RQ3 folds (tracked) |
 | `config/` | protocol lock and label tokens (tracked) |
 | `runs/` | run outputs and server logs (git-ignored) |

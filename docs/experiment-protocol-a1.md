@@ -1,6 +1,6 @@
 # Experiment protocol A1
 
-**Status:** approved 2026-10-09; amended 2026-10-09 before production (§4 test inputs, D10; D3/D6/D7/D8/D9 settled; see the change log) · implements A1 of the approved [problem brief](problem-brief.md)
+**Status:** approved 2026-10-09; amended 2026-10-09 before production (§4 test inputs, D10; D3/D6/D7/D8/D9 settled; Qwen3-4B hard-label only, D11; see the change log) · implements A1 of the approved [problem brief](problem-brief.md)
 **Rule:** nothing in §1–§10 may change after the production run starts. A change needs a new protocol version and a rerun of the affected cells. No result from the dry run (§11) is used in any reported analysis.
 
 Facts in this document come from the pinned SecAlertBench files (commit `42a8488`), the pilot ([notes/soc-alert-triage-pilot.md](../notes/soc-alert-triage-pilot.md)), the llama.cpp b11509 server README, Groq's documentation (model page, reasoning, OpenAI compatibility and rate-limit pages, read 2026-10-09), and Anthropic's model reference. Items marked **[D#]** refer to the decisions in §12.
@@ -247,7 +247,8 @@ RQ3 measures performance on alerts from **held-out rules**: rules absent from th
 
 | System | AUROC? | Score |
 |---|---|---|
-| Qwen3-4B, Llama 3.2 3B | yes | The label-probability score defined in §7.1. Primary AUROC uses only alerts whose score is available, with coverage reported for each model × condition. R1 gives worst-case and best-case bounds for the unavailable scores. |
+| Llama 3.2 3B | yes | The label-probability score defined in §7.1. Primary AUROC uses only alerts whose score is available, with coverage reported for each model × condition. R1 gives worst-case and best-case bounds for the unavailable scores. |
+| Qwen3-4B | no **[D11]** | Hard-label metrics only: TPR, FPR, precision, F1 and balanced accuracy. The §7.1 score is still extracted, but only its availability (coverage) and the reasons for unavailability are reported, as a diagnostic. |
 | gpt-oss-120b | no | Groq does not support logprobs. Report TPR, FPR, precision, F1 and balanced accuracy only. |
 | Claude Haiku 4.5 | no | The Messages API returns no logprobs. Same metrics as gpt-oss. |
 | 15 published models | no | Hard labels only. |
@@ -260,6 +261,8 @@ A single-point "AUROC" computed from hard labels is not reported for any model.
 ### 7.1 Local-model label-probability score (primary AUROC score)
 
 This procedure is applied **identically to Qwen3-4B and Llama 3.2 3B**, each with its own tokenizer, and with the same parameters and thresholds.
+
+**Qwen3-4B [D11].** Steps 1–8 (score extraction and availability) apply to both local models. Steps 9–10 (AUROC and the R1 bounds) apply only to Llama 3.2 3B. No AUROC is reported for Qwen3-4B: in the Qwen dry run the two-label score had insufficient coverage under the fixed top-20 extraction, because `Non-Attack`'s first token was absent from the top 20 (Qwen put probability ≈ 1 on `Attack`). For Qwen3-4B, score coverage is reported as a diagnostic for every condition, overall and per stratum, together with the observed reasons for unavailability. No missing probability is ever substituted or imputed. The procedure itself (top-20, both labels required, step 7) is unchanged for every model.
 
 1. **Label strings.** A = `Attack` and N = `Non-Attack`: exactly the benchmark's labels, case-sensitive, with no leading space, quotes or punctuation.
 2. **Label tokens.** Each label is tokenised as the first text of the assistant turn, so the tokenizer sees exactly the context the model generates in.
@@ -376,7 +379,7 @@ Dry-run outputs are kept under `runs/dryrun/` and **never** reused in results.
 | P5 | Equivalence of local endpoints | On 20 alerts, `/apply-template` + `/completion` yields the same label as the pilot's `/v1/chat/completions` for Qwen3-4B. |
 | P6 | Transport | 0 calls `failed` after retries; every retry is logged. |
 | P7 | Validity | The invalid rate for every model × condition is reported. Any cell above 10% stops the run for review; the prompt is never changed to fix it. |
-| P8 | Score extraction (§7.1) | For each local model: label token IDs recorded; the prompt-prefix assertion holds; the divergence position k is reported. Score coverage is reported for each model × condition, and coverage below 95% in any cell stops the run for your review. The distribution of generated first tokens is printed. |
+| P8 | Score extraction (§7.1) | For each local model: label token IDs recorded; the prompt-prefix assertion holds; the divergence position k is reported. Score coverage is reported for each model × condition, and coverage below 95% in any cell stops the run for your review. For Qwen3-4B, whose AUROC is not reported, coverage is a reported diagnostic and does not stop the run **[D11]**; its other P8 requirements still apply. The distribution of generated first tokens is printed. |
 | P9 | Determinism | Local models: 20 repeated calls give identical labels and \|Δscore\| < 1e-3. APIs: label agreement on 20 repeats is reported, and anything below 95% is flagged. |
 | P10 | Resume | Killing the runner mid-run and restarting it gives exactly the expected call IDs, with no duplicates, and `attempts.jsonl` shows completed calls were not re-sent. |
 | P11 | Metric code | Reproduces each published file's in-file summary (TP, FP, TN, FN, F1) exactly. Passes hand-computed confusion-matrix tests. AUROC equals scikit-learn's `roc_auc_score`. |
@@ -404,6 +407,7 @@ Dry-run outputs are kept under `runs/dryrun/` and **never** reused in results.
 | D7 | Published-file test rows (RQ1): all 2,000 rows as published (reproduces the headline numbers exactly). |
 | D8 | Accounts, licences, spend: a Groq Developer (paid) plan and an Anthropic API key, the Llama 3.2 Community Licence ("Built with Llama") accepted, and about $7.10 authorised (planned budget about $7–8). |
 | D9 | The 16th published model (Gemini): analyse the 15 available published per-alert prediction files. Windows Defender is never bypassed and the quarantined `gemini-3-flash-preview.json` is not recovered; the 16th model enters only through its published summary metrics. |
+| D11 | Qwen3-4B is evaluated on hard-label metrics only (TPR, FPR, precision, F1, balanced accuracy); no AUROC is reported for it. Its §7.1 score coverage, and the reasons for unavailability, are reported as a diagnostic; missing probabilities are never substituted or imputed. The AUROC procedure is unchanged for every model whose score is available (Llama 3.2 3B, and the references). The 60 Qwen calls from the stopped dry run stay dry-run and debugging material only (§7, §7.1, P8). |
 | D10 | RQ1 references read each published row's own `record` (what that published model was shown) as the test input; training uses pinned-dataset rows outside the test set, excluding exact content-key duplicates. Unmatched published rows stay in the test set; their count is recorded and reported as a limitation (§4). |
 
 ### Still open
@@ -419,3 +423,4 @@ After these are settled, the next steps are to implement `experiments/a1/`, run 
 | 2026-10-09 | §4: the test input for a published file is the row's own published `record`; unmatched published rows stay in the test set, with their count reported as a limitation. Added D10 to §12. | Under-specified in the approved text. Settled by the user during offline preparation, before production and before any reference result was computed; it changes only the reference baselines, not any LLM input or output. |
 | 2026-10-09 | §12: D3, D6, D7 and D8 moved from "Still open" to "Settled", each as its recommended option, with no change of substance. The note on **[D#]** markers now refers to §12 instead of "awaiting approval". | The user explicitly approved all four. |
 | 2026-10-09 | §12: D9 moved from "Still open" to "Settled" as its recommended option (15 per-alert files; the 16th model through its published summary only). The alternative (a sandbox or VM with a Defender exclusion) is rejected: Defender is never bypassed and the quarantined file is not recovered. | The user explicitly settled D9. |
+| 2026-10-09 | §7, §7.1, P8, §12: Qwen3-4B is evaluated on hard-label metrics only and no AUROC is reported for it; its score coverage and unavailability reasons are reported as a diagnostic, with no substitution or imputation; P8's 95% coverage gate does not apply to Qwen3-4B. The AUROC procedure is unchanged for models whose score is available. Added D11. | The Qwen dry run stopped at P8 after 60 of 120 calls: score coverage was 3/20, 3/20 and 9/20 in conditions (a), (b) and (c), and in all 45 unavailable cases `Non-Attack`'s first token was absent from the top 20. Decided by the user after this gate exposed the coverage issue, before production and before any Qwen performance metric was computed or reported. The 60 Qwen dry-run calls are never used as results. This departs from the problem brief's plan to report AUROC for both local models; the brief itself is not edited. |
