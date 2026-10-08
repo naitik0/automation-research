@@ -37,6 +37,9 @@ DECISIONS = {
     "D7": "RQ1: all 2,000 published rows as published, labels from true_label (confirmed 2026-10-09)",
     "D8": "planned budget about $7-8 kept (confirmed 2026-10-09); API credentials not yet configured",
     "D9": "15 published per-alert files; gemini-3-flash-preview summary only",
+    "D10": "RQ1 references: test input is each published row's own record; training on pinned-dataset rows outside "
+           "the test set (exact content-key duplicates excluded); unmatched published rows kept, counted, reported "
+           "as a limitation (protocol amendment 2026-10-09)",
 }
 
 
@@ -81,7 +84,7 @@ def build() -> dict:
     label_tokens = json.loads(LABEL_TOKENS_PATH.read_text(encoding="utf-8")) if LABEL_TOKENS_PATH.exists() else {}
     src_status = _git("status", "--porcelain", "--", "src")
     return {
-        "protocol": "docs/experiment-protocol-a1.md (approved 2026-10-09)",
+        "protocol": "docs/experiment-protocol-a1.md (approved 2026-10-09; amended 2026-10-09: §4 test inputs, D10)",
         "pins": PINS, "files": files,
         "seeds": {"production": SEED_PRODUCTION, "dryrun": SEED_DRYRUN, "call_order": SEED_CALL_ORDER,
                   "bootstrap": SEED_BOOTSTRAP, "folds": SEED_FOLDS},
