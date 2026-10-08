@@ -77,7 +77,7 @@
 
 **Nearest related work (partial overlap only):**
 
-- **Rieger et al.**, *Expert Systems with Applications* 331 (2026), doi:10.1016/j.eswa.2026.133194 (available online 2026-06-15). Eight LLMs vs Logistic Regression, Random Forest and Linear SVM on TF-IDF features, 178 manually labelled alerts from the authors' own simulated lab (Wazuh and Suricata), stratified 5-fold CV. The Linear SVM had the best F1 (89.43%). It does not use SecAlertBench, does not audit rule identity as a predictor, and does not use RBA. The paper explicitly notes that large public SOC datasets were not used. Its priority ground truth is derived from the detectors' rule levels.
+- **Rieger et al.**, *Expert Systems with Applications* 331 (2026), doi:10.1016/j.eswa.2026.133194 (available online 2026-06-15). Eight LLMs vs Logistic Regression, Random Forest and Linear SVM on TF-IDF features, 178 manually labelled alerts from the authors' own simulated lab (Wazuh and Suricata), stratified 5-fold CV. The Linear SVM had the best F1 (89.64% (corrected 2026-10-08 from the paper's results text; best LLM GPT-4.5-preview 85.84%)). It does not use SecAlertBench, does not audit rule identity as a predictor, and does not use RBA. The paper explicitly notes that large public SOC datasets were not used. Its priority ground truth is derived from the detectors' rule levels.
 - **Schärmer et al.**, ARES 2026 Workshops, doi:10.1007/978-3-032-35579-9_19: LLM classification of IDS alerts, ChatGPT and Gemini. Only the Crossref abstract was readable (full text behind a login). We cannot say which dataset or baselines it uses.
 
 ## 4. Part (b): LLM triage vs RBA on public alert data
