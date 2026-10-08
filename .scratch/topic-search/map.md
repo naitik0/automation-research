@@ -38,6 +38,8 @@ An approved **problem brief** (see `CONTEXT.md`) for one **chosen problem** in A
 
 <!-- one line per closed ticket: [title](issues/NN-slug.md): gist -->
 
+- [Gap scan: Reliability of LLM agents in multi-step workflow automation](issues/03-gap-scan-workflow-agent-reliability.md): crowded area, weak-to-moderate gap; best angle is runtime reliability of LLM steps in public n8n templates (overlaps with low-code security).
+
 ## Not yet specified
 
 - **Feasibility pilot for the chosen problem:** a smoke test (dataset loads, a model runs the task, one metric computes) before the brief is approved. Its shape depends on which problem is chosen.
