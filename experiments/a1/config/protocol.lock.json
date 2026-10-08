@@ -58,7 +58,7 @@
     "sport"
   ],
   "files": {
-    "../../docs/experiment-protocol-a1.md": "38414feb90b7ebc0649dc99cb4178f9a45ff86908b25fe4ca4e1b86b0614c8fa",
+    "../../docs/experiment-protocol-a1.md": "f3bc778f466b51e2919b12a1975080fa9d339bf1afd10d00d91d311874b074f1",
     "../../docs/problem-brief.md": "be23791808e338315f2e8d7ed83e698feec3b3ad1b2876614eac80feb9ed4dba",
     "data/rq1/Foundation-Sec-8B-Instruct.json": "515494c1a5de9f102b029d835d7edc309df9754d59358f2be1b1781a6f315cfb",
     "data/rq1/SecGPT-14B.json": "e2d716d376d1f2542a7952bb2c461bde6df7b0a5e8319c8981904b1e9a01eb66",
@@ -147,7 +147,7 @@
     "tools/models/Qwen3-4B-Instruct-2507-Q4_K_M.gguf": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597"
   },
   "harness": {
-    "commit": "b00d7c5d9402097a886b280e57ea9a1f27acb1b4",
+    "commit": "3efc0efb6c62573fb86b62177b981b3c4b3a7159",
     "hash": "171e9e68338cc886",
     "src_uncommitted_changes": false
   },
