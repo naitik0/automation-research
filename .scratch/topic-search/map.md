@@ -38,6 +38,7 @@ An approved **problem brief** (see `CONTEXT.md`) for one **chosen problem** in A
 
 <!-- one line per closed ticket: [title](issues/NN-slug.md): gist -->
 
+- [Gap scan: LLM agents for SOC alert triage and log analysis](issues/01-gap-scan-soc-alert-triage.md): crowded, but strongest gap so far (a flawed evaluation): LLM triage benchmarks lack cheap baselines; a rule-majority lookup beat the reported LLM average on SecAlertBench in a pilot; nobody has compared LLMs with risk-based alerting.
 - [Gap scan: Reliability of LLM agents in multi-step workflow automation](issues/03-gap-scan-workflow-agent-reliability.md): crowded area, weak-to-moderate gap; best angle is runtime reliability of LLM steps in public n8n templates (overlaps with low-code security).
 - [Gap scan: Security of low-code AI workflow automation](issues/02-gap-scan-low-code-workflow-security.md): main hunch wrong, since JAW (arXiv:2605.11229) already hijacks n8n templates; a narrower gap remains in measuring n8n's built-in defences and attack rates across models.
 - [Which LLMs can we actually run for experiments on our hardware and budget?](issues/05-feasible-model-setup.md): Qwen3-4B and Llama 3.2 3B local, gpt-oss-120b on Groq free tier, Claude Haiku 4.5 as reference; about $10–15. Small models are weak at multi-turn tool calling.
