@@ -1,3 +1,11 @@
+## Project
+
+Academic research project, currently exploring the research space to choose a topic. See `README.md` for the phase and layout.
+
+- Research findings go in `notes/<topic-slug>.md`, following `notes/README.md`. Cite every claim; prefer peer-reviewed venues and arXiv.
+- The topic search is tracked as a wayfinder map at `.scratch/topic-search/`.
+- Don't write the paper or build a system unless asked.
+
 ## Agent skills
 
 ### Issue tracker
