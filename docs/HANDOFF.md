@@ -2,8 +2,73 @@
 
 **Read this before running anything.** Experiment execution was **frozen by the user** on 2026-10-09, part-way through the dry run.
 - No production call has ever been made.
-- The dry run is **incomplete** and **not valid**.
+- The dry run is **incomplete**: both local models are validated; the API models, P13 and the dry-run report remain.
 - Nothing may run until the user says so.
+
+## Update 2026-10-09 (latest): local-model dry-run validation complete
+
+The user accepted both local models' dry runs as technically successful; Qwen's acceptance notes the P5 limitation below. All local checks pass. API models, P13 and the dry-run report remain. No production call has been made.
+
+**Main runs (accepted):**
+
+| Model | Directory | Harness | Config hash | Result |
+|---|---|---|---|---|
+| Llama 3.2 3B | `runs/dryrun/llama-3.2-3b/final` | `171e9e68338cc886` | `0f76c90d…cf63` | 120/120 `ok`, 0 invalid; `validate_run` PASS |
+| Qwen3-4B | `runs/dryrun/qwen3-4b/final-d11` | `d2e23ceaaf7041f0` | `4d013ecb…5791` | 120/120 `ok`, 0 invalid; `validate_run` PASS |
+
+**P-check outcomes:**
+
+| Check | Llama 3.2 3B | Qwen3-4B |
+|---|---|---|
+| P3 Context fit | PASS (max 4,190 tokens) | PASS (max 4,375 tokens) |
+| P4 Template stability | PASS: 120/120 re-rendered hashes match; the pinned `Today Date: 26 Jul 2024` is present; today's date is absent | PASS: 120/120 hashes match; the template contains no date |
+| P5 Endpoint equivalence | not required (Qwen only) | PASS: 20/20 equal labels. **Limitation:** all 20 chat outputs were `Attack`, so `Non-Attack` agreement is untested |
+| P7 Validity | PASS: 0% invalid in every condition | PASS: 0% invalid in every condition |
+| P8 Score extraction | PASS: coverage 100% in every cell | PASS under D11 (coverage is a diagnostic): (a) 4/40, (b) 6/40, (c) 21/40; all 89 unavailable because `Non-Attack` was outside the top 20 |
+| P9 Determinism | PASS: 20/20 identical labels; Δscore = 0 on 20/20; identical tokens and top-20 log-probabilities | PASS: 20/20 identical labels and availability; Δscore = 0 on the 2 pairs with a score; identical tokens and top-20 log-probabilities on 20/20 |
+| P10 Crash and resume | PASS (10/10 sub-checks) | PASS (10/10 sub-checks) |
+| P13 inputs | 5.27 s per call on average (about 4.4 h for 3,000 calls) | 7.48 s per call on average (about 6.2 h for 3,000 calls) |
+
+**How P10 was run (`scripts/live_checks.py p10`, directory `p10`, first 12 calls), for each model:**
+1. Session A: a hard exit after 5 completed calls, leaving a stale lock.
+2. Session B: `--break-lock`, 2 more calls, then an exit while writing the 3rd line (half a line on disk).
+3. Session C: `--break-lock` to the end. It moved the partial line aside and made only the 5 remaining calls.
+
+The result is exactly the 12 expected call IDs, no duplicates, and no lock left. The 7 calls completed before a crash were each sent once; only the in-flight call was re-sent, once (§9). `validate_run` flags that in-flight call as "sent more than once", which is expected.
+
+**Cross-checks (read-only, not results):**
+- Llama's P9 repeats ran under the current harness and its main run under the previous one; their outputs are identical.
+- Both P10 runs' 12 calls match their main runs.
+- Qwen `final-d11` matches the stopped 60-call `final` run on all 60 shared call IDs.
+
+**Extra generation requests beyond the main runs (local only):**
+
+| Check | Requests |
+|---|---|
+| Qwen P9 | 20 |
+| Qwen P5 (pilot-style chat) | 20 |
+| Llama P9 | 20 |
+| Llama P10 | 13 |
+| Qwen P10 | 13 |
+| **Total** | **86** |
+
+P4 used `/apply-template` only, and every runner start re-checked the label tokens with `/tokenize`.
+
+**Dry-run directories:**
+- `llama-3.2-3b/`: `main` (frozen 94-call checkpoint), `final`, `p9`, `p10`.
+- `qwen3-4b/`: `final` (stopped at 60 calls; debugging only), `final-d11`, `p9`, `p5`, `p10`.
+- Reports: `runs/dryrun/checks/`, which is git-ignored.
+- `main`, `final` and `final-d11` were verified unchanged by sha256 after the P9 and P10 work.
+
+**`scripts/live_checks.py`** (outside `src/`, so not part of the harness): P4, P5, P10 and the per-model P7/P8/P9/P13 report; every command takes `--subdir`.
+- P4's date test: it fails if today's date appears, or if a pinned `date_string` is missing (§3, P4).
+- P10's analysis: it reports a clean failure if a session dies early, and records each session's error output.
+
+**Remaining before production (production stays prohibited until the user approves the dry-run report):**
+1. API credentials for Groq (Developer plan) and Anthropic, set as environment variables only.
+2. Dry runs for gpt-oss-120b and Claude Haiku 4.5: 120 calls each, plus 20 repeats (P9 for APIs: agreement of 95% or more, otherwise flagged), P6 transport, P7, and P12 gpt-oss truncation (at most 2% `length` at 1,024 tokens; otherwise 2,048, pre-approved).
+3. P13 budget projection across all four models (at most 20 h local and at most $10 API).
+4. The dry-run report covering P1–P15, for the user's review.
 
 ## Update 2026-10-09 (later): Llama dry run done; Qwen stopped at P8; protocol amended (D11)
 
@@ -28,15 +93,7 @@
   - Request parameters, call IDs and config hashes are unchanged (Llama `0f76c90d…`, Qwen `4d013ecb…`).
   - Lock sha256: `ba57aa56…b2de38`, generated from the clean commit `156c7c3`.
 - **Live checks:** `scripts/live_checks.py` (P4, P5, per-model P7/P8/P9/P13 report). It sits outside `src/`, so it isn't part of the harness.
-- **Next, needs approval: a fresh Qwen dry run in a new directory under the current harness.**
-  1. `python -m src.run_llm --model qwen3-4b --subdir final-d11 --max-new-calls 60` (twice)
-  2. P9: `--subdir p9 --first 20`
-  3. P5: `python scripts/live_checks.py p5 --model qwen3-4b`
-  4. P4: `python scripts/live_checks.py p4 --model qwen3-4b`
-  5. `validate_run`, then `python scripts/live_checks.py report`
-
-  Steps 3–5 all take `--subdir final-d11`.
-- **Llama:** P4, P9 and P10 are still pending.
+- **Next steps from this update** (the fresh Qwen run, and Llama P4, P9 and P10) are done: see the latest update above.
 
 ## Update 2026-10-09: offline preparation done, clean Llama dry run ready (not run)
 

@@ -4,6 +4,7 @@ P7/P8/P9/P13 report. Kept outside src/ so adding it does not change the locked h
   python scripts/live_checks.py p4 --model qwen3-4b       # re-render prompts: /apply-template only, no generation
   python scripts/live_checks.py p5 --model qwen3-4b       # 20 pilot-style /v1/chat/completions calls (generation)
   python scripts/live_checks.py report --model qwen3-4b   # P7, P8, P9, P13 from runs/dryrun/<model>/{<subdir>,p9}
+  python scripts/live_checks.py p10 --model qwen3-4b      # crash-and-resume test in runs/dryrun/<model>/p10
 All take --subdir (default final): the main dry-run directory.
 
 Reports go to runs/dryrun/checks/<model>_<check>.json. No performance metric is computed.
@@ -14,19 +15,22 @@ import argparse
 import json
 import re
 import statistics
+import subprocess
 import sys
 import time
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.common import MANIFESTS, RUNS, load_dataset, read_jsonl, sha256_text, write_json  # noqa: E402
+from src.common import MANIFESTS, ROOT, RUNS, load_dataset, read_jsonl, sha256_text, write_json  # noqa: E402
 from src.lock import harness_hash  # noqa: E402
 from src.lock import load as load_lock  # noqa: E402
 from src.models import MODELS, LocalClient  # noqa: E402
 from src.prompts import SYSTEM_PROMPT, messages, parse_label, user_message  # noqa: E402
 from src.run_llm import call_order  # noqa: E402
+from src.validate_run import validate  # noqa: E402
 
 CHECKS = RUNS / "dryrun" / "checks"
 DATE_RE = re.compile(r"\d{1,2} [A-Z][a-z]{2} \d{4}|\d{4}-\d{2}-\d{2}|today|date", re.IGNORECASE)
@@ -46,9 +50,19 @@ def _server(model: str) -> LocalClient:
     return c
 
 
+def _today_strings() -> set[str]:
+    """Today's date (local and UTC) in the formats a chat template might insert."""
+    out = set()
+    for d in (datetime.now(), datetime.now(timezone.utc)):
+        out |= {d.strftime("%d %b %Y"), f"{d.day} {d.strftime('%b %Y')}", d.strftime("%Y-%m-%d"),
+                d.strftime("%B %d, %Y"), d.strftime("%d %B %Y")}
+    return out
+
+
 def p4(model: str, subdir: str = "final") -> dict:
-    """Template stability: re-rendering every prompt of the finished run gives the recorded hash, and the
-    template's own text (prompt minus the two messages) holds no date or run-varying text."""
+    """Template stability: re-rendering every prompt of the finished run gives the recorded hash, two probe
+    renders are identical, and the template's own text (prompt minus the two messages) holds no run-varying
+    date: today's date never appears, and a pinned `date_string` (§3) does appear where one is set."""
     c, kw = _server(model), MODELS[model]["template_kwargs"] or None
     data = load_dataset()
     calls = _run(model, subdir)
@@ -62,10 +76,14 @@ def p4(model: str, subdir: str = "final") -> dict:
     renders = [c.apply_template(probe, kw) for _ in range(2)]
     scaffold = renders[0].replace("SYSTEM-PROBE", "").replace("USER-PROBE", "")
     hits = DATE_RE.findall(scaffold)
-    ok = differ == 0 and renders[0] == renders[1] and not hits
+    today_found = sorted(t for t in _today_strings() if t in scaffold)
+    pinned = (kw or {}).get("date_string")
+    pinned_ok = pinned is None or pinned in scaffold
+    ok = differ == 0 and renders[0] == renders[1] and not today_found and pinned_ok
     return {"pass": ok, "prompts_rerendered": len(calls), "hash_differs": differ,
             "probe_renders_identical": renders[0] == renders[1], "template_scaffold": scaffold,
-            "date_like_text_in_scaffold": hits, "template_kwargs": kw}
+            "date_like_text_in_scaffold": hits, "todays_date_in_scaffold": today_found,
+            "pinned_date_string": pinned, "pinned_date_present": pinned_ok, "template_kwargs": kw}
 
 
 def p5(model: str, subdir: str = "final") -> dict:
@@ -160,13 +178,88 @@ def report(model: str, subdir: str = "final") -> dict:
     }
 
 
+P10_FIRST, P10_CRASH_A, P10_CRASH_B = 12, 5, 3
+
+
+def _runner(model: str, subdir: str, *extra: str) -> subprocess.CompletedProcess:
+    cmd = [sys.executable, "-m", "src.run_llm", "--model", model, "--subdir", subdir, "--first", str(P10_FIRST),
+           *extra]
+    return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+
+
+def p10(model: str, subdir: str = "final") -> dict:
+    """§11 P10, three runner sessions on the first 12 calls in a fresh directory (runs/dryrun/<model>/p10):
+      A: hard exit right after the 5th completed call (stale lock left behind);
+      B: resume with --break-lock, complete 2 calls, then exit while writing the 3rd line (half a line on disk);
+      C: resume with --break-lock to the end.
+    Pass: exactly the 12 expected call IDs, no duplicates, the partial line moved aside, every call completed before
+    a crash sent exactly once, and only the in-flight call re-sent (once). `subdir` names the main run whose
+    outputs the p10 calls are compared with."""
+    _server(model)
+    d = RUNS / "dryrun" / model / "p10"
+    if d.exists():
+        raise SystemExit(f"{d} exists: P10 needs a fresh directory")
+    a = _runner(model, "p10", "--crash-after", str(P10_CRASH_A))
+    after_a = [x["call_id"] for x in read_jsonl(d / "calls.jsonl")] if (d / "calls.jsonl").exists() else []
+    lock_after_a = (d / "RUNNING.lock").exists()
+    b = _runner(model, "p10", "--break-lock", "--crash-after", str(P10_CRASH_B), "--crash-partial")
+    raw_b = (d / "calls.jsonl").read_bytes() if (d / "calls.jsonl").exists() else b""
+    after_b = [json.loads(x)["call_id"] for x in raw_b.decode("utf-8").splitlines(keepends=True) if x.endswith("\n")]
+    partial_after_b = not raw_b.endswith(b"\n")
+    c = _runner(model, "p10", "--break-lock")
+    c_summary = json.loads(c.stdout.strip().splitlines()[-1]) if c.returncode == 0 and c.stdout.strip() else None
+
+    calls = read_jsonl(d / "calls.jsonl") if (d / "calls.jsonl").exists() else []
+    attempts = read_jsonl(d / "attempts.jsonl") if (d / "attempts.jsonl").exists() else []
+    partial_files = sorted(d.glob("calls.jsonl.partial-*"))
+    partial_text = partial_files[0].read_text(encoding="utf-8") if partial_files else ""
+    m = re.search(r'"call_id": "([0-9a-f]{64})"', partial_text)
+    in_flight = m.group(1) if m else None
+    ok_att = Counter(x["call_id"] for x in attempts if x["status"] == "ok")
+    completed_before = set(after_b)                       # every call fully written before the second crash
+    v = validate(d, "dryrun", model, first=P10_FIRST)
+    ids = [x["call_id"] for x in calls]
+    main = {x["call_id"]: x for x in _run(model, subdir)}
+    same = [x for x in calls if x["call_id"] in main]
+    checks = {
+        "session_A_exit_3_after_5_calls": a.returncode == 3 and len(after_a) == P10_CRASH_A and lock_after_a,
+        "session_B_exit_3_with_partial_line": b.returncode == 3 and partial_after_b
+                                               and len(after_b) == P10_CRASH_A + P10_CRASH_B - 1,
+        "session_C_completed": c.returncode == 0 and c_summary is not None and c_summary["done"] == P10_FIRST,
+        "session_C_new_calls_only_remaining": c_summary is not None
+                                              and c_summary["new_calls"] == P10_FIRST - len(after_b),
+        "expected_ids_exactly": v["expected"] == P10_FIRST and v["done"] == P10_FIRST and v["missing"] == 0,
+        "no_duplicate_call_ids": len(ids) == len(set(ids)) == P10_FIRST,
+        "partial_line_moved_aside": len(partial_files) == 1 and in_flight is not None,
+        "completed_calls_not_resent": all(ok_att[k] == 1 for k in completed_before),
+        "only_in_flight_call_resent_once": in_flight not in completed_before and ok_att[in_flight] == 2
+                                           and sum(n > 1 for n in ok_att.values()) == 1,
+        "no_lock_left": not (d / "RUNNING.lock").exists(),
+    }
+    return {
+        "pass": all(checks.values()), "checks": checks, "requests_sent": len(attempts),
+        "calls_recorded": len(calls), "in_flight_call_id": in_flight,
+        "validate_run_problems": v["problems"],
+        "note": "validate_run reports the in-flight call as 'sent more than once': by design (§9) the call in flight "
+                "at a crash is re-sent; P10 checks that it is the only one and that no completed call was re-sent",
+        "matches_main_run": {
+            "shared_ids": len(same),
+            "identical_labels": sum(x["parsed_label"] == main[x["call_id"]]["parsed_label"] for x in same),
+            "identical_tokens": sum(x["generated_token_ids"] == main[x["call_id"]]["generated_token_ids"]
+                                   for x in same)},
+        "session_returncodes": {"A": a.returncode, "B": b.returncode, "C": c.returncode},
+        "session_stderr_tail": {k: r.stderr[-500:] for k, r in (("A", a), ("B", b), ("C", c)) if r.stderr.strip()},
+        "session_C_summary": c_summary,
+    }
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("check", choices=["p4", "p5", "report"])
+    ap.add_argument("check", choices=["p4", "p5", "p10", "report"])
     ap.add_argument("--model", required=True, choices=[k for k, m in MODELS.items() if m["kind"] == "local"])
     ap.add_argument("--subdir", default="final", help="the main dry-run directory to check")
     a = ap.parse_args(argv)
-    fn = {"p4": p4, "p5": p5, "report": report}[a.check]
+    fn = {"p4": p4, "p5": p5, "p10": p10, "report": report}[a.check]
     rep = {"check": a.check, "model": a.model, "subdir": a.subdir, **fn(a.model, a.subdir)}
     write_json(CHECKS / f"{a.model}_{a.check}.json", rep)
     print(json.dumps(rep, indent=1, ensure_ascii=False))
